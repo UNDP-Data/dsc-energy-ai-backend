@@ -10,6 +10,7 @@ RUN python3.9 -m pip install --upgrade pip
 RUN pip install -r requirements.txt
 RUN pip install bs4
 RUN pip install openpyxl
+RUN python -m spacy download en_core_web_sm
 
 COPY . /python-docker
 ENV FLASK_APP=/python-docker/main.py
