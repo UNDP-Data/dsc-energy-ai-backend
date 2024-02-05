@@ -1,6 +1,6 @@
 {
     "user_query": "What is the role of USAID in supporting Albania's energy sector strategy?",
-    "answer": "<p>The role of USAID in supporting Albania's energy sector strategy is to enhance capacity for low emission development strategies (EC-LEDS) in the country. This is outlined in the USAID Energy Strategy for Albania (2017-2030)<a data-id='doc-16'>[1]</a>. USAID aims to develop domestic energy sources, create a regional integrated and diversified energy system, and promote market principles. The strategy focuses on meeting energy demand, sustainable development of the economy, ensuring energy security and quality, environmental protection, climate action, and increased welfare at minimum social cost.</p>",
+    "answer": "<p>The role of USAID in supporting Albania's energy sector strategy is to provide technical expertise and support in the development of the National Strategy for the Energy Sector. USAID works closely with a Working Group composed of leading experts in the fields of electricity, oil and gas, renewables, energy efficiency, and strategic energy planning. This Working Group coordinates the process for drafting the National Strategy for the Energy Sector and is supported by USAID with technical expertise. The partnership between Albania and USAID aims to enhance capacity for low emission development strategies and promote the development of a regional integrated and diversified energy system based on market principles. This collaboration contributes to the overall goal of meeting the demand for energy and ensuring sustainable development of the economy in Albania<a data-id='doc-16'>[1]</a><a data-id='doc-11'>[2]</a>.</p>",
     "sources": {
         "doc-1": {
             "title": "Country programme document for Afghanistan (2015 2019)",
@@ -73,5 +73,45 @@
             "thumbnail": ""
         }
     },
-    "query_ideas": "['What initiatives has USAID taken to support Albania's energy sector strategy?',\n 'How has USAID contributed to the development of Albania's energy sector strategy?',\n 'What specific projects has USAID implemented to support Albania's energy sector strategy?',\n 'What is the impact of USAID's support on Albania's energy sector strategy?',\n 'How does USAID collaborate with Albania's government and other stakeholders in implementing the energy sector strategy?',\n 'What are the goals and objectives of USAID's involvement in Albania's energy sector strategy?',\n 'What are the key challenges and opportunities in USAID's support for Albania's energy sector strategy?',\n 'What is the timeline for USAID's support in implementing Albania's energy sector strategy?',\n 'What are the expected outcomes and benefits of USAID's support for Albania's energy sector strategy?',\n 'How does USAID ensure transparency and accountability in its support for Albania's energy sector strategy?']"
+    "query_ideas": "['What initiatives has USAID taken to support Albania's energy sector strategy?',\n 'How has USAID contributed to the development of Albania's energy sector strategy?',\n 'What specific projects has USAID implemented to support Albania's energy sector strategy?',\n 'What is the impact of USAID's support on Albania's energy sector strategy?',\n 'How does USAID collaborate with Albania's government and other stakeholders in implementing the energy sector strategy?',\n 'What are the goals and objectives of USAID's involvement in Albania's energy sector strategy?',\n 'What are the key challenges and opportunities in USAID's support for Albania's energy sector strategy?',\n 'What is the timeline for USAID's support in implementing Albania's energy sector strategy?',\n 'What are the expected outcomes and benefits of USAID's support for Albania's energy sector strategy?',\n 'How does USAID ensure transparency and accountability in its support for Albania's energy sector strategy?']",
+    "entities": [
+        {
+            "name": "Albania",
+            "category": "Location",
+            "summary": "Albania (/ælˈbeɪniə, ɔːl-/ a(w)l-BAY-nee-ə; Albanian: Shqipëri or Shqipëria), officially the Republic of Albania (Albanian: Republika e Shqipërisë), is a country in Southeastern Europe. It is located on the Adriatic and Ionian Seas within the Mediterranean Sea and shares land borders with Montenegro to the northwest, Kosovo to the northeast, North Macedonia to the east and Greece to the south. Tirana is its capital and largest city, followed by Durrës, Vlorë, and Shkodër. Albania displays varied climatic, geological, hydrological, and morphological conditions, defined in an area of 28,748 km2 (11,100 sq mi). It possesses significant diversity with the landscape ranging from the snow-capped mountains in the Albanian Alps as well as the Korab, Skanderbeg, Pindus and Ceraunian Mountains to the hot and sunny coasts of the Albanian Adriatic and Ionian Sea along the Mediterranean Sea. Albania has been inhabited by different civilisations over time, such as the Illyrians, Thracians, Greeks, Romans, Byzantines, Venetians, and Ottomans. The Albanians established the autonomous Principality of Arbër in the 12th century. The Kingdom of Albania and Principality of Albania formed between the 13th and 14th centuries. Prior to the Ottoman conquest of Albania in the 15th century, the Albanian resistance to Ottoman expansion into Europe led by Skanderbeg won them acclaim over most of Europe. Albania remained under Ottoman rule for nearly five centuries, during which many Albanians (known as Arnauts) attained high-ranking offices in the empire, especially in the Southern Balkans and Egypt. Between the 18th and 19th centuries, cultural developments, widely attributed to Albanians having gathered both spiritual and intellectual strength, conclusively led to the Albanian Renaissance. After the defeat of the Ottomans in the Balkan Wars, the modern nation state of Albania declared independence in 1912. In the 20th century, the Kingdom of Albania was invaded by Italy, which formed Greater Albania before becoming a protectorate of Nazi Germany. Enver Hoxha formed the People's Socialist Republic of Albania after World War II, modeled under the terms of Hoxhaism. The Revolutions of 1991 concluded the fall of communism in Albania and eventually the establishment of the current Republic of Albania. Albania is a unitary parliamentary constitutional republic. It is a developing country, ranking 67th in the Human Development Index, with an upper-middle income economy dominated by the service sector, followed by manufacturing. It went through a process of transition following the end of communism in 1990, from centralised planning to a market-based economy. Albania provides universal health care and free primary and secondary education to its citizens. Albania is a member of the United Nations, World Bank, UNESCO, NATO, WTO, COE, OSCE, and OIC. It has been an official candidate for membership in the European Union since 2014. It is one of the founding members of the Energy Community, including the Organization of the Black Sea Economic Cooperation and Union for the Mediterranean.",
+            "acronym": "N/A"
+        },
+        {
+            "name": "United States Agency for International Development",
+            "category": "Organization",
+            "summary": "The United States Agency for International Development (USAID) is an independent agency of the U.S. federal government that is primarily responsible for administering civilian foreign aid and development assistance. With a budget of over $27 billion, USAID is one of the largest official aid agencies in the world and accounts for more than half of all U.S. foreign assistance—the highest in the world in absolute dollar terms. Congress passed the Foreign Assistance Act on September 4, 1961, which reorganized U.S. foreign assistance programs and mandated the creation of an agency to administer economic aid. USAID was subsequently established by the executive order of President John F. Kennedy, who sought to unite several existing foreign assistance organizations and programs under one agency. USAID became the first U.S. foreign assistance organization whose primary focus was long-term socioeconomic development. USAID's programs are authorized by Congress in the Foreign Assistance Act, which Congress supplements through directions in annual funding appropriation acts and other legislation. As an official component of U.S. foreign policy, USAID operates subject to the guidance of the President, Secretary of State, and the National Security Council. USAID has missions in over 100 countries, primarily in Africa, Asia, Latin America, the Middle East, and Eastern Europe.",
+            "acronym": "USAID"
+        },
+        {
+            "name": "Working Group",
+            "category": "Organization",
+            "summary": "N/A",
+            "acronym": "N/A"
+        }
+    ],
+    "relations": [
+        {
+            "subject": "Albania",
+            "object": "United States Agency for International Development",
+            "relationship_type": "partners with",
+            "description": "Albania partners with USAID"
+        },
+        {
+            "subject": "United States Agency for International Development",
+            "object": "Working Group",
+            "relationship_type": "partners with",
+            "description": "This Working Group coordinated the process for drafting the National Strategy for the Energy Sector and was closely supported by USAID with technical expertise1 from USAID’s strategic team, composed of leading experts in the fields of electricity, oil and gas, renewables, energy efficiency and strategic energy planning."
+        },
+        {
+            "subject": "Working Group",
+            "object": "United States Agency for International Development",
+            "relationship_type": "partners with",
+            "description": "This Working Group coordinated the process for drafting the National Strategy for the Energy Sector and was closely supported by USAID with technical expertise1 from USAID’s strategic team, composed of leading experts in the fields of electricity, oil and gas, renewables, energy efficiency and strategic energy planning."
+        }
+    ]
 }
