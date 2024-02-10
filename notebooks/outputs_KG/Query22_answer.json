@@ -1,0 +1,261 @@
+{
+    "user_query": "What percentage of Niger's population has access to electricity for productive use?",
+    "answer": "According to the provided information, the answer to the user's query \"What percentage of Niger's population has access to electricity for productive use?\" cannot be determined. The given sources and entity-relation information do not provide specific data or statistics regarding the percentage of Niger's population with access to electricity for productive use.",
+    "sources": {
+        "doc-465": {
+            "title": "Country programme document for Niger (2023–2027)",
+            "extract": "Executive Board of the United Nations Development Programme, the United Nations Population Fund and the United Nations Office for Project Services Distr.: General 11 July 2022 Original: English 22-10797 (E) 130722 *2210797* Second regular session 2022 29 August to 1 September 2022, New York Item 3 of the provisional agenda Country programmes and related matters Country programme document for Niger (2023–2027) Contents Page I. UNDP within the United Nations Sustainable Development Cooperation Framework................ 2 II. Programme priorities and partnerships………………………………………………………….… 3 III. Programme and risk management ………………………………………………………………… 7 IV. Monitoring and evaluation…………………………………………………….…………………... 8 Annex Results and resources framework for Niger (2023–2027) …………………………………………. 9I. UNDP within the United Nations Sustainable Development Cooperation Framework 1. Niger, a low-income country located in the heart of the Sahel region along the Lake Chad Basin, is endowed with immense natural resources, including oil reserves that cover 90 per cent of its territory, but still marginally exploited. The country’s development faces strong socioeconomic, environmental and security constraints",
+            "category": "CPD",
+            "link": "https://digitallibrary.un.org/record/3982745/files/DP_DCP_NER_4-EN.pdf?ln=en",
+            "thumbnail": ""
+        },
+        "doc-468": {
+            "title": "ENERGY PROFILE Niger",
+            "extract": "Total Energy Supply (TES) 2015 2020 Non-renewable (TJ) 30 666 40 262 Renewable (TJ) 64 534 73 482 Total (TJ) 95 200 113 744 Renewable share (%) 68 65 Growth in TES 2015-20 2019-20 Non-renewable (%) +31.3 +17.2 Renewable (%) +13.9 +4.1 Total (%) +19.5 +8.4 Primary energy trade 2015 2020 Imports (TJ) 7 537 7 413 Exports (TJ) 10 412 5 872 Net trade (TJ) 2 875 - 1 541 Imports (% of supply) 8 7 Exports (% of production) 10 5 Energy self-sufficiency (%) 105 101 COUNTRY INDICATORS AND SDGS TOTAL ENERGY SUPPLY (TES) Total energy supply in 2020 Renewable energy supply in 2020 28% 1% 65% 7% Oil Gas Nuclear Coal + others Renewables 0% 100% Hydro/marine Wind Solar Bioenergy Geothermal 19% 0% 0%5% 20% 40% 60% 80% 100% 2015 2016 2017 2018 2019 2020 2021 7.1.1 Access to electricity (% population) 7.1.2 Access to clean cooking (% population) 7.2.1 Renewable energy (% TFEC) 52.9 52.5 52.4",
+            "category": "NEPro",
+            "link": "https://www.irena.org/-/media/Files/IRENA/Agency/Statistics/Statistical_Profiles/Africa/Niger_Africa_RE_SP.pdf?country=Niger&regionID=&countryID=e92b7b58-e7b3-4967-934e-e0fd070c3249",
+            "thumbnail": ""
+        },
+        "doc-469": {
+            "title": "NIGER RENEWABLES READINESS ASSESSMENT 2013",
+            "extract": "NIGER RENEWABLES READINESS ASSESSMENT 2013Unless otherwise indicated, the material in this publication may be used freely, shared or reprinted, so long as IRENA is acknowledged as the source. About IRENA The International Renewable Energy Agency (IRENA) is an intergovernmental organisation that supports countries in their transition to a sustainable energy future, and serves as the principal platform for international cooperation, a centre of excellence, and a repository of policy, technology, resource and financial knowledge on renewable energy. IRENA promotes the widespread adoption and sustainable use of all forms of renewable energy, including bioenergy, geothermal, hydropower, ocean, solar and wind energy in the pursuit of sustainable development, energy access, energy security and low carbon economic growth and prosperity. Authors: Gauri Singh (IRENA), Safiatou Alzouma Nouhou (IRENA) and Mohamed Youba Sokona (IRENA) About RRA A Renewables Readiness Assessment (RRA) is a holistic evaluation of a country’s conditions and identifies the actions needed to overcome barriers to renewable energy deployment. This is a",
+            "category": "NREP",
+            "link": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2013/RRA_Niger.pdf?rev=c2ae8b936cd14c53a733ddcf8849f7e4",
+            "thumbnail": ""
+        }
+    },
+    "entities": [
+        {
+            "name": "International Fund for Agricultural Development",
+            "category": "Organization",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Niger",
+            "category": "Location",
+            "acronym": "NIGER"
+        },
+        {
+            "name": "African Economic Outlook",
+            "category": "Organization",
+            "acronym": "N/A"
+        },
+        {
+            "name": "World Bank",
+            "category": "Organization",
+            "acronym": "WB"
+        },
+        {
+            "name": "UNESCO",
+            "category": "Organization",
+            "acronym": "N/A"
+        },
+        {
+            "name": "United Nations Educational, Scientific and Cultural Organization",
+            "category": "Organization",
+            "acronym": "N/A"
+        },
+        {
+            "name": "United Nations Children's Fund",
+            "category": "Organization",
+            "acronym": "UNICEF"
+        },
+        {
+            "name": "African Development Bank",
+            "category": "Organization",
+            "acronym": "AfDB"
+        },
+        {
+            "name": "Economic Community of West African States",
+            "category": "Organization",
+            "acronym": "ECOWAS"
+        },
+        {
+            "name": "Chinese National Petroleum Corporation",
+            "category": "Organization",
+            "acronym": "N/A"
+        }
+    ],
+    "relations": [
+        {
+            "subject": "International Fund for Agricultural Development",
+            "object": "Niger",
+            "relationship_type": "supports",
+            "description": "Over the past ten years, the Nigerien economy grew at an average rate of 5%, but only 2.3% in 2011 due to a poor harvest and a severe food grain shortage."
+        },
+        {
+            "subject": "African Economic Outlook",
+            "object": "Niger",
+            "relationship_type": "supports",
+            "description": "However, it bounced back in 2012, growing by 13%, according to the African Economic Outlook (2013)."
+        },
+        {
+            "subject": "World Bank",
+            "object": "Niger",
+            "relationship_type": "supports",
+            "description": "This was helped by heavy rains that generated a surplus of over 5 million metric tons (t) of cereals (World Bank, 2013a)."
+        },
+        {
+            "subject": "UNESCO",
+            "object": "Niger",
+            "relationship_type": "supports",
+            "description": "Niger is supported by UNESCO"
+        },
+        {
+            "subject": "United Nations Educational, Scientific and Cultural Organization",
+            "object": "Niger",
+            "relationship_type": "supports",
+            "description": "Niger is supported by United Nations Educational, Scientific and Cultural Organization"
+        },
+        {
+            "subject": "United Nations Children's Fund",
+            "object": "Niger",
+            "relationship_type": "supports",
+            "description": "Niger has the potential to achieve universal access to water and sanitation, but financial resources are limited and institutions to help deliver this goal are and some wind pumps are in use."
+        },
+        {
+            "subject": "African Development Bank",
+            "object": "Niger",
+            "relationship_type": "monitors",
+            "description": "According to the African Development Bank, the Nigerien economy grew at an average rate of 5% over the past ten years."
+        },
+        {
+            "subject": "Economic Community of West African States",
+            "object": "Niger",
+            "relationship_type": "partners_with",
+            "description": "Niger is a member of the Economic Community of West African States (ECOWAS)."
+        },
+        {
+            "subject": "Chinese National Petroleum Corporation",
+            "object": "Niger",
+            "relationship_type": "partners_with",
+            "description": "Niger commenced oil production in late 2011 in a joint venture with the Chinese National Petroleum Corporation (CNPC)."
+        },
+        {
+            "subject": "Orange",
+            "object": "Niger",
+            "relationship_type": "partners_with",
+            "description": "Orange started making a similar move in 2009."
+        },
+        {
+            "subject": "CNPC",
+            "object": "Niger",
+            "relationship_type": "partners_with",
+            "description": "Niger commenced oil production in late 2011 in a joint venture with the Chinese National Petroleum Corporation (CNPC)."
+        },
+        {
+            "subject": "Niger",
+            "object": "Nigeria",
+            "relationship_type": "partners_with",
+            "description": "Initial feasibility studies have been carried out and MOUs have been signed amongst the governments of Nigeria, Niger and Algeria."
+        },
+        {
+            "subject": "Niger",
+            "object": "Economic Community of West African States",
+            "relationship_type": "partners_with",
+            "description": "Niger is a member of the Economic Community of West African States (ECOWAS)"
+        },
+        {
+            "subject": "Gaya",
+            "object": "Niger",
+            "relationship_type": "in",
+            "description": "N/A"
+        },
+        {
+            "subject": "Diffa",
+            "object": "Niger",
+            "relationship_type": "in",
+            "description": "N/A"
+        },
+        {
+            "subject": "Damasak",
+            "object": "Niger",
+            "relationship_type": "in",
+            "description": "N/A"
+        },
+        {
+            "subject": "Tahoua",
+            "object": "Niger",
+            "relationship_type": "in",
+            "description": "N/A"
+        },
+        {
+            "subject": "Maradi",
+            "object": "Niger",
+            "relationship_type": "in",
+            "description": "N/A"
+        },
+        {
+            "subject": "Arlit",
+            "object": "Niger",
+            "relationship_type": "in",
+            "description": "N/A"
+        },
+        {
+            "subject": "Zinder",
+            "object": "Niger",
+            "relationship_type": "in",
+            "description": "The 5 MW PV plant is located in Zinder, Niger."
+        },
+        {
+            "subject": "Kamba",
+            "object": "Niger",
+            "relationship_type": "in",
+            "description": "N/A"
+        },
+        {
+            "subject": "Agadez",
+            "object": "Niger",
+            "relationship_type": "in",
+            "description": "Using available data from Agadez (a northern urban area), a simple simulation was carried out to assess the potential that wind could play in off-grid electrification."
+        },
+        {
+            "subject": "BirninKebbi",
+            "object": "Niger",
+            "relationship_type": "in",
+            "description": "N/A"
+        },
+        {
+            "subject": "Tchirozerine",
+            "object": "Niger",
+            "relationship_type": "in",
+            "description": "N/A"
+        },
+        {
+            "subject": "Ayorou",
+            "object": "Niger",
+            "relationship_type": "in",
+            "description": "A typical village around Ayorou in Niger"
+        },
+        {
+            "subject": "Niger",
+            "object": "Sahel",
+            "relationship_type": "in",
+            "description": "Niger is located in the heart of the Sahel region."
+        },
+        {
+            "subject": "Niger",
+            "object": "West Africa",
+            "relationship_type": "in",
+            "description": "Niger is a landlocked country in West Africa"
+        },
+        {
+            "subject": "Niger",
+            "object": "Chad",
+            "relationship_type": "in",
+            "description": "Niger is bordered by Chad to the East"
+        },
+        {
+            "subject": "Niger",
+            "object": "Nigeria",
+            "relationship_type": "in",
+            "description": "Niger is bordered by Nigeria to the South"
+        },
+        {
+            "subject": "Niger",
+            "object": "Benin",
+            "relationship_type": "in",
+            "description": "Niger is bordered by Benin to the West"
+        }
+    ]
+}

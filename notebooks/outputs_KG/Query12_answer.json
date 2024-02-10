@@ -1,0 +1,103 @@
+{
+    "user_query": "How is Angola addressing the Sustainable Development Goals with a focus on poverty eradication?",
+    "answer": "Angola is addressing the Sustainable Development Goals (SDGs) with a specific focus on poverty eradication. Angola's efforts contribute to the achievement of the SDGs, and the country aims to eradicate poverty as part of its commitment to the goals. The United Nations Development Programme (UNDP) has established multi-stakeholder partnerships on priorities for the SDGs, including poverty eradication. The results framework for Angola's SDG efforts is aligned with indicators related to the European Union accession, the National Spatial Data Infrastructure (NSDI), and the national indicator framework for the SDGs. By monitoring these indicators, Angola can track its progress towards poverty eradication and other SDG targets.",
+    "sources": {
+        "doc-31": {
+            "title": "UN Country programme document for Angola (2020-2022)",
+            "extract": "Executive Board of the United Nations Development Programme, the United Nations Population Fund and the United Nations Office for Project Services Distr.: General 1 July 2019 Original: English 1911135X (E) 230719 Second regular session 2019 3 to 6 September 2019, New York Item 3 of the provisional agenda Country programmes and related matters Country programme document for Angola (2020-2022) Contents Page I. Programme rationale..................................................................................................... 2 II. Programme priorities and partnerships………………………………………………….……….… 4 III. Programme and risk management.................................................................................... 7 IV. Monitoring and evaluation…………………………………………………….…………………… 8 Annex Results and resources framework for Angola (2020-2022) 10I. Programme rationale 1. The 2017 general elections ushered in a new era in Angola, with a change of President after 38 years. There is strong political commitment to strengthen democratic governance, justice and human rights, and fight corruption. Creating the first-ever elected local governments in 2020 is a flagship policy. 2. Governance, justice and human rights institutions at national and local levels remain fragile in responding to ongoing structural",
+            "category": "CPD",
+            "link": "https://digitallibrary.un.org/record/3813093/files/DP_DCP_AGO_4-EN.pdf?ln=en",
+            "thumbnail": ""
+        },
+        "doc-35": {
+            "title": "Energy Profile Angola IRENA",
+            "extract": "Total Energy Supply (TES) 2015 2020 Non-renewable (TJ) 279 635 186 724 Renewable (TJ) 279 151 324 757 Total (TJ) 558 786 511 481 Renewable share (%) 50 63 Growth in TES 2015-20 2019-20 Non-renewable (%) -33.2 -22.8 Renewable (%) +16.3 +1.1 Total (%) -8.5 -9.2 Primary energy trade 2015 2020 Imports (TJ) 201 220 69 659 Exports (TJ) 3 667 669 2 822 808 Net trade (TJ) 3 466 449 2 753 149 Imports (% of supply) 36 14 Exports (% of production) 91 87 Energy self-sufficiency (%) 722 637 COUNTRY INDICATORS AND SDGS TOTAL ENERGY SUPPLY (TES) Total energy supply in 2020 Renewable energy supply in 2020 28% 63% 9% Oil Gas Nuclear Coal + others Renewables 15%0% 85% Hydro/marine Wind Solar Bioenergy Geothermal 48% 50% 0% 0% 20% 40% 60% 80% 100% 2015 2016 2017 2018 2019 2020 2021 7.1.1 Access to electricity (% population) 7.1.2 Access to clean cooking (% population) 7.2.1 Renewable energy (% TFEC)",
+            "category": "NEPro",
+            "link": "https://www.irena.org/-/media/Files/IRENA/Agency/Statistics/Statistical_Profiles/Africa/Angola_Africa_RE_SP.pdf?country=Angola&regionID=&countryID=af6d0eca-7f88-4c5b-9d3e-9e3b7494ffd0",
+            "thumbnail": ""
+        }
+    },
+    "entities": [
+        {
+            "name": "Angola",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Sustainable Development Goals",
+            "category": "Strategy",
+            "acronym": "SDGs"
+        },
+        {
+            "name": "United Nations Development Programme",
+            "category": "Organization",
+            "acronym": "UNDP"
+        },
+        {
+            "name": "Western Balkan Regional Economic Area",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Government of Nigeria",
+            "category": "Organization",
+            "acronym": "N/A"
+        }
+    ],
+    "relations": [
+        {
+            "subject": "Angola",
+            "object": "Sustainable Development Goals",
+            "relationship_type": "contributes_to",
+            "description": "Angola's efforts contribute to the achievement of the Sustainable Development Goals"
+        },
+        {
+            "subject": "Sustainable Development Goals",
+            "object": "Angola",
+            "relationship_type": "addresses",
+            "description": "Angola aims to eradicate poverty"
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "Sustainable Development Goals",
+            "relationship_type": "partners_with",
+            "description": "UNDP has established multi-stakeholder partnerships on priorities for the Sustainable Development Goals."
+        },
+        {
+            "subject": "Sustainable Development Goals",
+            "object": "Western Balkan Regional Economic Area",
+            "relationship_type": "focuses_on",
+            "description": "UNDP will focus on integrated solutions that address cross-cutting problems, i.e., identifying nature-based solutions that support the transition to a clean green economy, promote ecotourism and create new jobs in competitive sectors within the Western Balkan Regional Economic Area."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "Sustainable Development Goals",
+            "relationship_type": "contributes_to",
+            "description": "The results framework is aligned with indicators related to European Union accession, the NSDI and the national indicator framework for the Sustainable Development Goals."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "Sustainable Development Goals",
+            "relationship_type": "monitors",
+            "description": "The results framework is aligned with indicators related to European Union accession, the NSDI and the national indicator framework for the Sustainable Development Goals."
+        },
+        {
+            "subject": "Government of Nigeria",
+            "object": "Sustainable Development Goals",
+            "relationship_type": "contributes_to",
+            "description": "The Government of Nigeria contributes to the achievement of the Sustainable Development Goals."
+        },
+        {
+            "subject": "Angola",
+            "object": "Sustainable Development Goals",
+            "relationship_type": "contributes_to",
+            "description": "Angola's efforts contribute to the achievement of the Sustainable Development Goals"
+        },
+        {
+            "subject": "Sustainable Development Goals",
+            "object": "Angola",
+            "relationship_type": "addresses",
+            "description": "Angola aims to eradicate poverty"
+        }
+    ]
+}

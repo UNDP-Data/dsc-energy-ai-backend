@@ -1,0 +1,75 @@
+{
+    "user_query": "What are North Macedonia's strategic priorities in partnership with the United Nations Sustainable Development Cooperation Framework for 2021-2025?",
+    "answer": "North Macedonia's strategic priorities in partnership with the United Nations Sustainable Development Cooperation Framework for 2021-2025 include working towards European Union accession, sustainable economic growth, and inclusive prosperity. North Macedonia aims to narrow the income gap with the European Union. Additionally, North Macedonia has interconnectivity infrastructure with Albania, and Manastir is located in North Macedonia. The United Nations Development Programme focuses on the United Nations Sustainable Development Cooperation Framework.",
+    "sources": [],
+    "entities": [
+        {
+            "name": "North Macedonia",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "European Union",
+            "category": "Organization",
+            "acronym": "EU"
+        },
+        {
+            "name": "Albania",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Manastir",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "United Nations Development Programme",
+            "category": "Organization",
+            "acronym": "UNDP"
+        },
+        {
+            "name": "United Nations Sustainable Development Cooperation Framework",
+            "category": "Organization",
+            "acronym": "UNSDCF"
+        }
+    ],
+    "relations": [
+        {
+            "subject": "North Macedonia",
+            "object": "European Union",
+            "relationship_type": "focuses_on",
+            "description": "North Macedonia is working towards narrowing the income gap with the European Union."
+        },
+        {
+            "subject": "European Union",
+            "object": "North Macedonia",
+            "relationship_type": "targets",
+            "description": "Together, they aim for European Union accession, sustainable economic growth, and inclusive prosperity."
+        },
+        {
+            "subject": "Albania",
+            "object": "North Macedonia",
+            "relationship_type": "in",
+            "description": "Albania has interconnectivity infrastructure with North Macedonia"
+        },
+        {
+            "subject": "North Macedonia",
+            "object": "Albania",
+            "relationship_type": "in",
+            "description": "North Macedonia has interconnectivity infrastructure with Albania"
+        },
+        {
+            "subject": "Manastir",
+            "object": "North Macedonia",
+            "relationship_type": "in",
+            "description": "Manastir is located in North Macedonia"
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "United Nations Sustainable Development Cooperation Framework",
+            "relationship_type": "focuses_on",
+            "description": "The United Nations Development Programme focuses on the United Nations Sustainable Development Cooperation Framework."
+        }
+    ]
+}

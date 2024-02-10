@@ -1,0 +1,56 @@
+{
+    "user_query": "How does the National Social Policy Coordination Council contribute to human rights in Argentina?",
+    "answer": "The National Social Policy Coordination Council contributes to human rights in Argentina by working in collaboration with the Secretariat of Human Rights of the Nation. This collaboration allows the National Social Policy Coordination Council to actively contribute to the promotion and protection of human rights in the country. The Council's efforts are aimed at ensuring that human rights are respected, upheld, and advanced in Argentina. Additionally, it is important to note that Argentina is classified by the World Bank as an upper-middle-income country, indicating its commitment to socio-economic development and the well-being of its citizens.",
+    "sources": {
+        "doc-36": {
+            "title": "UN Country programme document for Argentina\n(2021-2025)",
+            "extract": "Executive Board of the United Nations Development Programme, the United Nations Population Fund and the United Nations Office for Project Services Distr.: General 5 April 2021 Original: English 2104544X (E) 130421 Annual session 2021 7–11 June 2021, New York Item 8 of the provisional agenda Country programmes and related matters Country programme document for Argentina (2021-2025) Contents Chapter Page I. UNDP within the United Nations Sustainable Development Cooperation Framework ................ 2 II. Programme priorities and partnerships………………………………………………….……….… 3 III. Programme and risk management .................................................................................... 6 IV. Monitoring and evaluation…………………………………………………….…………………… 7 Annex Results and resources framework for Argentina (2021-2025) 8I. UNDP within the United Nations Sustainable Development Cooperation Framework 1. Argentina scores very highly on the Human Development Index, ranked 46 of 189 countries in 2020, and is classified by the World Bank as an upper-middle-income country, with a gross national income per capita of $10,006 in 2019. Nonetheless, there is great heterogeneity between regions regarding indicators for productivity, well-being and social",
+            "category": "CPD",
+            "link": "https://www.undp.org/sites/g/files/zskgke326/files/2022-08/undp-rblac-ARG-2021-2025-ENG%20%282%29.pdf",
+            "thumbnail": ""
+        },
+        "doc-38": {
+            "title": "Energy Profile Argentina IRENA",
+            "extract": "Total Energy Supply (TES) 2015 2020 Non-renewable (TJ) 3 133 038 2 807 932 Renewable (TJ) 250 876 279 739 Total (TJ) 3 383 914 3 087 671 Renewable share (%) 7 9 Growth in TES 2015-20 2019-20 Non-renewable (%) -10.4 -5.2 Renewable (%) +11.5 -8.3 Total (%) -8.8 -5.5 Primary energy trade 2015 2020 Imports (TJ) 644 152 368 482 Exports (TJ) 195 511 340 846 Net trade (TJ) - 448 641 - 27 636 Imports (% of supply) 19 12 Exports (% of production) 6 11 Energy self-sufficiency (%) 89 101 COUNTRY INDICATORS AND SDGS TOTAL ENERGY SUPPLY (TES) Total energy supply in 2020 Renewable energy supply in 2020 33% 53% 4% 2% 9% Oil Gas Nuclear Coal + others Renewables 25% 17% 55% Hydro/marine Wind Solar Bioenergy Geothermal 100% 95% 0% 0% 20% 40% 60% 80% 100% 2015 2016 2017 2018 2019 2020 2021 7.1.1 Access to electricity (% population) 7.1.2 Access to clean cooking (% population)",
+            "category": "NEPro",
+            "link": "https://www.irena.org/-/media/Files/IRENA/Agency/Statistics/Statistical_Profiles/South-America/Argentina_South-America_RE_SP.pdf?country=Argentina&regionID=&countryID=4cb8dac7-5309-4f5f-8f42-1478bc8597d1",
+            "thumbnail": ""
+        }
+    },
+    "entities": [
+        {
+            "name": "National Social Policy Coordination Council",
+            "category": "Organization",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Secretariat of Human Rights of the Nation",
+            "category": "Organization",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Argentina",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "World Bank",
+            "category": "Organization",
+            "acronym": "WB"
+        }
+    ],
+    "relations": [
+        {
+            "subject": "National Social Policy Coordination Council",
+            "object": "Secretariat of Human Rights of the Nation",
+            "relationship_type": "contributes_to",
+            "description": "The National Social Policy Coordination Council contributes to the Secretariat of Human Rights of the Nation."
+        },
+        {
+            "subject": "Argentina",
+            "object": "World Bank",
+            "relationship_type": "focuses_on",
+            "description": "Argentina is classified by the World Bank as an upper-middle-income country"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "user_query": "What is the role of Paris Agreement in sustainable energy development?",
+    "answer": "The Paris Agreement plays a crucial role in sustainable energy development. Adopted in December 2015, it provides a common framework for all Parties with the aim of holding the increase in the global average temperature to well below 2° C above pre-industrial levels. This agreement sets goals and targets for countries to reduce greenhouse gas emissions and transition to sustainable energy sources.\n\nIn the context of sustainable energy development, the Paris Agreement aligns with Albania's efforts. Albania aims to achieve the goals set in the Paris Agreement, indicating its commitment to sustainable energy development. By aligning with the agreement, Albania is likely implementing policies and initiatives to promote renewable energy, energy efficiency, and other sustainable practices.\n\nOverall, the Paris Agreement serves as a global platform for countries to collaborate and take collective action towards mitigating climate change and promoting sustainable energy development. It provides a framework for setting targets, implementing policies, and monitoring progress, ultimately contributing to a more sustainable and low-carbon future.",
+    "sources": [],
+    "entities": [
+        {
+            "name": "Albania",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Paris Agreement",
+            "category": "Event",
+            "acronym": "N/A"
+        }
+    ],
+    "relations": [
+        {
+            "subject": "Albania",
+            "object": "Paris Agreement",
+            "relationship_type": "aligns_with",
+            "description": "The Paris Agreement, adopted in December 2015, provides a common framework for all Parties aimed at holding the increase in the global average temperature to well below 2° C above pre-industrial levels."
+        },
+        {
+            "subject": "Albania",
+            "object": "Paris Agreement",
+            "relationship_type": "targets",
+            "description": "Albania aims to achieve the goals set in the Paris Agreement."
+        }
+    ]
+}

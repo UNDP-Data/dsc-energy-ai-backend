@@ -1,0 +1,96 @@
+{
+    "user_query": "How does the Ministry of Environment's support for the Paris Agreement on Climate Change manifest in Argentina's environmental policies?",
+    "answer": "The Ministry of Environment's support for the Paris Agreement on Climate Change manifests in Argentina's environmental policies through various collaborations and initiatives. \n\nFirstly, the Ministry of Environment partners with the United Nations Environment Programme (UNEP) to address environmental issues and promote sustainable energy resources. This partnership allows Argentina to align its environmental policies with the goals and objectives of the Paris Agreement.\n\nAdditionally, the Ministry of Environment supports the Paris Agreement on Climate Change directly. This support signifies Argentina's commitment to reducing greenhouse gas emissions and mitigating the impacts of climate change. By endorsing the Paris Agreement, Argentina demonstrates its dedication to international cooperation and collective action in addressing climate change.\n\nFurthermore, the Ministry of Environment collaborates with the National Agency of Natural Resources to address environmental issues and promote sustainable energy resources. This collaboration ensures that Argentina's environmental policies are comprehensive and integrated, considering both natural resource management and environmental protection.\n\nIt is important to note that Argentina's environmental policies also address areas of interest to the European Community. The Ministry of Environment specifically focuses on areas where natural habitat species and other habitats of interest to the European Community are declared areas of special conservation. This demonstrates Argentina's commitment to biodiversity conservation and aligns with the objectives of the European Community.\n\nOverall, the Ministry of Environment's support for the Paris Agreement on Climate Change is reflected in Argentina's environmental policies through partnerships, collaborations, and initiatives aimed at addressing environmental issues, promoting sustainable energy resources, and conserving biodiversity.",
+    "sources": {
+        "doc-36": {
+            "title": "UN Country programme document for Argentina\n(2021-2025)",
+            "extract": "Executive Board of the United Nations Development Programme, the United Nations Population Fund and the United Nations Office for Project Services Distr.: General 5 April 2021 Original: English 2104544X (E) 130421 Annual session 2021 7–11 June 2021, New York Item 8 of the provisional agenda Country programmes and related matters Country programme document for Argentina (2021-2025) Contents Chapter Page I. UNDP within the United Nations Sustainable Development Cooperation Framework ................ 2 II. Programme priorities and partnerships………………………………………………….……….… 3 III. Programme and risk management .................................................................................... 6 IV. Monitoring and evaluation…………………………………………………….…………………… 7 Annex Results and resources framework for Argentina (2021-2025) 8I. UNDP within the United Nations Sustainable Development Cooperation Framework 1. Argentina scores very highly on the Human Development Index, ranked 46 of 189 countries in 2020, and is classified by the World Bank as an upper-middle-income country, with a gross national income per capita of $10,006 in 2019. Nonetheless, there is great heterogeneity between regions regarding indicators for productivity, well-being and social",
+            "category": "CPD",
+            "link": "https://www.undp.org/sites/g/files/zskgke326/files/2022-08/undp-rblac-ARG-2021-2025-ENG%20%282%29.pdf",
+            "thumbnail": ""
+        },
+        "doc-38": {
+            "title": "Energy Profile Argentina IRENA",
+            "extract": "Total Energy Supply (TES) 2015 2020 Non-renewable (TJ) 3 133 038 2 807 932 Renewable (TJ) 250 876 279 739 Total (TJ) 3 383 914 3 087 671 Renewable share (%) 7 9 Growth in TES 2015-20 2019-20 Non-renewable (%) -10.4 -5.2 Renewable (%) +11.5 -8.3 Total (%) -8.8 -5.5 Primary energy trade 2015 2020 Imports (TJ) 644 152 368 482 Exports (TJ) 195 511 340 846 Net trade (TJ) - 448 641 - 27 636 Imports (% of supply) 19 12 Exports (% of production) 6 11 Energy self-sufficiency (%) 89 101 COUNTRY INDICATORS AND SDGS TOTAL ENERGY SUPPLY (TES) Total energy supply in 2020 Renewable energy supply in 2020 33% 53% 4% 2% 9% Oil Gas Nuclear Coal + others Renewables 25% 17% 55% Hydro/marine Wind Solar Bioenergy Geothermal 100% 95% 0% 0% 20% 40% 60% 80% 100% 2015 2016 2017 2018 2019 2020 2021 7.1.1 Access to electricity (% population) 7.1.2 Access to clean cooking (% population)",
+            "category": "NEPro",
+            "link": "https://www.irena.org/-/media/Files/IRENA/Agency/Statistics/Statistical_Profiles/South-America/Argentina_South-America_RE_SP.pdf?country=Argentina&regionID=&countryID=4cb8dac7-5309-4f5f-8f42-1478bc8597d1",
+            "thumbnail": ""
+        }
+    },
+    "entities": [
+        {
+            "name": "Ministry of Environment",
+            "category": "Organization",
+            "acronym": "MoE"
+        },
+        {
+            "name": "United Nations Environment Programme",
+            "category": "Organization",
+            "acronym": "UNEP"
+        },
+        {
+            "name": "Paris Agreement on Climate Change",
+            "category": "Event",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Energy Regulatory Entity",
+            "category": "Organization",
+            "acronym": "ERE"
+        },
+        {
+            "name": "National Agency of Natural Resources",
+            "category": "Organization",
+            "acronym": "AKBN"
+        },
+        {
+            "name": "European Community",
+            "category": "Organization",
+            "acronym": "EC"
+        }
+    ],
+    "relations": [
+        {
+            "subject": "Ministry of Environment",
+            "object": "United Nations Environment Programme",
+            "relationship_type": "partners_with",
+            "description": "The Ministry of Environment partners with the United Nations Environment Programme."
+        },
+        {
+            "subject": "Ministry of Environment",
+            "object": "Paris Agreement on Climate Change",
+            "relationship_type": "supports",
+            "description": "The Ministry of Environment supports the Paris Agreement on Climate Change."
+        },
+        {
+            "subject": "Energy Regulatory Entity",
+            "object": "Ministry of Environment",
+            "relationship_type": "in",
+            "description": "Any project which envisages the power generation from RESor for any producer of bio-fuels is required to perform the procedure of preliminary or in-depth Environmental Impact Assessment (depending on the project), and then if the installation is listed in Annex 1 the law in force for environmental permits, and should be supplied with an environmental Permit of type A, B or C. Environmental protection law and the law on environmental impact assessment require the Ministry of Environment and its subordinate institutions and local authorities to cooperate throughout the process, ensuring public participation in any potential decision making process."
+        },
+        {
+            "subject": "Ministry of Environment",
+            "object": "National Agency of Natural Resources",
+            "relationship_type": "partners_with",
+            "description": "The Ministry of Environment collaborates with the National Agency of Natural Resources to address environmental issues and promote sustainable energy resources."
+        },
+        {
+            "subject": "European Community",
+            "object": "Ministry of Environment",
+            "relationship_type": "addresses",
+            "description": "areas where natural habitat species of interest to the European Community, as well as other habitats of interest to this community, are declared areas of special conservation"
+        },
+        {
+            "subject": "Ministry of Environment",
+            "object": "European Community",
+            "relationship_type": "addresses",
+            "description": "areas where natural habitat species of interest to the European Community, as well as other habitats of interest to this community, are declared areas of special conservation"
+        },
+        {
+            "subject": "Ministry of Environment",
+            "object": "Paris Agreement on Climate Change",
+            "relationship_type": "supports",
+            "description": "The Ministry of Environment supports the Paris Agreement on Climate Change."
+        }
+    ]
+}

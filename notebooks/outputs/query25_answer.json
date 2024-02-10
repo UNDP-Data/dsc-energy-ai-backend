@@ -1,6 +1,6 @@
 {
-    "user_query": "What percentage of Niger's population has access to electricity for productive use",
-    "answer": "<p>Niger is a landlocked country located in West Africa. It is known for its vast desert landscapes, including the Sahara Desert, which covers a significant portion of its territory. Niger is rich in natural resources, such as uranium, and faces challenges related to poverty, food insecurity, and political stability.</p>\n\n<p>Population refers to the total number of individuals living in a specific area or region. It is a key demographic indicator that helps understand the size, composition, and distribution of a community. Population size impacts various aspects of society, including resource allocation, economic development, and social dynamics.</p>\n\n<p>Access to electricity refers to the availability and ability of individuals, communities, or nations to obtain and utilize electrical power for various purposes. It is crucial for modern living, enabling lighting, heating, cooking, communication, education, healthcare, and economic development. Lack of access hinders progress and perpetuates inequality.</p>\n\n<p>Productive use refers to engaging in activities or tasks that contribute to personal or professional growth, efficiency, or accomplishment. It involves utilizing time, resources, and skills effectively to achieve desired goals or outcomes. Productive use can include activities such as learning, planning, organizing, problem-solving, creating, or collaborating.</p>\n\n<p>Unfortunately, the provided sources do not directly mention the percentage of Niger's population that has access to electricity for productive use. For more specific information on this topic, you may refer to the following sources:</p>\n\n<ol>\n  <li><a href=\"https://digitallibrary.un.org/record/3982745/files/DP_DCP_NER_4-EN.pdf?ln=en\" target=\"_blank\">Country programme document for Niger (2023–2027)</a></li>\n  <li><a href=\"https://www.irena.org/-/media/Files/IRENA/Agency/Statistics/Statistical_Profiles/Africa/Niger_Africa_RE_SP.pdf?country=Niger&regionID=&countryID=e92b7b58-e7b3-4967-934e-e0fd070c3249\" target=\"_blank\">ENERGY PROFILE Niger</a></li>\n  <li><a href=\"https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2013/RRA_Niger.pdf?rev=c2ae8b936cd14c53a733ddcf8849f7e4\" target=\"_blank\">NIGER RENEWABLES READINESS ASSESSMENT 2013</a></li>\n</ol>\n\n<p>Please refer to these sources for more detailed information on Niger's access to electricity and its population.</p>",
+    "user_query": "What are the national development priorities of Niger for 2022-2026?",
+    "answer": "According to the provided sources, the national development priorities of Niger for the period of 2023-2027 are outlined in the \"Country programme document for Niger (2023–2027)\" by the Executive Board of the United Nations Development Programme, the United Nations Population Fund, and the United Nations Office for Project Services. Unfortunately, the specific details of these priorities are not mentioned in the given excerpts. To obtain more information about the national development priorities of Niger for 2022-2026, you can refer to the full document available at the following link: [Country programme document for Niger (2023–2027)](https://digitallibrary.un.org/record/3982745/files/DP_DCP_NER_4-EN.pdf?ln=en).",
     "sources": {
         "doc-465": {
             "title": "Country programme document for Niger (2023–2027)",
@@ -23,12 +23,5 @@
             "link": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2013/RRA_Niger.pdf?rev=c2ae8b936cd14c53a733ddcf8849f7e4",
             "thumbnail": ""
         }
-    },
-    "query_ideas": "['What is the percentage of Niger's population with access to electricity for productive use?']\n['How many people in Niger have access to electricity for productive use as a percentage of the total population?']\n['What proportion of Niger's population has access to electricity for productive use?']\n['What is the rate of access to electricity for productive use in Niger as a percentage of the population?']\n['What percentage of the population in Niger can access electricity for productive use?']",
-    "entities": [
-        "Niger",
-        "population",
-        "access to electricity",
-        "productive use"
-    ]
+    }
 }

@@ -1,0 +1,58 @@
+{
+    "user_query": "What are the key railway upgrade plans for Colombo and its suburbs?",
+    "answer": "The key railway upgrade plans for Colombo and its suburbs include the upgrading and electrification of the most widely used suburban rail corridors. By mid-2023, the rail corridors between Colombo and Panadura, Negombo, Avissawella, and the Airport will be upgraded and electrified. These upgrades aim to improve the efficiency and reliability of the railway system in Colombo and its surrounding areas.",
+    "sources": [],
+    "entities": [
+        {
+            "name": "Colombo",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Panadura",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Negombo",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Avissawella",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Airport",
+            "category": "Location",
+            "acronym": "N/A"
+        }
+    ],
+    "relations": [
+        {
+            "subject": "Colombo",
+            "object": "Panadura",
+            "relationship_type": "in",
+            "description": "The most widely used suburban rail corridors between Colombo and Panadura will be upgraded and electrified by mid-2023."
+        },
+        {
+            "subject": "Colombo",
+            "object": "Negombo",
+            "relationship_type": "in",
+            "description": "The most widely used suburban rail corridors between Colombo and Negombo will be upgraded and electrified by mid-2023."
+        },
+        {
+            "subject": "Colombo",
+            "object": "Avissawella",
+            "relationship_type": "in",
+            "description": "The most widely used suburban rail corridors between Colombo and Avissawella will be upgraded and electrified by mid-2023."
+        },
+        {
+            "subject": "Colombo",
+            "object": "Airport",
+            "relationship_type": "in",
+            "description": "The most widely used suburban rail corridors between Colombo and the Airport will be upgraded and electrified by mid-2023."
+        }
+    ]
+}

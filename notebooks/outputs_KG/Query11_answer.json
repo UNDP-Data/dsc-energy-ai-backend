@@ -1,0 +1,253 @@
+{
+    "user_query": "What strategies is UNDP implementing to support Angola's Bureau of External Relations and Advocacy?",
+    "answer": "The UNDP is implementing several strategies to support Angola's Bureau of External Relations and Advocacy. One of the strategies is partnering with the government to drive policies and actions that focus on disaster risk reduction, increasing resilience, and enabling adaptive capacities. This is aimed at reducing the long-term vulnerability of the population and protecting development investments, particularly in at-risk areas.\n\nAdditionally, the UNDP is working with civil society and the government to improve human capacities and data systems for performance, transparency, and planning. They are also focusing on the quality of services and the rule of law in collaboration with other United Nations partners.\n\nFurthermore, the UNDP has established multi-stakeholder partnerships on priorities for the Sustainable Development Goals (SDGs). They are aligning their results framework with indicators related to European Union accession, the National Statistical Development Indicator (NSDI), and the national indicator framework for the SDGs.\n\nThe UNDP is also employing national monitoring systems, official statistical data, and reports from line ministries, development partners, and research institutions to measure its contribution to national results. This monitoring and evaluation plan will be implemented following endorsement by the Executive Board.\n\nOverall, the UNDP is actively supporting Angola's Bureau of External Relations and Advocacy through various strategies, including partnerships with the government, focusing on the SDGs, and implementing monitoring and evaluation plans.",
+    "sources": {
+        "doc-31": {
+            "title": "UN Country programme document for Angola (2020-2022)",
+            "extract": "Executive Board of the United Nations Development Programme, the United Nations Population Fund and the United Nations Office for Project Services Distr.: General 1 July 2019 Original: English 1911135X (E) 230719 Second regular session 2019 3 to 6 September 2019, New York Item 3 of the provisional agenda Country programmes and related matters Country programme document for Angola (2020-2022) Contents Page I. Programme rationale..................................................................................................... 2 II. Programme priorities and partnerships………………………………………………….……….… 4 III. Programme and risk management.................................................................................... 7 IV. Monitoring and evaluation…………………………………………………….…………………… 8 Annex Results and resources framework for Angola (2020-2022) 10I. Programme rationale 1. The 2017 general elections ushered in a new era in Angola, with a change of President after 38 years. There is strong political commitment to strengthen democratic governance, justice and human rights, and fight corruption. Creating the first-ever elected local governments in 2020 is a flagship policy. 2. Governance, justice and human rights institutions at national and local levels remain fragile in responding to ongoing structural",
+            "category": "CPD",
+            "link": "https://digitallibrary.un.org/record/3813093/files/DP_DCP_AGO_4-EN.pdf?ln=en",
+            "thumbnail": ""
+        },
+        "doc-35": {
+            "title": "Energy Profile Angola IRENA",
+            "extract": "Total Energy Supply (TES) 2015 2020 Non-renewable (TJ) 279 635 186 724 Renewable (TJ) 279 151 324 757 Total (TJ) 558 786 511 481 Renewable share (%) 50 63 Growth in TES 2015-20 2019-20 Non-renewable (%) -33.2 -22.8 Renewable (%) +16.3 +1.1 Total (%) -8.5 -9.2 Primary energy trade 2015 2020 Imports (TJ) 201 220 69 659 Exports (TJ) 3 667 669 2 822 808 Net trade (TJ) 3 466 449 2 753 149 Imports (% of supply) 36 14 Exports (% of production) 91 87 Energy self-sufficiency (%) 722 637 COUNTRY INDICATORS AND SDGS TOTAL ENERGY SUPPLY (TES) Total energy supply in 2020 Renewable energy supply in 2020 28% 63% 9% Oil Gas Nuclear Coal + others Renewables 15%0% 85% Hydro/marine Wind Solar Bioenergy Geothermal 48% 50% 0% 0% 20% 40% 60% 80% 100% 2015 2016 2017 2018 2019 2020 2021 7.1.1 Access to electricity (% population) 7.1.2 Access to clean cooking (% population) 7.2.1 Renewable energy (% TFEC)",
+            "category": "NEPro",
+            "link": "https://www.irena.org/-/media/Files/IRENA/Agency/Statistics/Statistical_Profiles/Africa/Angola_Africa_RE_SP.pdf?country=Angola&regionID=&countryID=af6d0eca-7f88-4c5b-9d3e-9e3b7494ffd0",
+            "thumbnail": ""
+        }
+    },
+    "entities": [
+        {
+            "name": "United Nations Development Programme",
+            "category": "Organization",
+            "acronym": "UNDP"
+        },
+        {
+            "name": "United Nations agencies",
+            "category": "Organization",
+            "acronym": "N/A"
+        },
+        {
+            "name": "United Nations",
+            "category": "Organization",
+            "acronym": "UN"
+        },
+        {
+            "name": "United Nations Population Fund",
+            "category": "Organization",
+            "acronym": "UNFPA"
+        },
+        {
+            "name": "Government",
+            "category": "Organization",
+            "acronym": "Government"
+        },
+        {
+            "name": "Sustainable Development Goals",
+            "category": "Strategy",
+            "acronym": "SDGs"
+        },
+        {
+            "name": "United Nations Office for Project Services",
+            "category": "Organization",
+            "acronym": "UNOPS"
+        },
+        {
+            "name": "United Nations Sustainable Development Cooperation Framework",
+            "category": "Organization",
+            "acronym": "UNSDCF"
+        },
+        {
+            "name": "National Statistical Office",
+            "category": "Organization",
+            "acronym": "N/A"
+        },
+        {
+            "name": "European Union",
+            "category": "Organization",
+            "acronym": "EU"
+        },
+        {
+            "name": "Albania",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Executive Board",
+            "category": "Organization",
+            "acronym": "N/A"
+        },
+        {
+            "name": "People’s Advocate",
+            "category": "Organization",
+            "acronym": "N/A"
+        },
+        {
+            "name": "National Public Administration Reform Strategy",
+            "category": "Project",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Angola",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "UNDP Strategic Plan",
+            "category": "Project",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Bureau of External Relations and Advocacy",
+            "category": "Organization",
+            "acronym": "BERA"
+        }
+    ],
+    "relations": [
+        {
+            "subject": "United Nations Development Programme",
+            "object": "United Nations agencies",
+            "relationship_type": "partners_with",
+            "description": "UNDP partners with United Nations agencies to achieve its goals."
+        },
+        {
+            "subject": "United Nations",
+            "object": "United Nations Development Programme",
+            "relationship_type": "partners_with",
+            "description": "Building on previous successes, UNDP will work with civil society and the government to improve human capacities and data systems for performance, transparency and planning. UNDP will work on the quality of services and rule of law, in close collaboration with United Nations partners."
+        },
+        {
+            "subject": "United Nations Population Fund",
+            "object": "United Nations Development Programme",
+            "relationship_type": "partners_with",
+            "description": "The United Nations Population Fund partners with the United Nations Development Programme."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "Government",
+            "relationship_type": "partners_with",
+            "description": "UNDP will assist the Government in driving policies and actions that focus on prevention and reduction of disaster-related risks, increasing resilience of infrastructures, ecosystems and society, and enabling adaptive capacities, all as a means to reduce the long-term vulnerability of the population and protect development investments, particularly in at-risk areas."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "United Nations",
+            "relationship_type": "partners_with",
+            "description": "UNDP will participate in joint Government–United Nations coordination mechanisms."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "Sustainable Development Goals",
+            "relationship_type": "partners_with",
+            "description": "UNDP has established multi-stakeholder partnerships on priorities for the Sustainable Development Goals."
+        },
+        {
+            "subject": "United Nations Office for Project Services",
+            "object": "United Nations Development Programme",
+            "relationship_type": "partners_with",
+            "description": "The United Nations Office for Project Services partners with the United Nations Development Programme."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "United Nations Sustainable Development Cooperation Framework",
+            "relationship_type": "focuses_on",
+            "description": "The United Nations Development Programme focuses on the United Nations Sustainable Development Cooperation Framework."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "National Statistical Office",
+            "relationship_type": "contributes_to",
+            "description": "UNDP will employ national monitoring systems, official statistical data and reports from line ministries, development partners and research institutions to measure its contribution to national results."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "Sustainable Development Goals",
+            "relationship_type": "contributes_to",
+            "description": "The results framework is aligned with indicators related to European Union accession, the NSDI and the national indicator framework for the Sustainable Development Goals."
+        },
+        {
+            "subject": "European Union",
+            "object": "United Nations Development Programme",
+            "relationship_type": "contributes_to",
+            "description": "The European Union will contribute to the priorities of UNDP."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "Albania",
+            "relationship_type": "contributes_to",
+            "description": "Risks will be managed through coordination and partnerships; advocacy and policy dialogue; regular monitoring of risks, project and results; and updating of contingency plans for the country office and national emergencies."
+        },
+        {
+            "subject": "Albania",
+            "object": "United Nations Development Programme",
+            "relationship_type": "contributes_to",
+            "description": "Albania will contribute to the priorities of UNDP."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "European Union",
+            "relationship_type": "supports",
+            "description": "The monitoring and evaluation plan will be implemented following endorsement of the CPD by the Executive Board."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "National Statistical Office",
+            "relationship_type": "monitors",
+            "description": "UNDP will employ national monitoring systems, official statistical data and reports from line ministries, development partners and research institutions to measure its contribution to national results."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "Sustainable Development Goals",
+            "relationship_type": "monitors",
+            "description": "The results framework is aligned with indicators related to European Union accession, the NSDI and the national indicator framework for the Sustainable Development Goals."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "Executive Board",
+            "relationship_type": "monitors",
+            "description": "The monitoring and evaluation plan will be implemented following endorsement of the CPD by the Executive Board."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "Government",
+            "relationship_type": "supports",
+            "description": "UNDP will continue to support the Government to address structural and systemic barriers to gender equality and women’s empowerment in policy formulation and implementation."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "People’s Advocate",
+            "relationship_type": "supports",
+            "description": "UNDP will continue to support the People’s Advocate."
+        },
+        {
+            "subject": "People’s Advocate",
+            "object": "United Nations Development Programme",
+            "relationship_type": "supports",
+            "description": "UNDP will continue to support the People’s Advocate."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "National Public Administration Reform Strategy",
+            "relationship_type": "supports",
+            "description": "UNDP will broaden partnerships for a stronger good governance framework, in line with the National Public Administration Reform Strategy."
+        },
+        {
+            "subject": "Angola",
+            "object": "Sustainable Development Goals",
+            "relationship_type": "contributes_to",
+            "description": "Angola's efforts contribute to the achievement of the Sustainable Development Goals"
+        },
+        {
+            "subject": "Sustainable Development Goals",
+            "object": "Angola",
+            "relationship_type": "addresses",
+            "description": "Angola aims to eradicate poverty"
+        },
+        {
+            "subject": "UNDP Strategic Plan",
+            "object": "Bureau of External Relations and Advocacy",
+            "relationship_type": "supports",
+            "description": "The country office is developing a country programme action plan (CPAP), which includes a partnerships strategy and action plan for resource mobilization, with Bureau of External Relations and Advocacy (BERA) support, and a communication strategy."
+        }
+    ]
+}

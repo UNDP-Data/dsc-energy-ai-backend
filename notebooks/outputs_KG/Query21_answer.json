@@ -1,0 +1,108 @@
+{
+    "user_query": "How do governance and rule of law reforms compare between North Macedonia and Sri Lanka?",
+    "answer": "Governance and rule of law reforms in North Macedonia and Sri Lanka differ in several aspects. \n\nIn North Macedonia, the country is working towards narrowing the income gap with the European Union (EU). They have a focus on European Union accession, sustainable economic growth, and inclusive prosperity. Additionally, North Macedonia has interconnectivity infrastructure with Albania, including the city of Manastir located within its borders.\n\nOn the other hand, in Sri Lanka, governance and rule of law reforms are centered around various strategies and events. The Ministry of Petroleum and Petroleum Resources Development is responsible for implementing steps to ensure the exploration and exploitation of petroleum resources are carried out with appropriate investor participation and internationally recognized practices. Sri Lanka also focuses on the 2030 Agenda for Sustainable Development, aiming for equity and 'leaving no-one behind'. They have updated their Nationally Determined Contributions, committing to increasing forest cover, reducing greenhouse gas emissions, and achieving carbon neutrality in electricity generation. Additionally, Sri Lanka ranks among the top 10 most climate-vulnerable countries on the Climate Risk Index.\n\nOverall, while North Macedonia's governance and rule of law reforms are more focused on EU integration and interconnectivity with neighboring countries, Sri Lanka's reforms are centered around sustainable development, climate resilience, and the responsible exploitation of petroleum resources.",
+    "sources": [],
+    "entities": [
+        {
+            "name": "North Macedonia",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "European Union",
+            "category": "Organization",
+            "acronym": "EU"
+        },
+        {
+            "name": "Albania",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Manastir",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Ministry of Petroleum and Petroleum Resources Development",
+            "category": "Organization",
+            "acronym": "MOPE"
+        },
+        {
+            "name": "Sri Lanka",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "2030 Agenda for Sustainable Development",
+            "category": "Strategy",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Nationally Determined Contributions",
+            "category": "Strategy",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Climate Risk Index",
+            "category": "Event",
+            "acronym": "N/A"
+        }
+    ],
+    "relations": [
+        {
+            "subject": "North Macedonia",
+            "object": "European Union",
+            "relationship_type": "focuses_on",
+            "description": "North Macedonia is working towards narrowing the income gap with the European Union."
+        },
+        {
+            "subject": "European Union",
+            "object": "North Macedonia",
+            "relationship_type": "targets",
+            "description": "Together, they aim for European Union accession, sustainable economic growth, and inclusive prosperity."
+        },
+        {
+            "subject": "Albania",
+            "object": "North Macedonia",
+            "relationship_type": "in",
+            "description": "Albania has interconnectivity infrastructure with North Macedonia"
+        },
+        {
+            "subject": "North Macedonia",
+            "object": "Albania",
+            "relationship_type": "in",
+            "description": "North Macedonia has interconnectivity infrastructure with Albania"
+        },
+        {
+            "subject": "Manastir",
+            "object": "North Macedonia",
+            "relationship_type": "in",
+            "description": "Manastir is located in North Macedonia"
+        },
+        {
+            "subject": "Ministry of Petroleum and Petroleum Resources Development",
+            "object": "Sri Lanka",
+            "relationship_type": "supports",
+            "description": "Institutional responsibility to implement all steps to ensure that exploration and exploitation of petroleum resources are carried out with appropriate investor participation adopting internationally recognised practices and proven technology lies with the Ministry of Petroleum and Petroleum Resources Development."
+        },
+        {
+            "subject": "2030 Agenda for Sustainable Development",
+            "object": "Sri Lanka",
+            "relationship_type": "focuses_on",
+            "description": "The United Nations Sustainable Development Cooperation Framework (UNSDCF), with its four mutually reinforcing strategic priorities and six outcome areas, responds to the policy priorities of the Government and the 2030 Agenda for Sustainable Development, and focuses on equity and ‘leaving no-one behind’."
+        },
+        {
+            "subject": "Nationally Determined Contributions",
+            "object": "Sri Lanka",
+            "relationship_type": "targets",
+            "description": "In 2021, Sri Lanka updated its Nationally Determined Contributions, renewing commitments to increase forest cover up to 32 per cent, reduce greenhouse gas emissions by 14.5 per cent by 2030, and achieve carbon neutrality in electricity generation with no capacity addition of coal power plants by 2050."
+        },
+        {
+            "subject": "Climate Risk Index",
+            "object": "Sri Lanka",
+            "relationship_type": "addresses",
+            "description": "Sri Lanka ranks among the top 10 most climate-vulnerable countries on the Climate Risk Index."
+        }
+    ]
+}

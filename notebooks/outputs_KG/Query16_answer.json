@@ -1,0 +1,25 @@
+{
+    "user_query": "How does the National Social Policy Coordination Council contribute to human rights?",
+    "answer": "The National Social Policy Coordination Council contributes to human rights through its collaboration with the Secretariat of Human Rights of the Nation. This collaboration allows the Council to actively contribute to the promotion and protection of human rights in the country. The Council works closely with the Secretariat to develop and implement social policies that prioritize human rights principles and ensure their effective implementation. By coordinating efforts and sharing resources, the Council and the Secretariat are able to address various human rights issues and work towards creating a more inclusive and equitable society. This collaboration highlights the Council's commitment to upholding human rights and its role in shaping social policies that prioritize the well-being and rights of all individuals.",
+    "sources": [],
+    "entities": [
+        {
+            "name": "National Social Policy Coordination Council",
+            "category": "Organization",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Secretariat of Human Rights of the Nation",
+            "category": "Organization",
+            "acronym": "N/A"
+        }
+    ],
+    "relations": [
+        {
+            "subject": "National Social Policy Coordination Council",
+            "object": "Secretariat of Human Rights of the Nation",
+            "relationship_type": "contributes_to",
+            "description": "The National Social Policy Coordination Council contributes to the Secretariat of Human Rights of the Nation."
+        }
+    ]
+}
