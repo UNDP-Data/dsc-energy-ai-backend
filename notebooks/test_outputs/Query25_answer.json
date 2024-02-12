@@ -1,0 +1,73 @@
+{
+    "user_query": "What are the national development priorities of Niger for 2022-2026?",
+    "answer": "Based on the provided sources and relationships, the national development priorities of Niger for 2022-2026 can be inferred as follows:\n\n1. Inclusive Economic Transformation: The Government of Niger views providing reliable electricity and other basic energy services to all populations and parts of the country as a critical aspect of its inclusive economic transformation plans. This indicates that one of the national development priorities is to ensure access to reliable and affordable energy for all.\n\n2. Poverty Reduction: The government's new poverty reduction strategy, known as the Plan for Economic and Social Development (PDES), is the country's overarching development framework. This suggests that poverty reduction is a key priority for Niger during the specified period.\n\n3. Renewable Energy: The Programme on Access to Energy Services emphasizes the important role of renewable energy in delivering energy services. This indicates that promoting and expanding the use of renewable energy sources is a priority for Niger's national development.\n\n4. Domestic Finance and Investment: Niger's Renewables Readiness Assessment (RRA) highlights the importance of raising domestic finance and aligning internal investment with wider development goals. This suggests that mobilizing domestic financial resources and attracting investments for sustainable development projects are priorities for the country.\n\n5. Reliable and Affordable Energy Supply: Decree no. 2004-338/PRN/MME addresses the need for reliable and affordable energy supply in Niger. This indicates that ensuring a stable and affordable energy supply is a priority for the country's development.\n\nIn summary, the national development priorities of Niger for 2022-2026 include inclusive economic transformation, poverty reduction, promotion of renewable energy, mobilization of domestic finance and investment, and ensuring a reliable and affordable energy supply.",
+    "sources": {
+        "doc-465": {
+            "title": "Country programme document for Niger (2023–2027)",
+            "extract": "Executive Board of the United Nations Development Programme, the United Nations Population Fund and the United Nations Office for Project Services Distr.: General 11 July 2022 Original: English 22-10797 (E) 130722 *2210797* Second regular session 2022 29 August to 1 September 2022, New York Item 3 of the provisional agenda Country programmes and related matters Country programme document for Niger (2023–2027) Contents Page I. UNDP within the United Nations Sustainable Development Cooperation Framework................ 2 II. Programme priorities and partnerships………………………………………………………….… 3 III. Programme and risk management ………………………………………………………………… 7 IV. Monitoring and evaluation…………………………………………………….…………………... 8 Annex Results and resources framework for Niger (2023–2027) …………………………………………. 9I. UNDP within the United Nations Sustainable Development Cooperation Framework 1. Niger, a low-income country located in the heart of the Sahel region along the Lake Chad Basin, is endowed with immense natural resources, including oil reserves that cover 90 per cent of its territory, but still marginally exploited. The country’s development faces strong socioeconomic, environmental and security constraints",
+            "category": "CPD",
+            "link": "https://digitallibrary.un.org/record/3982745/files/DP_DCP_NER_4-EN.pdf?ln=en",
+            "thumbnail": ""
+        },
+        "doc-468": {
+            "title": "ENERGY PROFILE Niger",
+            "extract": "Total Energy Supply (TES) 2015 2020 Non-renewable (TJ) 30 666 40 262 Renewable (TJ) 64 534 73 482 Total (TJ) 95 200 113 744 Renewable share (%) 68 65 Growth in TES 2015-20 2019-20 Non-renewable (%) +31.3 +17.2 Renewable (%) +13.9 +4.1 Total (%) +19.5 +8.4 Primary energy trade 2015 2020 Imports (TJ) 7 537 7 413 Exports (TJ) 10 412 5 872 Net trade (TJ) 2 875 - 1 541 Imports (% of supply) 8 7 Exports (% of production) 10 5 Energy self-sufficiency (%) 105 101 COUNTRY INDICATORS AND SDGS TOTAL ENERGY SUPPLY (TES) Total energy supply in 2020 Renewable energy supply in 2020 28% 1% 65% 7% Oil Gas Nuclear Coal + others Renewables 0% 100% Hydro/marine Wind Solar Bioenergy Geothermal 19% 0% 0%5% 20% 40% 60% 80% 100% 2015 2016 2017 2018 2019 2020 2021 7.1.1 Access to electricity (% population) 7.1.2 Access to clean cooking (% population) 7.2.1 Renewable energy (% TFEC) 52.9 52.5 52.4",
+            "category": "NEPro",
+            "link": "https://www.irena.org/-/media/Files/IRENA/Agency/Statistics/Statistical_Profiles/Africa/Niger_Africa_RE_SP.pdf?country=Niger&regionID=&countryID=e92b7b58-e7b3-4967-934e-e0fd070c3249",
+            "thumbnail": ""
+        },
+        "doc-469": {
+            "title": "NIGER RENEWABLES READINESS ASSESSMENT 2013",
+            "extract": "NIGER RENEWABLES READINESS ASSESSMENT 2013Unless otherwise indicated, the material in this publication may be used freely, shared or reprinted, so long as IRENA is acknowledged as the source. About IRENA The International Renewable Energy Agency (IRENA) is an intergovernmental organisation that supports countries in their transition to a sustainable energy future, and serves as the principal platform for international cooperation, a centre of excellence, and a repository of policy, technology, resource and financial knowledge on renewable energy. IRENA promotes the widespread adoption and sustainable use of all forms of renewable energy, including bioenergy, geothermal, hydropower, ocean, solar and wind energy in the pursuit of sustainable development, energy access, energy security and low carbon economic growth and prosperity. Authors: Gauri Singh (IRENA), Safiatou Alzouma Nouhou (IRENA) and Mohamed Youba Sokona (IRENA) About RRA A Renewables Readiness Assessment (RRA) is a holistic evaluation of a country’s conditions and identifies the actions needed to overcome barriers to renewable energy deployment. This is a",
+            "category": "NREP",
+            "link": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2013/RRA_Niger.pdf?rev=c2ae8b936cd14c53a733ddcf8849f7e4",
+            "thumbnail": ""
+        }
+    },
+    "entities": [
+        {
+            "name": "International Fund for Agricultural Development",
+            "category": "Organization",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Niger",
+            "category": "Location",
+            "acronym": "NIGER"
+        }
+    ],
+    "relations": {
+        "relations": [
+            {
+                "subject": "Government of Niger",
+                "object": "Niger",
+                "relationship_type": "focuses_on",
+                "description": "The Government of Niger views providing reliable electricity and other basic energy services to all populations and parts of the country as a critical aspect of its inclusive economic transformation plans."
+            },
+            {
+                "subject": "Ministry of Planning, Lands and Community Development",
+                "object": "Niger",
+                "relationship_type": "focuses_on",
+                "description": "The government of Niger’s new poverty reduction strategy — its Plan for Economic and Social Development (PDES) — is the country’s overarching development framework according to the Ministry of Planning, Lands and Community Development (MP/AT-DC, 2011)."
+            },
+            {
+                "subject": "Programme Programme on Access to Energy Services",
+                "object": "Niger",
+                "relationship_type": "contributes_to",
+                "description": "Several strategies such as Programme Programme on Access to Energy Services, have outlined the important role of renewable energy in delivering energy services."
+            },
+            {
+                "subject": "Renewables Readiness Assessment",
+                "object": "Niger",
+                "relationship_type": "addresses",
+                "description": "Niger's Renewables Readiness Assessment (RRA) drew attention to the importance of raising domestic finance, as well to calibrate internal investment with wider development goals."
+            },
+            {
+                "subject": "Decree",
+                "object": "Niger",
+                "relationship_type": "addresses",
+                "description": "Decree no. 2004-338/PRN/MME addresses the need for reliable and affordable energy supply in Niger."
+            }
+        ]
+    }
+}

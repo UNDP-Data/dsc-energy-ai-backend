@@ -1,0 +1,33 @@
+{
+    "user_query": "What is the role of Paris Agreement in sustainable energy development?",
+    "answer": "The Paris Agreement plays a crucial role in sustainable energy development. It provides a common framework for all participating countries to work towards holding the increase in the global average temperature to well below 2° C above pre-industrial levels. This means that the agreement aims to limit the rise in global temperatures, which is essential for mitigating the impacts of climate change.\n\nIn terms of sustainable energy development, the Paris Agreement encourages countries to transition towards cleaner and more sustainable energy sources. By setting a clear goal to limit global warming, the agreement creates a strong incentive for countries to reduce their greenhouse gas emissions, including those from the energy sector.\n\nThe agreement also promotes the use of renewable energy sources and the development of low-carbon technologies. This is important because sustainable energy sources such as solar, wind, and hydroelectric power have a significantly lower carbon footprint compared to fossil fuels. By encouraging the adoption of these clean energy sources, the Paris Agreement helps to reduce reliance on fossil fuels and promote the development of a sustainable energy sector.\n\nFurthermore, the Paris Agreement sets targets for countries to achieve in order to fulfill their commitments. In the case of Albania, for example, the country aims to achieve the goals set in the Paris Agreement. This demonstrates the commitment of countries to take concrete actions towards sustainable energy development and reducing their carbon emissions.\n\nOverall, the Paris Agreement serves as a global framework for addressing climate change and promoting sustainable energy development. It provides a roadmap for countries to work together towards a more sustainable future by limiting global warming and transitioning to cleaner energy sources.",
+    "sources": [],
+    "entities": [
+        {
+            "name": "Albania",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Paris Agreement",
+            "category": "Event",
+            "acronym": "N/A"
+        }
+    ],
+    "relations": {
+        "relations": [
+            {
+                "subject": "Albania",
+                "object": "Paris Agreement",
+                "relationship_type": "aligns_with",
+                "description": "The Paris Agreement, adopted in December 2015, provides a common framework for all Parties aimed at holding the increase in the global average temperature to well below 2° C above pre-industrial levels."
+            },
+            {
+                "subject": "Albania",
+                "object": "Paris Agreement",
+                "relationship_type": "targets",
+                "description": "Albania aims to achieve the goals set in the Paris Agreement."
+            }
+        ]
+    }
+}

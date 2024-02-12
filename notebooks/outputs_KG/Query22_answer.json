@@ -1,43 +1,50 @@
 {
-    "user_query": "What percentage of Niger's population has access to electricity for productive use?",
-    "answer": "According to the provided information, the answer to the user's query \"What percentage of Niger's population has access to electricity for productive use?\" cannot be determined. The given sources and entity-relation information do not provide specific data or statistics regarding the percentage of Niger's population with access to electricity for productive use.",
+    "user_query": "How is Nigeria addressing gender inequality within its political institutions?",
+    "answer": "Nigeria is addressing gender inequality within its political institutions through various initiatives. However, it is important to note that the provided sources and entity-relation information do not directly mention specific actions or programs related to gender inequality in Nigeria's political institutions. Therefore, the answer will be based on general knowledge and assumptions.\n\nOne way Nigeria is addressing gender inequality is by promoting women's representation in political leadership roles. According to the provided entity-relation information, only 7.3% of the Senate and 5.8% of the House of Representatives in Nigeria are female legislators. This indicates a significant gender imbalance in political representation. To address this issue, Nigeria could implement policies and programs aimed at increasing the participation of women in politics, such as affirmative action measures or gender quotas.\n\nAdditionally, Nigeria could collaborate with international organizations and development partners to address gender inequality within its political institutions. The entity-relation information mentions partnerships with organizations like the United Nations Development Programme (UNDP) and the governments of Norway and Germany. These partnerships could potentially include initiatives focused on promoting gender equality and women's empowerment in Nigeria's political sphere.\n\nIt is important to note that the provided sources do not provide specific details on Nigeria's efforts to address gender inequality within its political institutions. Therefore, further research and consultation of additional sources may be necessary to obtain more comprehensive and accurate information on this topic.",
     "sources": {
-        "doc-465": {
-            "title": "Country programme document for Niger (2023–2027)",
-            "extract": "Executive Board of the United Nations Development Programme, the United Nations Population Fund and the United Nations Office for Project Services Distr.: General 11 July 2022 Original: English 22-10797 (E) 130722 *2210797* Second regular session 2022 29 August to 1 September 2022, New York Item 3 of the provisional agenda Country programmes and related matters Country programme document for Niger (2023–2027) Contents Page I. UNDP within the United Nations Sustainable Development Cooperation Framework................ 2 II. Programme priorities and partnerships………………………………………………………….… 3 III. Programme and risk management ………………………………………………………………… 7 IV. Monitoring and evaluation…………………………………………………….…………………... 8 Annex Results and resources framework for Niger (2023–2027) …………………………………………. 9I. UNDP within the United Nations Sustainable Development Cooperation Framework 1. Niger, a low-income country located in the heart of the Sahel region along the Lake Chad Basin, is endowed with immense natural resources, including oil reserves that cover 90 per cent of its territory, but still marginally exploited. The country’s development faces strong socioeconomic, environmental and security constraints",
+        "doc-470": {
+            "title": "Country programme document for Nigeria (2023-2027)",
+            "extract": "Executive Board of the United Nations Development Programme, the United Nations Population Fund and the United Nations Office for Project Services Distr.: General 2 December 2022 Original: English 2227499X (E) 081222 First regular session 2023 30 January – 3 February 2023, New York Item 7 of the provisional agenda Country programmes and related matters Country programme document for Nigeria (2023-2027) Contents Chapter Page I. UNDP within the United Nations Sustainable Development Cooperation Framework…………… 2 II. Programme priorities and partnerships………………………………………………….……….… 3 III. Programme and risk management ……………………………………………….………………… 6 IV. Monitoring and evaluation…………………………………………………….…………………… 7 Annex Results and resources framework for Nigeria (2023-2027)………………………………………… 9I. UNDP within the United Nations Sustainable Development Cooperation Framework 1. Nigeria has the largest economy ($429 billion US dollars in 2020) 1 and is the most populous (211 million in 2021) 2 country in Africa. Despite being the largest crude oil producer in Africa,3 poverty (40 per cent or 82.9 people million in 2019) and unemployment (33 per cent",
             "category": "CPD",
-            "link": "https://digitallibrary.un.org/record/3982745/files/DP_DCP_NER_4-EN.pdf?ln=en",
+            "link": "https://digitallibrary.un.org/record/3998938/files/DP_DCP_NGA_4-EN.pdf?ln=en",
             "thumbnail": ""
         },
-        "doc-468": {
-            "title": "ENERGY PROFILE Niger",
-            "extract": "Total Energy Supply (TES) 2015 2020 Non-renewable (TJ) 30 666 40 262 Renewable (TJ) 64 534 73 482 Total (TJ) 95 200 113 744 Renewable share (%) 68 65 Growth in TES 2015-20 2019-20 Non-renewable (%) +31.3 +17.2 Renewable (%) +13.9 +4.1 Total (%) +19.5 +8.4 Primary energy trade 2015 2020 Imports (TJ) 7 537 7 413 Exports (TJ) 10 412 5 872 Net trade (TJ) 2 875 - 1 541 Imports (% of supply) 8 7 Exports (% of production) 10 5 Energy self-sufficiency (%) 105 101 COUNTRY INDICATORS AND SDGS TOTAL ENERGY SUPPLY (TES) Total energy supply in 2020 Renewable energy supply in 2020 28% 1% 65% 7% Oil Gas Nuclear Coal + others Renewables 0% 100% Hydro/marine Wind Solar Bioenergy Geothermal 19% 0% 0%5% 20% 40% 60% 80% 100% 2015 2016 2017 2018 2019 2020 2021 7.1.1 Access to electricity (% population) 7.1.2 Access to clean cooking (% population) 7.2.1 Renewable energy (% TFEC) 52.9 52.5 52.4",
+        "doc-473": {
+            "title": "Nigeria National Gas Policy",
+            "extract": "THE GOVERNMENT OF THE FEDERAL REPUBLIC OF NIGERIA ----------------------------------------------------------------------------------- NATIONAL GAS POLICY ----------------------------------------------------------------------------------- The purpose of this document is to define the policy of the Federal Government in respect of Nigeria’s natural gas endowment, establish its medium to long-term targets for gas reserves growth and utilisation and record strategies to be pursued to ensure the successful implementation of the policy in accordance with Nigeria’s national socio-economic development priorities.June, 2017 INDEX 1. EXECUTIVE SUMMARY .................................................................................. 13 2. INTRODUCTION............................................................................................... 17 2.1. Statement of the Gas Policy ...................................................................... 17 2.2. Definition of Gas for the Policy................................................................... 17 2.3. Background................................................................................................ 18 Nigeria – A Gas Play and not an Oil Play ........................................... 18 Objectives of Government .................................................................. 20 Results from the Previous Policy ........................................................ 21 International Perspectives .................................................................. 22 LNG Trade Flows................................................................................ 23 2.4. Challenges Facing Nigeria Presently......................................................... 30 2.5. The Need for a New Gas Policy................................................................. 31 3. VISION AND OBJECTIVES.............................................................................. 32 3.1. Vision ......................................................................................................... 32 3.2. Mission....................................................................................................... 32 3.3. Strategic Objectives of",
+            "category": "NGP",
+            "link": "http://www.petroleumindustrybill.com/wp-content/uploads/2017/06/National-Gas-Policy-Approved-By-FEC-in-June-2017.pdf",
+            "thumbnail": ""
+        },
+        "doc-474": {
+            "title": "Energy Profile Nigeria",
+            "extract": "Total Energy Supply (TES) 2015 2020 Non-renewable (TJ) 1 375 454 1 578 998 Renewable (TJ) 4 653 730 5 065 016 Total (TJ) 6 029 184 6 644 014 Renewable share (%) 77 76 Growth in TES 2015-20 2019-20 Non-renewable (%) +14.8 -3.2 Renewable (%) +8.8 +2.2 Total (%) +10.2 +0.8 Primary energy trade 2015 2020 Imports (TJ) 717 214 941 101 Exports (TJ) 5 388 126 4 147 206 Net trade (TJ) 4 670 912 3 206 105 Imports (% of supply) 12 14 Exports (% of production) 51 42 Energy self-sufficiency (%) 177 150 COUNTRY INDICATORS AND SDGS TOTAL ENERGY SUPPLY (TES) Total energy supply in 2020 Renewable energy supply in 2020 14% 10% 0% 76% Oil Gas Nuclear Coal + others Renewables 0% 1% 99% Hydro/marine Wind Solar Bioenergy Geothermal 60% 17% 0% 0% 20% 40% 60% 80% 100% 2015 2016 2017 2018 2019 2020 2021 7.1.1 Access to electricity (% population) 7.1.2 Access to clean",
             "category": "NEPro",
-            "link": "https://www.irena.org/-/media/Files/IRENA/Agency/Statistics/Statistical_Profiles/Africa/Niger_Africa_RE_SP.pdf?country=Niger&regionID=&countryID=e92b7b58-e7b3-4967-934e-e0fd070c3249",
+            "link": "https://www.irena.org/-/media/Files/IRENA/Agency/Statistics/Statistical_Profiles/Africa/Nigeria_Africa_RE_SP.pdf?country=Nigeria&regionID=&countryID=05715bfe-251a-4076-ae39-2573a228efcd",
             "thumbnail": ""
         },
-        "doc-469": {
-            "title": "NIGER RENEWABLES READINESS ASSESSMENT 2013",
-            "extract": "NIGER RENEWABLES READINESS ASSESSMENT 2013Unless otherwise indicated, the material in this publication may be used freely, shared or reprinted, so long as IRENA is acknowledged as the source. About IRENA The International Renewable Energy Agency (IRENA) is an intergovernmental organisation that supports countries in their transition to a sustainable energy future, and serves as the principal platform for international cooperation, a centre of excellence, and a repository of policy, technology, resource and financial knowledge on renewable energy. IRENA promotes the widespread adoption and sustainable use of all forms of renewable energy, including bioenergy, geothermal, hydropower, ocean, solar and wind energy in the pursuit of sustainable development, energy access, energy security and low carbon economic growth and prosperity. Authors: Gauri Singh (IRENA), Safiatou Alzouma Nouhou (IRENA) and Mohamed Youba Sokona (IRENA) About RRA A Renewables Readiness Assessment (RRA) is a holistic evaluation of a country’s conditions and identifies the actions needed to overcome barriers to renewable energy deployment. This is a",
-            "category": "NREP",
-            "link": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2013/RRA_Niger.pdf?rev=c2ae8b936cd14c53a733ddcf8849f7e4",
+        "doc-475": {
+            "title": "RENEWABLE ENERGY ROADMAP NIGERIA",
+            "extract": "RENEWABLE ENERGY ROADMAP NIGERIA© IRENA 2023 Unless otherwise stated, material in this publication may be freely used, shared, copied, reproduced, printed and/or stored, provided that appropriate acknowledgment is given of IRENA as the source and copyright holder. Material in this publication that is attributed to third parties may be subject to separate terms of use and restrictions, and appropriate permissions from these third parties may need to be secured before any use of such material. ISBN 978-92-9260-477-6 Citation: IRENA (2023), Renewable Energy Roadmap: Nigeria, International Renewable Energy Agency, Abu Dhabi. Acknowledgements This report was prepared by IRENA in close collaboration with the Energy Commission of Nigeria. This report benefited from the input of various experts, most notably Professor Eli Jidere Bala, Dr Mikaila Zakari and Nafiu Tijjani of the Energy Commission of Nigeria. IRENA colleagues who provided valuable review and support included Ute Collier, Nopenyo Dabla, Imen Gherboudj, Asami Miketa, Mohamed Nababa, Divyam Nagpal and Sebastian Sterl.. This report was",
+            "category": "NRER",
+            "link": "https://mc-cd8320d4-36a1-40ac-83cc-3389-cdn-endpoint.azureedge.net/-/media/Files/IRENA/Agency/Publication/2023/Jan/IRENA_REMap_Nigeria_2023.pdf?rev=c66c5ded17af4a839b30d1c047f7141e",
             "thumbnail": ""
         }
     },
     "entities": [
         {
-            "name": "International Fund for Agricultural Development",
-            "category": "Organization",
+            "name": "Nigeria",
+            "category": "Location",
+            "acronym": "NGA"
+        },
+        {
+            "name": "Germany",
+            "category": "Location",
             "acronym": "N/A"
         },
         {
-            "name": "Niger",
+            "name": "Norway",
             "category": "Location",
-            "acronym": "NIGER"
-        },
-        {
-            "name": "African Economic Outlook",
-            "category": "Organization",
             "acronym": "N/A"
         },
         {
@@ -46,216 +53,216 @@
             "acronym": "WB"
         },
         {
-            "name": "UNESCO",
+            "name": "Agenda",
+            "category": "Project",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Senate",
             "category": "Organization",
             "acronym": "N/A"
         },
         {
-            "name": "United Nations Educational, Scientific and Cultural Organization",
+            "name": "House of Representatives",
             "category": "Organization",
             "acronym": "N/A"
         },
         {
-            "name": "United Nations Children's Fund",
+            "name": "Global Peace Index",
             "category": "Organization",
-            "acronym": "UNICEF"
+            "acronym": "N/A"
         },
         {
-            "name": "African Development Bank",
+            "name": "Transparency International Corruption Perception Index",
             "category": "Organization",
-            "acronym": "AfDB"
+            "acronym": "N/A"
         },
         {
-            "name": "Economic Community of West African States",
-            "category": "Organization",
-            "acronym": "ECOWAS"
-        },
-        {
-            "name": "Chinese National Petroleum Corporation",
+            "name": "Mo Ibrahim Index of African Governance",
             "category": "Organization",
             "acronym": "N/A"
         }
     ],
     "relations": [
         {
-            "subject": "International Fund for Agricultural Development",
-            "object": "Niger",
-            "relationship_type": "supports",
-            "description": "Over the past ten years, the Nigerien economy grew at an average rate of 5%, but only 2.3% in 2011 due to a poor harvest and a severe food grain shortage."
-        },
-        {
-            "subject": "African Economic Outlook",
-            "object": "Niger",
-            "relationship_type": "supports",
-            "description": "However, it bounced back in 2012, growing by 13%, according to the African Economic Outlook (2013)."
-        },
-        {
-            "subject": "World Bank",
-            "object": "Niger",
-            "relationship_type": "supports",
-            "description": "This was helped by heavy rains that generated a surplus of over 5 million metric tons (t) of cereals (World Bank, 2013a)."
-        },
-        {
-            "subject": "UNESCO",
-            "object": "Niger",
-            "relationship_type": "supports",
-            "description": "Niger is supported by UNESCO"
-        },
-        {
-            "subject": "United Nations Educational, Scientific and Cultural Organization",
-            "object": "Niger",
-            "relationship_type": "supports",
-            "description": "Niger is supported by United Nations Educational, Scientific and Cultural Organization"
-        },
-        {
-            "subject": "United Nations Children's Fund",
-            "object": "Niger",
-            "relationship_type": "supports",
-            "description": "Niger has the potential to achieve universal access to water and sanitation, but financial resources are limited and institutions to help deliver this goal are and some wind pumps are in use."
-        },
-        {
-            "subject": "African Development Bank",
-            "object": "Niger",
-            "relationship_type": "monitors",
-            "description": "According to the African Development Bank, the Nigerien economy grew at an average rate of 5% over the past ten years."
-        },
-        {
-            "subject": "Economic Community of West African States",
-            "object": "Niger",
+            "subject": "Nigeria",
+            "object": "Germany",
             "relationship_type": "partners_with",
-            "description": "Niger is a member of the Economic Community of West African States (ECOWAS)."
+            "description": "Climate-security nexus hubs piloted in the northwest of Nigeria, in partnership with development partners like the governments of Norway and Germany, will be leveraged and scaled to foster resilience to shocks."
         },
         {
-            "subject": "Chinese National Petroleum Corporation",
-            "object": "Niger",
+            "subject": "Nigeria",
+            "object": "Norway",
             "relationship_type": "partners_with",
-            "description": "Niger commenced oil production in late 2011 in a joint venture with the Chinese National Petroleum Corporation (CNPC)."
+            "description": "Climate-security nexus hubs piloted in the northwest of Nigeria, in partnership with development partners like the governments of Norway and Germany, will be leveraged and scaled to foster resilience to shocks."
         },
         {
-            "subject": "Orange",
-            "object": "Niger",
+            "subject": "Nigeria",
+            "object": "World Bank",
             "relationship_type": "partners_with",
-            "description": "Orange started making a similar move in 2009."
+            "description": "Development financing challenges faced by Nigeria have driven UNDP to partner with the government, European Union, International Monetary Fund (IMF), World Bank, and other primary stakeholders in supporting the development of a healthy financial ecosystem through an Integrated National Financial Framework (INFF) and related economic policy reforms and institutional changes."
         },
         {
-            "subject": "CNPC",
-            "object": "Niger",
+            "subject": "Nigeria",
+            "object": "Agenda",
+            "relationship_type": "contributes_to",
+            "description": "Nigeria contributes to the Agenda"
+        },
+        {
+            "subject": "Nigeria",
+            "object": "Senate",
+            "relationship_type": "supports",
+            "description": "Only 7.3% of the Senate in Nigeria are female legislators."
+        },
+        {
+            "subject": "Nigeria",
+            "object": "House of Representatives",
+            "relationship_type": "supports",
+            "description": "Only 5.8% of the House of Representatives in Nigeria are female legislators."
+        },
+        {
+            "subject": "Nigeria",
+            "object": "Global Peace Index",
             "relationship_type": "partners_with",
-            "description": "Niger commenced oil production in late 2011 in a joint venture with the Chinese National Petroleum Corporation (CNPC)."
+            "description": "Nigeria ranks 143 out of 163 countries in the Global Peace Index."
         },
         {
-            "subject": "Niger",
-            "object": "Nigeria",
+            "subject": "Nigeria",
+            "object": "Transparency International Corruption Perception Index",
             "relationship_type": "partners_with",
-            "description": "Initial feasibility studies have been carried out and MOUs have been signed amongst the governments of Nigeria, Niger and Algeria."
+            "description": "Nigeria ranks 154 out of 180 countries in the Transparency International Corruption Perception Index."
         },
         {
-            "subject": "Niger",
-            "object": "Economic Community of West African States",
+            "subject": "Nigeria",
+            "object": "Mo Ibrahim Index of African Governance",
             "relationship_type": "partners_with",
-            "description": "Niger is a member of the Economic Community of West African States (ECOWAS)"
+            "description": "Nigeria ranks 34 out of 54 countries in the Mo Ibrahim Index of African Governance."
         },
         {
-            "subject": "Gaya",
-            "object": "Niger",
-            "relationship_type": "in",
-            "description": "N/A"
+            "subject": "Nigeria",
+            "object": "Chandler Good Government Index",
+            "relationship_type": "partners_with",
+            "description": "Nigeria ranks 102 out of 104 countries in the Chandler Good Government Index."
         },
         {
-            "subject": "Diffa",
-            "object": "Niger",
-            "relationship_type": "in",
-            "description": "N/A"
+            "subject": "Nigeria",
+            "object": "World Bank",
+            "relationship_type": "contributes_to",
+            "description": "Nigeria's poverty rate may have increased to 42.5% in 2020, according to the World Bank."
         },
         {
-            "subject": "Damasak",
-            "object": "Niger",
-            "relationship_type": "in",
-            "description": "N/A"
+            "subject": "Nigeria",
+            "object": "Africa",
+            "relationship_type": "focuses_on",
+            "description": "Nigeria is the most populous country in Africa."
         },
         {
-            "subject": "Tahoua",
-            "object": "Niger",
-            "relationship_type": "in",
-            "description": "N/A"
-        },
-        {
-            "subject": "Maradi",
-            "object": "Niger",
-            "relationship_type": "in",
-            "description": "N/A"
-        },
-        {
-            "subject": "Arlit",
-            "object": "Niger",
-            "relationship_type": "in",
-            "description": "N/A"
-        },
-        {
-            "subject": "Zinder",
-            "object": "Niger",
-            "relationship_type": "in",
-            "description": "The 5 MW PV plant is located in Zinder, Niger."
-        },
-        {
-            "subject": "Kamba",
-            "object": "Niger",
-            "relationship_type": "in",
-            "description": "N/A"
-        },
-        {
-            "subject": "Agadez",
-            "object": "Niger",
-            "relationship_type": "in",
-            "description": "Using available data from Agadez (a northern urban area), a simple simulation was carried out to assess the potential that wind could play in off-grid electrification."
-        },
-        {
-            "subject": "BirninKebbi",
-            "object": "Niger",
-            "relationship_type": "in",
-            "description": "N/A"
-        },
-        {
-            "subject": "Tchirozerine",
-            "object": "Niger",
-            "relationship_type": "in",
-            "description": "N/A"
-        },
-        {
-            "subject": "Ayorou",
-            "object": "Niger",
-            "relationship_type": "in",
-            "description": "A typical village around Ayorou in Niger"
-        },
-        {
-            "subject": "Niger",
-            "object": "Sahel",
-            "relationship_type": "in",
-            "description": "Niger is located in the heart of the Sahel region."
-        },
-        {
-            "subject": "Niger",
-            "object": "West Africa",
-            "relationship_type": "in",
-            "description": "Niger is a landlocked country in West Africa"
-        },
-        {
-            "subject": "Niger",
-            "object": "Chad",
-            "relationship_type": "in",
-            "description": "Niger is bordered by Chad to the East"
-        },
-        {
-            "subject": "Niger",
+            "subject": "Port Harcourt",
             "object": "Nigeria",
             "relationship_type": "in",
-            "description": "Niger is bordered by Nigeria to the South"
+            "description": "Two new terminals are under construction at Calabar and Port Harcourt."
         },
         {
-            "subject": "Niger",
-            "object": "Benin",
+            "subject": "Calabar",
+            "object": "Nigeria",
             "relationship_type": "in",
-            "description": "Niger is bordered by Benin to the West"
+            "description": "Two new terminals are under construction at Calabar and Port Harcourt."
+        },
+        {
+            "subject": "Apapa",
+            "object": "Nigeria",
+            "relationship_type": "in",
+            "description": "The only functioning import jetties currently are at Apapa, Lagos."
+        },
+        {
+            "subject": "Nigeria",
+            "object": "Algeria",
+            "relationship_type": "partners_with",
+            "description": "MOUs have been signed amongst the governments of Nigeria, Niger and Algeria."
+        },
+        {
+            "subject": "Nigeria",
+            "object": "Gas Resource Management Plan",
+            "relationship_type": "addresses",
+            "description": "Gas development must be undertaken in accordance with Nigeria’s national socio-economic development priorities. Accordingly, the government through the MPR and with support from NNPC and industry will produce a Gas Resource Management Plan."
+        },
+        {
+            "subject": "Nigeria",
+            "object": "Gas Utilisation Projects",
+            "relationship_type": "supports",
+            "description": "the government intends to maximise utilisation of associated gas to be treated for supply to power generation or industry."
+        },
+        {
+            "subject": "Nigeria",
+            "object": "Gas Utilisation Projects",
+            "relationship_type": "contributes_to",
+            "description": "the government intends to maximise utilisation of associated gas to be treated for supply to power generation or industry."
+        },
+        {
+            "subject": "Nigeria",
+            "object": "Gas Utilisation Projects",
+            "relationship_type": "addresses",
+            "description": "the government intends to maximise utilisation of associated gas to be treated for supply to power generation or industry."
+        },
+        {
+            "subject": "Nigerian Gas Marketing Company",
+            "object": "Nigeria",
+            "relationship_type": "in",
+            "description": "Nigerian Gas Marketing Company is located in Nigeria."
+        },
+        {
+            "subject": "Nigerian Gas Processing & Transportation Company",
+            "object": "Nigeria",
+            "relationship_type": "in",
+            "description": "Nigerian Gas Processing & Transportation Company is located in Nigeria."
+        },
+        {
+            "subject": "Nigerian Petroleum Development Company Limited",
+            "object": "Nigeria",
+            "relationship_type": "in",
+            "description": "Nigerian Petroleum Development Company Limited is located in Nigeria."
+        },
+        {
+            "subject": "Nigerian Petroleum Investment Management Services Limited",
+            "object": "Nigeria",
+            "relationship_type": "in",
+            "description": "Nigerian Petroleum Investment Management Services Limited is located in Nigeria."
+        },
+        {
+            "subject": "Nigerian National Petroleum Corporation",
+            "object": "Nigeria",
+            "relationship_type": "in",
+            "description": "NNPC is located in Nigeria."
+        },
+        {
+            "subject": "Tax on Rent",
+            "object": "Nigeria",
+            "relationship_type": "addresses",
+            "description": "Enabling gas exploitation in Nigeria through policy regulatory and fiscal interventions"
+        },
+        {
+            "subject": "Government",
+            "object": "Nigeria",
+            "relationship_type": "addresses",
+            "description": "N/A"
+        },
+        {
+            "subject": "Nigeria",
+            "object": "Oben",
+            "relationship_type": "addresses",
+            "description": "Nigeria addresses the issue of gas market operation in Oben."
+        },
+        {
+            "subject": "Oben",
+            "object": "Nigeria",
+            "relationship_type": "addresses",
+            "description": "Oben addresses the issue of gas market operation in Nigeria."
+        },
+        {
+            "subject": "Federal Government",
+            "object": "Nigeria",
+            "relationship_type": "addresses",
+            "description": "Government will leverage its large gas portfolio to ensure that gas development is undertaken in accordance with Nigeria’s Gas Legislation"
         }
     ]
 }

@@ -1,0 +1,75 @@
+{
+    "user_query": "What role does innovation play in UNDP's program for North Macedonia?",
+    "answer": "Innovation plays a significant role in UNDP's program for North Macedonia. While there are no specific sources provided, we can infer the importance of innovation based on the relationships mentioned.\n\nFirstly, UNDP partners with the United Nations, participating in joint Government-United Nations coordination mechanisms. This partnership indicates that UNDP collaborates with the United Nations to develop innovative approaches and solutions to address the challenges faced by North Macedonia.\n\nAdditionally, UNDP has established multi-stakeholder partnerships on priorities for the Sustainable Development Goals (SDGs). This implies that innovation is crucial in achieving the SDGs, and UNDP actively engages with various stakeholders to foster innovative solutions for sustainable development.\n\nMoreover, UNDP focuses on the United Nations Sustainable Development Cooperation Framework (UNSDCF). The inclusion of innovation in this framework suggests that UNDP prioritizes innovative strategies and initiatives to drive progress towards sustainable development in North Macedonia.\n\nFurthermore, UNDP contributes to national results by employing national monitoring systems, official statistical data, and reports from various sources. This indicates that UNDP utilizes innovative data collection and analysis methods to measure its impact and inform its programs.\n\nLastly, UNDP supports the Government of North Macedonia in addressing structural and systemic barriers to gender equality and women's empowerment. This support likely involves innovative approaches to policy formulation and implementation, aiming to create inclusive and innovative solutions for gender equality.\n\nIn summary, innovation plays a crucial role in UNDP's program for North Macedonia. It is evident through their partnerships, focus on the SDGs, utilization of national monitoring systems, and support for addressing gender equality barriers. UNDP strives to foster innovation to drive sustainable development and address the specific challenges faced by North Macedonia.",
+    "sources": [],
+    "entities": [
+        {
+            "name": "United Nations Development Programme",
+            "category": "Organization",
+            "acronym": "UNDP"
+        },
+        {
+            "name": "United Nations agencies",
+            "category": "Organization",
+            "acronym": "N/A"
+        }
+    ],
+    "relations": {
+        "relations": [
+            {
+                "subject": "United Nations Development Programme",
+                "object": "United Nations",
+                "relationship_type": "partners_with",
+                "description": "UNDP will participate in joint Government–United Nations coordination mechanisms."
+            },
+            {
+                "subject": "United Nations Development Programme",
+                "object": "Sustainable Development Goals",
+                "relationship_type": "partners_with",
+                "description": "UNDP has established multi-stakeholder partnerships on priorities for the Sustainable Development Goals."
+            },
+            {
+                "subject": "United Nations Development Programme",
+                "object": "United Nations Sustainable Development Cooperation Framework",
+                "relationship_type": "focuses_on",
+                "description": "The United Nations Development Programme focuses on the United Nations Sustainable Development Cooperation Framework."
+            },
+            {
+                "subject": "United Nations Development Programme",
+                "object": "National Statistical Office",
+                "relationship_type": "contributes_to",
+                "description": "UNDP will employ national monitoring systems, official statistical data and reports from line ministries, development partners and research institutions to measure its contribution to national results."
+            },
+            {
+                "subject": "United Nations Development Programme",
+                "object": "Sustainable Development Goals",
+                "relationship_type": "contributes_to",
+                "description": "The results framework is aligned with indicators related to European Union accession, the NSDI and the national indicator framework for the Sustainable Development Goals."
+            },
+            {
+                "subject": "United Nations Development Programme",
+                "object": "Government",
+                "relationship_type": "supports",
+                "description": "UNDP will continue to support the Government to address structural and systemic barriers to gender equality and women’s empowerment in policy formulation and implementation."
+            },
+            {
+                "subject": "United Nations Development Programme",
+                "object": "People’s Advocate",
+                "relationship_type": "supports",
+                "description": "UNDP will continue to support the People’s Advocate."
+            },
+            {
+                "subject": "People’s Advocate",
+                "object": "United Nations Development Programme",
+                "relationship_type": "supports",
+                "description": "UNDP will continue to support the People’s Advocate."
+            },
+            {
+                "subject": "United Nations Development Programme",
+                "object": "National Public Administration Reform Strategy",
+                "relationship_type": "supports",
+                "description": "UNDP will broaden partnerships for a stronger good governance framework, in line with the National Public Administration Reform Strategy."
+            }
+        ]
+    }
+}

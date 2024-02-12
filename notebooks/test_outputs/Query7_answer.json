@@ -1,6 +1,6 @@
 {
-    "user_query": "What is the role of USAID in supporting Albania's energy sector strategy?",
-    "answer": "<p>The role of USAID in supporting Albania's energy sector strategy is to enhance capacity for low emission development strategies (EC-LEDS) in the country. This is outlined in the USAID Energy Strategy for Albania (2017-2030)<a data-id='doc-16'>[1]</a>. USAID aims to develop domestic energy sources, create a regional integrated and diversified energy system, and promote market principles. The strategy focuses on meeting energy demand, sustainable development of the economy, ensuring energy security and quality, environmental protection, climate action, and increased welfare at minimum social cost.</p>",
+    "user_query": "How is Afghanistan addressing the challenge of climate change and natural resource management?",
+    "answer": "Afghanistan is addressing the challenge of climate change and natural resource management through various initiatives and policies. One of the key documents outlining the country's approach is the Country Programme Document for Afghanistan (2015-2019) by the United Nations Development Programme (UNDP), the United Nations Population Fund (UNFPA), and the United Nations Office for Project Services (UNOPS). This document highlights the importance of Afghanistan's \"Transformation Decade\" and its journey towards self-reliance, with a focus on political, security, and development processes.\n\nIn terms of renewable energy, Afghanistan has significant potential for utilizing renewable energy sources such as hydro, wind, solar, geothermal, and biomass. The Renewable Energy Policy of Afghanistan emphasizes the need for rapid deployment of renewable energy projects to bring socio-economic benefits, employment opportunities, energy security, and access to energy. The government aims to produce around 318 GW of electricity using available renewable energy sources in the country. However, so far, only parts of hydroelectric power projects have been implemented.\n\nTo support the development of renewable energy, the government has established the Renewable Energy Coordination Committee (RECC) under the Ministry of Energy and Water (MEW). The RECC's mandate is to coordinate with relevant government and non-government entities for the implementation of renewable energy projects. Additionally, the Ministry of Rural Rehabilitation and Development (MRRD) has the authority to implement up to 1 MW of renewable energy projects.\n\nThe Afghanistan Rural Renewable Energy Policy focuses on providing energy access and energy security in rural areas. It promotes the establishment of Zonal Renewable Energy Centers (ZREC) within the Rural Energy Department (RED) for decentralized governance and coordination. The policy also emphasizes the expansion of rural energy and electricity services, as more than 75% of Afghans live in rural areas and 67% of the national Gross Domestic Product (GDP) comes from rural areas.\n\nThe Afghanistan Energy Efficiency Policy aims to integrate energy efficiency practices across the entire energy value chain, starting from mining and extraction to end-use sectors. The policy recognizes the importance of energy efficiency for long-term sustainability and providing access to clean energy for everyone.\n\nOverall, Afghanistan's approach to addressing climate change and natural resource management involves the development and implementation of renewable energy policies, coordination committees, and a focus on rural energy expansion and energy efficiency. These initiatives aim to bring socio-economic benefits, employment opportunities, and access to clean energy while ensuring sustainable development and environmental sustainability.",
     "sources": {
         "doc-1": {
             "title": "Country programme document for Afghanistan (2015 2019)",
@@ -57,21 +57,112 @@
             "category": "NEEP",
             "link": "https://policy.asiapacificenergy.org/sites/default/files/Afghanistan%20Energy%20Efficiency%20Policy%20%28Draft%202016%29.pdf",
             "thumbnail": ""
-        },
-        "doc-13": {
-            "title": "UN Country programme document for Albania (2022–2026)",
-            "extract": "Executive Board of the United Nations Development Programme, the United Nations Population Fund and the United Nations Office for Project Services Distr.: General 6 July 2021 Original: English 2109396X (E) 150721 Second regular session 2021 30 August–2 September 2021, New York Item 5 of the provisional agenda Country programmes and related matters Country programme document for Albania (2022–2026) Contents Page I. UNDP within the United Nations Sustainable Development Cooperation Framework................ 2 II. Programme priorities and partnerships………………………………………………….……….… 4 III. Programme and risk management ……………………………………………….………………… 6 IV. Monitoring and evaluation…………………………………………………….…………………… 6 Annex Results and resources framework for Albania (2022–2026) ……………………… ... ….…………… 8I. UNDP within the United Nations Sustainable Development Cooperation Framework 1. Albania, with its population of 2.9 million, is an upper-middle-income country with a high Human Development Index of 0.791, 1 Gender Development Index of 0.967 and Gender Inequality Index of 0.181. Women hold half of senior government positions. The economy is stable but underperforming, dependent on consumption and remittances,",
-            "category": "CPD",
-            "link": "https://digitallibrary.un.org/record/3933636/files/DP_DCP_ALB_3-EN.pdf?ln=en",
-            "thumbnail": ""
-        },
-        "doc-16": {
-            "title": "USAID ENERGY STRATEGY FOR ALBANIA (2017-2030)",
-            "extract": "ENERGY STRATEGY FOR ALBANIA Enhancing Capacity for Low Emission Development Strategies (EC-LEDS) DISCLAIMER The author’s views expressed in this publication do not necessarily reflect the views of the United States Agency for International Development or the United States Government. January 2018 This publication was produced for review by the United States Agency for International Development. It was prepared by RTI international. ENERGY STRATEGY FOR ALBANIA (2017-2030) VISION for 2030 Development of domestic energy sources, leading to a regional integrated and diversified energy system based on market principles, able to meet demand for energy and for sustainable development of the economy, ensuring security and quality of supply, safety, environmental protection and climate action, and increased welfare at minimum social cost. Prepared by: IRG an RTI Company Pat DeLaquil Besim Islami Stephen Nash Thomas O’Conner David Parish David Lockhart Zija Kamberi Redjan Basha Bart Tsala Fred WidicusTABLE OF CONTENTS LIST OF TABLES ii LIST OF FIGURES ii ACRONYMS iii 1. CONTEXT AND",
-            "category": "NES",
-            "link": "https://cdn.climatepolicyradar.org/navigator/ALB/2018/national-energy-strategy-2018_df00a495b65149b789cf6443dd177cea.pdf",
-            "thumbnail": ""
         }
     },
-    "query_ideas": "['What initiatives has USAID taken to support Albania's energy sector strategy?',\n 'How has USAID contributed to the development of Albania's energy sector strategy?',\n 'What specific projects has USAID implemented to support Albania's energy sector strategy?',\n 'What is the impact of USAID's support on Albania's energy sector strategy?',\n 'How does USAID collaborate with Albania's government and other stakeholders in implementing the energy sector strategy?',\n 'What are the goals and objectives of USAID's involvement in Albania's energy sector strategy?',\n 'What are the key challenges and opportunities in USAID's support for Albania's energy sector strategy?',\n 'What is the timeline for USAID's support in implementing Albania's energy sector strategy?',\n 'What are the expected outcomes and benefits of USAID's support for Albania's energy sector strategy?',\n 'How does USAID ensure transparency and accountability in its support for Albania's energy sector strategy?']"
+    "entities": [
+        {
+            "name": "Afghanistan",
+            "category": "Location",
+            "acronym": "N/A"
+        },
+        {
+            "name": "Asian Development Bank",
+            "category": "Organization",
+            "acronym": "ADB"
+        }
+    ],
+    "relations": {
+        "relations": [
+            {
+                "subject": "Afghanistan",
+                "object": "Renewable Energy Coordination committee",
+                "relationship_type": "contributes_to",
+                "description": "Given the importance of REN and the role it will play in the socio-economic development of Afghanistan, its development needs to be put on a “fast-track” Renewable Energy Coordination committee which will be established under MEW and work under the Deputy Minister for Energy the mandate of the RECC is to coordinate with all relevant gov/non gov entities for the implementation of this policy."
+            },
+            {
+                "subject": "Afghanistan",
+                "object": "National Energy Supply Programme",
+                "relationship_type": "contributes_to",
+                "description": "Afghanistan aims to achieve the strategic goals defined in the Power Sector Master Plan through the use of renewable energy."
+            },
+            {
+                "subject": "Afghanistan",
+                "object": "Power Sector Master Plan",
+                "relationship_type": "focuses_on",
+                "description": "The strategic goals of Afghan power sector are defined in the Power Sector Master Plan."
+            },
+            {
+                "subject": "Afghanistan",
+                "object": "Renewable Energy Projects",
+                "relationship_type": "in",
+                "description": "According to this policy, ministry of rural rehabilitation and development (MRRD) has the authority to implement up to 1mw of renewable energy projects."
+            },
+            {
+                "subject": "Afghanistan",
+                "object": "Zonal Renewable Energy Centers",
+                "relationship_type": "in",
+                "description": "The policy facilitates decentralized governance and coordination structure through the creation of Zonal Renewable Energy Centers (ZREC) within RED."
+            },
+            {
+                "subject": "Afghanistan",
+                "object": "Ministry of Energy and Water",
+                "relationship_type": "addresses",
+                "description": "This policy avail for better condition of electricity distribution, take part in rapid sustainable economic growth and environment."
+            },
+            {
+                "subject": "Afghanistan",
+                "object": "Renewable Energy Projects",
+                "relationship_type": "contributes_to",
+                "description": "Rapid deployment of renewable energy projects in Afghanistan will bring significant socio-economic benefit, employment opportunity and access to energy, energy security, overall growth and possibilities for International Climate Change Mitigation support."
+            },
+            {
+                "subject": "Afghanistan",
+                "object": "Afghan Government",
+                "relationship_type": "focuses_on",
+                "description": "The Afghan Government needs to initiate a sustained, long-term expansion of rural energy, as identified in the Afghanistan National Development Strategy (ANDS), which emphasizes that the overall policy focus for rural areas should be the expansion of rural energy and electricity services."
+            },
+            {
+                "subject": "Afghanistan",
+                "object": "Gross Domestic Product",
+                "relationship_type": "focuses_on",
+                "description": "More than 75% of Afghans live in rural areas and 67 per cent of the national Gross Domestic Product (GDP) comes from rural areas."
+            },
+            {
+                "subject": "Afghanistan",
+                "object": "Ministry of Energy and Water",
+                "relationship_type": "focuses_on",
+                "description": "In November 2012, the Ministry of Energy and Water (MEW) estimated that 28% of the household was connected to the power supply systems, the vast majority of whom live in urban centres."
+            },
+            {
+                "subject": "Afghanistan",
+                "object": "Ministry of Rural Rehabilitation and Development",
+                "relationship_type": "partners_with",
+                "description": "For O&M of rural REN projects below the capacity of 100 kW, utilities will coordinate with MRRD."
+            },
+            {
+                "subject": "Afghanistan",
+                "object": "Vision of Afghanistan",
+                "relationship_type": "addresses",
+                "description": "The Vision of AREP is enshrined in the Vision of Afghanistan- A society of hope and prosperity based on strong, private sector led economy, social equity and environmental sustainability – and its overall objective is to optimally deploy and utilize renewable energy resources in all possible manner to realize this Vision."
+            },
+            {
+                "subject": "Afghanistan",
+                "object": "Ministry of Energy and Water",
+                "relationship_type": "administers",
+                "description": "The Ministry of Energy and Water is the nodal Ministry to plan and direct the development of energy sector in Afghanistan."
+            },
+            {
+                "subject": "Afghanistan",
+                "object": "Ministry of Energy and Water",
+                "relationship_type": "in",
+                "description": "A strong local industry for manufacture, assembly, installation and servicing would be required to sustain the REN sector in Afghanistan in future."
+            },
+            {
+                "subject": "Afghanistan",
+                "object": "Renewable Energy Policy",
+                "relationship_type": "addresses",
+                "description": "The Afghanistan Renewable Energy Policy (AREP) aims to provide a thrust and direction to the REN sector."
+            }
+        ]
+    }
 }

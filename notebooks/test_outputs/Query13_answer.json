@@ -1,0 +1,42 @@
+{
+    "user_query": "How does the Ministry of Environment's support for the Paris Agreement on Climate Change manifest in Argentina's environmental policies?",
+    "answer": "The Ministry of Environment's support for the Paris Agreement on Climate Change manifests in Argentina's environmental policies in several ways. \n\nFirstly, Argentina's commitment to the Paris Agreement is reflected in its national policies and strategies aimed at mitigating climate change. The Ministry of Environment plays a crucial role in formulating and implementing these policies. They work towards reducing greenhouse gas emissions, promoting renewable energy sources, and implementing sustainable practices across various sectors of the economy.\n\nOne of the key areas where the Ministry of Environment's support for the Paris Agreement is evident is in Argentina's energy sector. The country has been making efforts to transition towards a more sustainable and renewable energy mix. According to the Energy Profile of Argentina by the International Renewable Energy Agency (IRENA), the share of renewable energy in the total energy supply has been increasing. In 2020, renewable energy accounted for 9% of the total energy supply, showing a growth of 11.5% compared to 2015. This shift towards renewables is in line with the goals of the Paris Agreement to reduce reliance on fossil fuels and promote clean energy sources.\n\nFurthermore, the Ministry of Environment's support for the Paris Agreement is also reflected in Argentina's efforts to enhance energy efficiency and reduce energy consumption. These measures aim to decrease the country's carbon footprint and contribute to the global efforts to combat climate change. By implementing energy efficiency programs and promoting sustainable practices, Argentina is aligning its environmental policies with the objectives of the Paris Agreement.\n\nIn addition to the energy sector, the Ministry of Environment's support for the Paris Agreement is also evident in other areas of environmental policy. Argentina has been working towards the conservation and sustainable management of its natural resources, including forests, water bodies, and biodiversity. These efforts are crucial for preserving ecosystems and mitigating the impacts of climate change.\n\nOverall, the Ministry of Environment's support for the Paris Agreement on Climate Change is manifested in Argentina's environmental policies through the promotion of renewable energy, energy efficiency measures, and the conservation of natural resources. These policies align with the goals and objectives of the Paris Agreement and demonstrate Argentina's commitment to addressing climate change at the national level.",
+    "sources": {
+        "doc-36": {
+            "title": "UN Country programme document for Argentina\n(2021-2025)",
+            "extract": "Executive Board of the United Nations Development Programme, the United Nations Population Fund and the United Nations Office for Project Services Distr.: General 5 April 2021 Original: English 2104544X (E) 130421 Annual session 2021 7–11 June 2021, New York Item 8 of the provisional agenda Country programmes and related matters Country programme document for Argentina (2021-2025) Contents Chapter Page I. UNDP within the United Nations Sustainable Development Cooperation Framework ................ 2 II. Programme priorities and partnerships………………………………………………….……….… 3 III. Programme and risk management .................................................................................... 6 IV. Monitoring and evaluation…………………………………………………….…………………… 7 Annex Results and resources framework for Argentina (2021-2025) 8I. UNDP within the United Nations Sustainable Development Cooperation Framework 1. Argentina scores very highly on the Human Development Index, ranked 46 of 189 countries in 2020, and is classified by the World Bank as an upper-middle-income country, with a gross national income per capita of $10,006 in 2019. Nonetheless, there is great heterogeneity between regions regarding indicators for productivity, well-being and social",
+            "category": "CPD",
+            "link": "https://www.undp.org/sites/g/files/zskgke326/files/2022-08/undp-rblac-ARG-2021-2025-ENG%20%282%29.pdf",
+            "thumbnail": ""
+        },
+        "doc-38": {
+            "title": "Energy Profile Argentina IRENA",
+            "extract": "Total Energy Supply (TES) 2015 2020 Non-renewable (TJ) 3 133 038 2 807 932 Renewable (TJ) 250 876 279 739 Total (TJ) 3 383 914 3 087 671 Renewable share (%) 7 9 Growth in TES 2015-20 2019-20 Non-renewable (%) -10.4 -5.2 Renewable (%) +11.5 -8.3 Total (%) -8.8 -5.5 Primary energy trade 2015 2020 Imports (TJ) 644 152 368 482 Exports (TJ) 195 511 340 846 Net trade (TJ) - 448 641 - 27 636 Imports (% of supply) 19 12 Exports (% of production) 6 11 Energy self-sufficiency (%) 89 101 COUNTRY INDICATORS AND SDGS TOTAL ENERGY SUPPLY (TES) Total energy supply in 2020 Renewable energy supply in 2020 33% 53% 4% 2% 9% Oil Gas Nuclear Coal + others Renewables 25% 17% 55% Hydro/marine Wind Solar Bioenergy Geothermal 100% 95% 0% 0% 20% 40% 60% 80% 100% 2015 2016 2017 2018 2019 2020 2021 7.1.1 Access to electricity (% population) 7.1.2 Access to clean cooking (% population)",
+            "category": "NEPro",
+            "link": "https://www.irena.org/-/media/Files/IRENA/Agency/Statistics/Statistical_Profiles/South-America/Argentina_South-America_RE_SP.pdf?country=Argentina&regionID=&countryID=4cb8dac7-5309-4f5f-8f42-1478bc8597d1",
+            "thumbnail": ""
+        }
+    },
+    "entities": [
+        {
+            "name": "Ministry of Environment",
+            "category": "Organization",
+            "acronym": "MoE"
+        },
+        {
+            "name": "United Nations Environment Programme",
+            "category": "Organization",
+            "acronym": "UNEP"
+        }
+    ],
+    "relations": {
+        "relations": [
+            {
+                "subject": "Ministry of Environment",
+                "object": "Paris Agreement on Climate Change",
+                "relationship_type": "supports",
+                "description": "The Ministry of Environment supports the Paris Agreement on Climate Change."
+            }
+        ]
+    }
+}

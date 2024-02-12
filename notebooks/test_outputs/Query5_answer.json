@@ -1,6 +1,6 @@
 {
-    "user_query": "What is the role of USAID in supporting Albania's energy sector strategy?",
-    "answer": "<p>The role of USAID in supporting Albania's energy sector strategy is to provide technical expertise and support in the development of the National Strategy for the Energy Sector. USAID works closely with a Working Group composed of leading experts in the fields of electricity, oil and gas, renewables, energy efficiency, and strategic energy planning. This Working Group coordinates the process for drafting the National Strategy for the Energy Sector and is supported by USAID with technical expertise. The partnership between Albania and USAID aims to enhance capacity for low emission development strategies and promote the development of a regional integrated and diversified energy system based on market principles. This collaboration contributes to the overall goal of meeting the demand for energy and ensuring sustainable development of the economy in Albania<a data-id='doc-16'>[1]</a><a data-id='doc-11'>[2]</a>.</p>",
+    "user_query": "What role does the Ministry of Finance play in implementing the New Deal for Engagement in Fragile States principles in Afghanistan?",
+    "answer": "The Ministry of Finance plays a role in implementing the New Deal for Engagement in Fragile States principles in Afghanistan. This information is supported by a relationship between the Ministry of Finance and the New Deal, as stated in the provided sources. According to the relationship, the United Nations Development Programme (UNDP) is supporting the implementation of the New Deal for Engagement in Fragile States principles with the Ministry of Finance.\n\nIt is important to note that the specific role of the Ministry of Finance in implementing these principles is not explicitly mentioned in the given information. However, as the Ministry of Finance is involved in the implementation process, it can be inferred that they have responsibilities related to financial management and resource allocation for the New Deal initiatives in Afghanistan.\n\nTo gain a more comprehensive understanding of the Ministry of Finance's role in implementing the New Deal for Engagement in Fragile States principles in Afghanistan, further research and analysis of additional sources may be required.",
     "sources": {
         "doc-1": {
             "title": "Country programme document for Afghanistan (2015 2019)",
@@ -57,61 +57,28 @@
             "category": "NEEP",
             "link": "https://policy.asiapacificenergy.org/sites/default/files/Afghanistan%20Energy%20Efficiency%20Policy%20%28Draft%202016%29.pdf",
             "thumbnail": ""
-        },
-        "doc-13": {
-            "title": "UN Country programme document for Albania (2022–2026)",
-            "extract": "Executive Board of the United Nations Development Programme, the United Nations Population Fund and the United Nations Office for Project Services Distr.: General 6 July 2021 Original: English 2109396X (E) 150721 Second regular session 2021 30 August–2 September 2021, New York Item 5 of the provisional agenda Country programmes and related matters Country programme document for Albania (2022–2026) Contents Page I. UNDP within the United Nations Sustainable Development Cooperation Framework................ 2 II. Programme priorities and partnerships………………………………………………….……….… 4 III. Programme and risk management ……………………………………………….………………… 6 IV. Monitoring and evaluation…………………………………………………….…………………… 6 Annex Results and resources framework for Albania (2022–2026) ……………………… ... ….…………… 8I. UNDP within the United Nations Sustainable Development Cooperation Framework 1. Albania, with its population of 2.9 million, is an upper-middle-income country with a high Human Development Index of 0.791, 1 Gender Development Index of 0.967 and Gender Inequality Index of 0.181. Women hold half of senior government positions. The economy is stable but underperforming, dependent on consumption and remittances,",
-            "category": "CPD",
-            "link": "https://digitallibrary.un.org/record/3933636/files/DP_DCP_ALB_3-EN.pdf?ln=en",
-            "thumbnail": ""
-        },
-        "doc-16": {
-            "title": "USAID ENERGY STRATEGY FOR ALBANIA (2017-2030)",
-            "extract": "ENERGY STRATEGY FOR ALBANIA Enhancing Capacity for Low Emission Development Strategies (EC-LEDS) DISCLAIMER The author’s views expressed in this publication do not necessarily reflect the views of the United States Agency for International Development or the United States Government. January 2018 This publication was produced for review by the United States Agency for International Development. It was prepared by RTI international. ENERGY STRATEGY FOR ALBANIA (2017-2030) VISION for 2030 Development of domestic energy sources, leading to a regional integrated and diversified energy system based on market principles, able to meet demand for energy and for sustainable development of the economy, ensuring security and quality of supply, safety, environmental protection and climate action, and increased welfare at minimum social cost. Prepared by: IRG an RTI Company Pat DeLaquil Besim Islami Stephen Nash Thomas O’Conner David Parish David Lockhart Zija Kamberi Redjan Basha Bart Tsala Fred WidicusTABLE OF CONTENTS LIST OF TABLES ii LIST OF FIGURES ii ACRONYMS iii 1. CONTEXT AND",
-            "category": "NES",
-            "link": "https://cdn.climatepolicyradar.org/navigator/ALB/2018/national-energy-strategy-2018_df00a495b65149b789cf6443dd177cea.pdf",
-            "thumbnail": ""
         }
     },
-    "query_ideas": "['What initiatives has USAID taken to support Albania's energy sector strategy?',\n 'How has USAID contributed to the development of Albania's energy sector strategy?',\n 'What specific projects has USAID implemented to support Albania's energy sector strategy?',\n 'What is the impact of USAID's support on Albania's energy sector strategy?',\n 'How does USAID collaborate with Albania's government and other stakeholders in implementing the energy sector strategy?',\n 'What are the goals and objectives of USAID's involvement in Albania's energy sector strategy?',\n 'What are the key challenges and opportunities in USAID's support for Albania's energy sector strategy?',\n 'What is the timeline for USAID's support in implementing Albania's energy sector strategy?',\n 'What are the expected outcomes and benefits of USAID's support for Albania's energy sector strategy?',\n 'How does USAID ensure transparency and accountability in its support for Albania's energy sector strategy?']",
     "entities": [
         {
-            "name": "Albania",
-            "category": "Location",
-            "summary": "Albania (/ælˈbeɪniə, ɔːl-/ a(w)l-BAY-nee-ə; Albanian: Shqipëri or Shqipëria), officially the Republic of Albania (Albanian: Republika e Shqipërisë), is a country in Southeastern Europe. It is located on the Adriatic and Ionian Seas within the Mediterranean Sea and shares land borders with Montenegro to the northwest, Kosovo to the northeast, North Macedonia to the east and Greece to the south. Tirana is its capital and largest city, followed by Durrës, Vlorë, and Shkodër. Albania displays varied climatic, geological, hydrological, and morphological conditions, defined in an area of 28,748 km2 (11,100 sq mi). It possesses significant diversity with the landscape ranging from the snow-capped mountains in the Albanian Alps as well as the Korab, Skanderbeg, Pindus and Ceraunian Mountains to the hot and sunny coasts of the Albanian Adriatic and Ionian Sea along the Mediterranean Sea. Albania has been inhabited by different civilisations over time, such as the Illyrians, Thracians, Greeks, Romans, Byzantines, Venetians, and Ottomans. The Albanians established the autonomous Principality of Arbër in the 12th century. The Kingdom of Albania and Principality of Albania formed between the 13th and 14th centuries. Prior to the Ottoman conquest of Albania in the 15th century, the Albanian resistance to Ottoman expansion into Europe led by Skanderbeg won them acclaim over most of Europe. Albania remained under Ottoman rule for nearly five centuries, during which many Albanians (known as Arnauts) attained high-ranking offices in the empire, especially in the Southern Balkans and Egypt. Between the 18th and 19th centuries, cultural developments, widely attributed to Albanians having gathered both spiritual and intellectual strength, conclusively led to the Albanian Renaissance. After the defeat of the Ottomans in the Balkan Wars, the modern nation state of Albania declared independence in 1912. In the 20th century, the Kingdom of Albania was invaded by Italy, which formed Greater Albania before becoming a protectorate of Nazi Germany. Enver Hoxha formed the People's Socialist Republic of Albania after World War II, modeled under the terms of Hoxhaism. The Revolutions of 1991 concluded the fall of communism in Albania and eventually the establishment of the current Republic of Albania. Albania is a unitary parliamentary constitutional republic. It is a developing country, ranking 67th in the Human Development Index, with an upper-middle income economy dominated by the service sector, followed by manufacturing. It went through a process of transition following the end of communism in 1990, from centralised planning to a market-based economy. Albania provides universal health care and free primary and secondary education to its citizens. Albania is a member of the United Nations, World Bank, UNESCO, NATO, WTO, COE, OSCE, and OIC. It has been an official candidate for membership in the European Union since 2014. It is one of the founding members of the Energy Community, including the Organization of the Black Sea Economic Cooperation and Union for the Mediterranean.",
+            "name": "Ministry of Power and Energy",
+            "category": "Organization",
             "acronym": "N/A"
         },
         {
-            "name": "United States Agency for International Development",
+            "name": "Ministry of Finance",
             "category": "Organization",
-            "summary": "The United States Agency for International Development (USAID) is an independent agency of the U.S. federal government that is primarily responsible for administering civilian foreign aid and development assistance. With a budget of over $27 billion, USAID is one of the largest official aid agencies in the world and accounts for more than half of all U.S. foreign assistance—the highest in the world in absolute dollar terms. Congress passed the Foreign Assistance Act on September 4, 1961, which reorganized U.S. foreign assistance programs and mandated the creation of an agency to administer economic aid. USAID was subsequently established by the executive order of President John F. Kennedy, who sought to unite several existing foreign assistance organizations and programs under one agency. USAID became the first U.S. foreign assistance organization whose primary focus was long-term socioeconomic development. USAID's programs are authorized by Congress in the Foreign Assistance Act, which Congress supplements through directions in annual funding appropriation acts and other legislation. As an official component of U.S. foreign policy, USAID operates subject to the guidance of the President, Secretary of State, and the National Security Council. USAID has missions in over 100 countries, primarily in Africa, Asia, Latin America, the Middle East, and Eastern Europe.",
-            "acronym": "USAID"
-        },
-        {
-            "name": "Working Group",
-            "category": "Organization",
-            "summary": "N/A",
-            "acronym": "N/A"
+            "acronym": "MOF"
         }
     ],
-    "relations": [
-        {
-            "subject": "Albania",
-            "object": "United States Agency for International Development",
-            "relationship_type": "partners with",
-            "description": "Albania partners with USAID"
-        },
-        {
-            "subject": "United States Agency for International Development",
-            "object": "Working Group",
-            "relationship_type": "partners with",
-            "description": "This Working Group coordinated the process for drafting the National Strategy for the Energy Sector and was closely supported by USAID with technical expertise1 from USAID’s strategic team, composed of leading experts in the fields of electricity, oil and gas, renewables, energy efficiency and strategic energy planning."
-        },
-        {
-            "subject": "Working Group",
-            "object": "United States Agency for International Development",
-            "relationship_type": "partners with",
-            "description": "This Working Group coordinated the process for drafting the National Strategy for the Energy Sector and was closely supported by USAID with technical expertise1 from USAID’s strategic team, composed of leading experts in the fields of electricity, oil and gas, renewables, energy efficiency and strategic energy planning."
-        }
-    ]
+    "relations": {
+        "relations": [
+            {
+                "subject": "Ministry of Finance",
+                "object": "New Deal",
+                "relationship_type": "supports",
+                "description": "Furthermore, UNDP is supporting the implementation of the New Deal for Engagement in Fragile States principles with the Ministry of Finance."
+            }
+        ]
+    }
 }

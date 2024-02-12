@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "query": "What role does innovation play in UNDP's program for North Macedonia?",
+    "llm_score": 0.3656019656019657,
+    "kg_score": 0.4060886116385966
+  },
+  {
+    "id": 2,
+    "query": "How do governance and rule of law reforms compare between North Macedonia and Sri Lanka?",
+    "llm_score": 0.02205882352941177,
+    "kg_score": 0.522157426750611
+  },
+  {
+    "id": 3,
+    "query": "How is Nigeria addressing gender inequality within its political institutions?",
+    "llm_score": 0.29589556102724596,
+    "kg_score": 0.31713900134952766
+  },
+  {
+    "id": 4,
+    "query": "How does the UNDP support the resilience of communities in the Diffa region of Niger?",
+    "llm_score": 0.33053402239448754,
+    "kg_score": 0.24688653858188875
+  },
+  {
+    "id": 5,
+    "query": "Can you detail the significance of Nigeria's rankings in international governance and corruption indexes and their implications for governance reforms?",
+    "llm_score": 0.2959986890211169,
+    "kg_score": 0.4870416342960586
+  },
+  {
+    "id": 6,
+    "query": "What are the national development priorities of Niger for 2022-2026? ",
+    "llm_score": 0.18418950544907586,
+    "kg_score": 0.20089285714285715
+  },
+  {
+    "id": 7,
+    "query": "What are the primary development financing challenges in Nigeria?",
+    "llm_score": 0.26916323036063744,
+    "kg_score": 0.5920055622699486
+  },
+  {
+    "id": 8,
+    "query": "How does Nigeria's poverty rate according to the World Bank in 2020 reflect on its economic policies and challenges? ",
+    "llm_score": 0.34274853747142436,
+    "kg_score": 0.4449943204130417
+  },
+  {
+    "id": 9,
+    "query": "How are international partnerships, particularly with Norway and Germany, enhancing Nigeria's resilience to climate change and security challenges?",
+    "llm_score": 0.3796178758584774,
+    "kg_score": 0.4012804358299671
+  },
+  {
+    "id": 10,
+    "query": "What are the challenges faced by Niger and Nigeria in achieving sustainable development and how are they addressing these challenges? ",
+    "llm_score": 0.42576878806251345,
+    "kg_score": 0.5323613671753601
+  },
+  {
+    "id": 11,
+    "query": "How do Niger and Nigeria's efforts in improving governance and transparency compare, as indicated by their partnerships and rankings in international indexes?",
+    "llm_score": 0.17730496453900707,
+    "kg_score": 0.5429309385701923
+  },
+  {
+    "id": 12,
+    "query": "How is the Gender Development Index (GDI) relevant to UNDP's work in Albania?",
+    "llm_score": 0.42311987488763736,
+    "kg_score": 0.42612701797136776
+  },
+  {
+    "id": 13,
+    "query": "How does UNDP contribute to the Sustainable Development Goals (SDGs) in the Western Balkan Regional Economic Area? ",
+    "llm_score": 0.3663962673413895,
+    "kg_score": 0.640813945465946
+  },
+  {
+    "id": 14,
+    "query": "How does the collaboration between the United Nations Country Team and the United Nations Working Group contribute to Afghanistan's development? ",
+    "llm_score": 0.2772000539890549,
+    "kg_score": 0.3346660710949178
+  },
+  {
+    "id": 15,
+    "query": "How is Afghanistan addressing the challenge of climate change and natural resource management? ",
+    "llm_score": 0.3053750794659886,
+    "kg_score": 0.30436931868817396
+  },
+  {
+    "id": 16,
+    "query": "How does the United Nations support Afghanistan's transition and development? ",
+    "llm_score": 0.2902330648307404,
+    "kg_score": 0.31952076739354157
+  },
+  {
+    "id": 17,
+    "query": "What is the Human Development Index (HDI) value for Albania as mentioned in the document? ",
+    "llm_score": 0.8775114984265312,
+    "kg_score": 0.9624319660161953
+  },
+  {
+    "id": 18,
+    "query": "Which United Nations agencies does UNDP partner with to support development in Albania? ",
+    "llm_score": 0.4150898569416397,
+    "kg_score": 0.6810750436300174
+  },
+  {
+    "id": 19,
+    "query": "How does the Ministry of Environment's support for the Paris Agreement on Climate Change manifest in Argentina's environmental policies?",
+    "llm_score": 0.41908159364403963,
+    "kg_score": 0.5242435863639423
+  },
+  {
+    "id": 20,
+    "query": "What is the role of Paris Agreement in sustainable energy development? ",
+    "llm_score": 0.4577822972848474,
+    "kg_score": 0.4577822972848474
+  },
+  {
+    "id": 21,
+    "query": "How does the Ceylon Petroleum Corporation contribute to the Results Delivery Framework? ",
+    "llm_score": 0.2674821797179261,
+    "kg_score": 0.48899625665216295
+  },
+  {
+    "id": 22,
+    "query": "What strategies is UNDP implementing to support Angola's Bureau of External Relations and Advocacy? ",
+    "llm_score": 0.32013077146771635,
+    "kg_score": 0.3479348265842805
+  },
+  {
+    "id": 23,
+    "query": "What are North Macedonia's strategic priorities in partnership with the United Nations Sustainable Development Cooperation Framework for 2021-2025?",
+    "llm_score": 0.04618937644341801,
+    "kg_score": 0.4372567388225323
+  },
+  {
+    "LLM Meteor scores": [
+      0.3656019656019657,
+      0.02205882352941177,
+      0.29589556102724596,
+      0.33053402239448754,
+      0.2959986890211169,
+      0.18418950544907586,
+      0.26916323036063744,
+      0.34274853747142436,
+      0.3796178758584774,
+      0.42576878806251345,
+      0.17730496453900707,
+      0.42311987488763736,
+      0.3663962673413895,
+      0.2772000539890549,
+      0.3053750794659886,
+      0.2902330648307404,
+      0.8775114984265312,
+      0.4150898569416397,
+      0.41908159364403963,
+      0.4577822972848474,
+      0.2674821797179261,
+      0.32013077146771635,
+      0.04618937644341801
+    ],
+    "KG_LLM Meteor scores": [
+      0.4060886116385966,
+      0.522157426750611,
+      0.31713900134952766,
+      0.24688653858188875,
+      0.4870416342960586,
+      0.20089285714285715,
+      0.5920055622699486,
+      0.4449943204130417,
+      0.4012804358299671,
+      0.5323613671753601,
+      0.5429309385701923,
+      0.42612701797136776,
+      0.640813945465946,
+      0.3346660710949178,
+      0.30436931868817396,
+      0.31952076739354157,
+      0.9624319660161953,
+      0.6810750436300174,
+      0.5242435863639423,
+      0.4577822972848474,
+      0.48899625665216295,
+      0.3479348265842805,
+      0.4372567388225323
+    ]
+  }
+]

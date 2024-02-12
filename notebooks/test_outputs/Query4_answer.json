@@ -1,6 +1,6 @@
 {
-    "user_query": "What is the role of USAID in supporting Albania's energy sector strategy?",
-    "answer": "<p>The role of USAID in supporting Albania's energy sector strategy is to enhance capacity for low emission development strategies (EC-LEDS) in the country. This is outlined in the USAID Energy Strategy for Albania (2017-2030)<a data-id='doc-16'>[1]</a>. USAID aims to develop domestic energy sources, create a regional integrated and diversified energy system, and promote market principles. The strategy focuses on meeting energy demand, sustainable development of the economy, ensuring energy security and quality, environmental protection, climate action, and increased welfare at minimum social cost.</p>",
+    "user_query": "How does the partnership between the Kabul Conference and the United Nations aim to enhance the UN system's effectiveness in Afghanistan?",
+    "answer": "The partnership between the Kabul Conference and the United Nations aims to enhance the UN system's effectiveness in Afghanistan by responding to the Kabul Conference's request for a unified United Nations system. The United Nations country team has committed to increasing the effectiveness of the system in response to this request. Additionally, the United Nations supports Afghanistan as a whole. The United Nations Development Programme (UNDP), as part of the United Nations system, will work with civil society and the government to improve human capacities and data systems for performance, transparency, and planning. UNDP will also participate in joint Government-United Nations coordination mechanisms. This partnership aims to improve the quality of services and the rule of law in Afghanistan, in collaboration with other United Nations partners.",
     "sources": {
         "doc-1": {
             "title": "Country programme document for Afghanistan (2015 2019)",
@@ -57,21 +57,80 @@
             "category": "NEEP",
             "link": "https://policy.asiapacificenergy.org/sites/default/files/Afghanistan%20Energy%20Efficiency%20Policy%20%28Draft%202016%29.pdf",
             "thumbnail": ""
-        },
-        "doc-13": {
-            "title": "UN Country programme document for Albania (2022–2026)",
-            "extract": "Executive Board of the United Nations Development Programme, the United Nations Population Fund and the United Nations Office for Project Services Distr.: General 6 July 2021 Original: English 2109396X (E) 150721 Second regular session 2021 30 August–2 September 2021, New York Item 5 of the provisional agenda Country programmes and related matters Country programme document for Albania (2022–2026) Contents Page I. UNDP within the United Nations Sustainable Development Cooperation Framework................ 2 II. Programme priorities and partnerships………………………………………………….……….… 4 III. Programme and risk management ……………………………………………….………………… 6 IV. Monitoring and evaluation…………………………………………………….…………………… 6 Annex Results and resources framework for Albania (2022–2026) ……………………… ... ….…………… 8I. UNDP within the United Nations Sustainable Development Cooperation Framework 1. Albania, with its population of 2.9 million, is an upper-middle-income country with a high Human Development Index of 0.791, 1 Gender Development Index of 0.967 and Gender Inequality Index of 0.181. Women hold half of senior government positions. The economy is stable but underperforming, dependent on consumption and remittances,",
-            "category": "CPD",
-            "link": "https://digitallibrary.un.org/record/3933636/files/DP_DCP_ALB_3-EN.pdf?ln=en",
-            "thumbnail": ""
-        },
-        "doc-16": {
-            "title": "USAID ENERGY STRATEGY FOR ALBANIA (2017-2030)",
-            "extract": "ENERGY STRATEGY FOR ALBANIA Enhancing Capacity for Low Emission Development Strategies (EC-LEDS) DISCLAIMER The author’s views expressed in this publication do not necessarily reflect the views of the United States Agency for International Development or the United States Government. January 2018 This publication was produced for review by the United States Agency for International Development. It was prepared by RTI international. ENERGY STRATEGY FOR ALBANIA (2017-2030) VISION for 2030 Development of domestic energy sources, leading to a regional integrated and diversified energy system based on market principles, able to meet demand for energy and for sustainable development of the economy, ensuring security and quality of supply, safety, environmental protection and climate action, and increased welfare at minimum social cost. Prepared by: IRG an RTI Company Pat DeLaquil Besim Islami Stephen Nash Thomas O’Conner David Parish David Lockhart Zija Kamberi Redjan Basha Bart Tsala Fred WidicusTABLE OF CONTENTS LIST OF TABLES ii LIST OF FIGURES ii ACRONYMS iii 1. CONTEXT AND",
-            "category": "NES",
-            "link": "https://cdn.climatepolicyradar.org/navigator/ALB/2018/national-energy-strategy-2018_df00a495b65149b789cf6443dd177cea.pdf",
-            "thumbnail": ""
         }
     },
-    "query_ideas": "['What initiatives has USAID taken to support Albania's energy sector strategy?',\n 'How has USAID contributed to the development of Albania's energy sector strategy?',\n 'What specific projects has USAID implemented to support Albania's energy sector strategy?',\n 'What is the impact of USAID's support on Albania's energy sector strategy?',\n 'How does USAID collaborate with Albania's government and other stakeholders in implementing the energy sector strategy?',\n 'What are the goals and objectives of USAID's involvement in Albania's energy sector strategy?',\n 'What are the key challenges and opportunities in USAID's support for Albania's energy sector strategy?',\n 'What is the timeline for USAID's support in implementing Albania's energy sector strategy?',\n 'What are the expected outcomes and benefits of USAID's support for Albania's energy sector strategy?',\n 'How does USAID ensure transparency and accountability in its support for Albania's energy sector strategy?']"
+    "entities": [
+        {
+            "name": "Kabul Conference",
+            "category": "Event",
+            "acronym": "N/A"
+        },
+        {
+            "name": "United Nations",
+            "category": "Organization",
+            "acronym": "UN"
+        }
+    ],
+    "relations": [
+        {
+            "subject": "Kabul Conference",
+            "object": "United Nations",
+            "relationship_type": "partners_with",
+            "description": "Responding to the Kabul Conference request for a unified United Nations system, the United Nations country team has committed to increasing the effectiveness of the system."
+        },
+        {
+            "subject": "United Nations",
+            "object": "United Nations Development Programme",
+            "relationship_type": "partners_with",
+            "description": "Building on previous successes, UNDP will work with civil society and the government to improve human capacities and data systems for performance, transparency and planning. UNDP will work on the quality of services and rule of law, in close collaboration with United Nations partners."
+        },
+        {
+            "subject": "United Nations Development Programme",
+            "object": "United Nations",
+            "relationship_type": "partners_with",
+            "description": "UNDP will participate in joint Government–United Nations coordination mechanisms."
+        },
+        {
+            "subject": "United Nations",
+            "object": "Global Compact",
+            "relationship_type": "partners_with",
+            "description": "The local Global Compact network in Argentina"
+        },
+        {
+            "subject": "Kabul Conference",
+            "object": "United Nations",
+            "relationship_type": "partners_with",
+            "description": "Responding to the Kabul Conference request for a unified United Nations system, the United Nations country team has committed to increasing the effectiveness of the system."
+        },
+        {
+            "subject": "United Nations",
+            "object": "Afghanistan",
+            "relationship_type": "supports",
+            "description": "The United Nations supports Afghanistan."
+        },
+        {
+            "subject": "Afghanistan",
+            "object": "Asian Development Bank",
+            "relationship_type": "partners_with",
+            "description": "It will pool in funds from the government resources, as well as from donors and international financial institutions such as the Asian Development Bank, Islamic Development Bank, World Bank etc."
+        },
+        {
+            "subject": "Afghanistan",
+            "object": "Islamic Development Bank",
+            "relationship_type": "funds",
+            "description": "It will pool in funds from the government resources, as well as from donors and international financial institutions such as the Asian Development Bank, Islamic Development Bank, World Bank etc."
+        },
+        {
+            "subject": "Afghanistan",
+            "object": "World Bank",
+            "relationship_type": "funds",
+            "description": "It will pool in funds from the government resources, as well as from donors and international financial institutions such as the Asian Development Bank, Islamic Development Bank, World Bank etc."
+        },
+        {
+            "subject": "Afghanistan",
+            "object": "Renewable Energy Coordination committee",
+            "relationship_type": "contributes_to",
+            "description": "Given the importance of REN and the role it will play in the socio-economic development of Afghanistan, its development needs to be put on a “fast-track” Renewable Energy Coordination committee which will be established under MEW and work under the Deputy Minister for Energy the mandate of the RECC is to coordinate with all relevant gov/non gov entities for the implementation of this policy."
+        }
+    ]
 }
