@@ -174,9 +174,4 @@ env/
 cache/
 
 data/documents_all.json
-data/WDICountry.csv
-data/WDICSV.csv
-data/WDISeries.csv
-data/documents.json
-# data/WDI_CSV
-data/WDI_CSV/WDICSV.csv
+data/WDI_CSV
