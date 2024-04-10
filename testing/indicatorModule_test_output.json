@@ -1,1004 +1,1016 @@
 [
     {
-        "wdi-1": {
-            "Country": "Afghanistan",
-            "Indicator Name": "Access to clean fuels and technologies for cooking, rural (% of rural population)",
-            "Values Per Year": {
-                "2021": 17.9
-            }
-        },
-        "wdi-2": {
-            "Country": "Afghanistan",
-            "Indicator Name": "Access to clean fuels and technologies for cooking, urban (% of urban population)",
-            "Values Per Year": {
-                "2021": 85.2
-            }
-        },
-        "wdi-3": {
-            "Country": "Afghanistan",
-            "Indicator Name": "Access to clean fuels and technologies for cooking (% of population)",
-            "Values Per Year": {
-                "2021": 35.4
-            }
-        },
-        "wdi-4": {
-            "Country": "Afghanistan",
-            "Indicator Name": "Access to electricity, rural (% of rural population)",
-            "Values Per Year": {
-                "2021": 97.0572022178384
-            }
-        },
-        "wdi-5": {
-            "Country": "Afghanistan",
-            "Indicator Name": "Access to electricity, urban (% of urban population)",
-            "Values Per Year": {
-                "2021": 99.5
-            }
-        },
-        "wdi-6": {
-            "Country": "Afghanistan",
-            "Indicator Name": "Access to electricity (% of population)",
-            "Values Per Year": {
-                "2021": 97.7
-            }
-        },
-        "wdi-7": {
-            "Country": "Afghanistan",
-            "Indicator Name": "CPIA policy and institutions for environmental sustainability rating (1=low to 6=high)",
-            "Values Per Year": {
-                "2022": 2.0
-            }
-        },
-        "wdi-8": {
-            "Country": "Afghanistan",
-            "Indicator Name": "CPIA policies for social inclusion/equity cluster average (1=low to 6=high)",
-            "Values Per Year": {
-                "2022": 1.7
-            }
-        }
-    },
-    {
-        "wdi-1": {
-            "Country": "Mauritius",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 2041.0
-            }
-        },
-        "wdi-2": {
-            "Country": "Benin",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 1039.0
-            }
-        },
-        "wdi-3": {
-            "Country": "Egypt, Arab Rep.",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 18.1
-            }
-        },
-        "wdi-4": {
-            "Country": "Eritrea",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 384.0
-            }
-        },
-        "wdi-5": {
-            "Country": "Gambia, The",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 836.0
-            }
-        },
-        "wdi-6": {
-            "Country": "Liberia",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 2391.0
-            }
-        },
-        "wdi-7": {
-            "Country": "Ethiopia",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 848.0
-            }
-        },
-        "wdi-8": {
-            "Country": "Chad",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 322.0
-            }
-        },
-        "wdi-9": {
-            "Country": "Senegal",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 686.0
-            }
-        },
-        "wdi-10": {
-            "Country": "Tunisia",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 207.0
-            }
-        },
-        "wdi-11": {
-            "Country": "Burundi",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 1274.0
-            }
-        },
-        "wdi-12": {
-            "Country": "Kenya",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 630.0
-            }
-        },
-        "wdi-13": {
-            "Country": "Algeria",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 89.0
-            }
-        },
-        "wdi-14": {
-            "Country": "Burkina Faso",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 748.0
-            }
-        },
-        "wdi-15": {
-            "Country": "Botswana",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 416.0
-            }
-        },
-        "wdi-16": {
-            "Country": "Sudan",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 250.0
-            }
-        },
-        "wdi-17": {
-            "Country": "Djibouti",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 220.0
-            }
-        },
-        "wdi-18": {
-            "Country": "Angola",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 1010.0
-            }
-        },
-        "wdi-19": {
-            "Country": "Gabon",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 1831.0
-            }
-        },
-        "wdi-20": {
-            "Country": "Mali",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 282.0
-            }
-        },
-        "wdi-21": {
-            "Country": "Congo, Rep.",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 1646.0
-            }
-        },
-        "wdi-22": {
-            "Country": "Cabo Verde",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 228.0
-            }
-        },
-        "wdi-23": {
-            "Country": "Zambia",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 1020.0
-            }
-        },
-        "wdi-24": {
-            "Country": "Morocco",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 346.0
-            }
-        },
-        "wdi-25": {
-            "Country": "Guinea",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 1651.0
-            }
-        },
-        "wdi-26": {
-            "Country": "Togo",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 1168.0
-            }
-        },
-        "wdi-27": {
-            "Country": "Rwanda",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 1212.0
-            }
-        },
-        "wdi-28": {
-            "Country": "Malawi",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 1181.0
-            }
-        },
-        "wdi-29": {
-            "Country": "Seychelles",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 2330.0
-            }
-        },
-        "wdi-30": {
-            "Country": "Ghana",
-            "Indicator Name": "Average precipitation in depth (mm per year)",
-            "Values Per Year": {
-                "2020": 1187.0
+        "User Query": "How many people in Afghanistan lack access to energy/electricity/clean cooking solutions for past 3 years?",
+        "indicatorsModule Result": {
+            "wdi-1": {
+                "Country": "Afghanistan",
+                "Indicator Name": "Access to clean fuels and technologies for cooking, rural (% of rural population)",
+                "Values Per Year": {
+                    "2021": 17.9
+                }
+            },
+            "wdi-2": {
+                "Country": "Afghanistan",
+                "Indicator Name": "Access to clean fuels and technologies for cooking, urban (% of urban population)",
+                "Values Per Year": {
+                    "2021": 85.2
+                }
+            },
+            "wdi-3": {
+                "Country": "Afghanistan",
+                "Indicator Name": "Access to clean fuels and technologies for cooking (% of population)",
+                "Values Per Year": {
+                    "2021": 35.4
+                }
+            },
+            "wdi-4": {
+                "Country": "Afghanistan",
+                "Indicator Name": "Access to electricity, rural (% of rural population)",
+                "Values Per Year": {
+                    "2021": 97.0572022178384
+                }
+            },
+            "wdi-5": {
+                "Country": "Afghanistan",
+                "Indicator Name": "Access to electricity, urban (% of urban population)",
+                "Values Per Year": {
+                    "2021": 99.5
+                }
+            },
+            "wdi-6": {
+                "Country": "Afghanistan",
+                "Indicator Name": "Access to electricity (% of population)",
+                "Values Per Year": {
+                    "2021": 97.7
+                }
+            },
+            "wdi-7": {
+                "Country": "Afghanistan",
+                "Indicator Name": "CPIA policy and institutions for environmental sustainability rating (1=low to 6=high)",
+                "Values Per Year": {
+                    "2022": 2.0
+                }
+            },
+            "wdi-8": {
+                "Country": "Afghanistan",
+                "Indicator Name": "CPIA policies for social inclusion/equity cluster average (1=low to 6=high)",
+                "Values Per Year": {
+                    "2022": 1.7
+                }
             }
         }
     },
     {
-        "wdi-1": {
-            "Country": "Albania",
-            "Indicator Name": "Alternative and nuclear energy (% of total energy use)",
-            "Values Per Year": {
-                "1971": 3.5044457561860454,
-                "1972": 3.986335213709285,
-                "1973": 5.532737638222825,
-                "1974": 6.123031305777501,
-                "1975": 6.919162459520887,
-                "1976": 7.459715709047349,
-                "1977": 8.148727192070064,
-                "1978": 7.956728350586404,
-                "1979": 10.263759161465904,
-                "1980": 8.259654631185422,
-                "1981": 9.727009602779782,
-                "1982": 9.985082750792769,
-                "1983": 9.675467521614229,
-                "1984": 7.964705003224036,
-                "1985": 6.741081811517616,
-                "1986": 11.986751784733665,
-                "1987": 10.134538549589587,
-                "1988": 8.669958511775008,
-                "1989": 9.14789279975118,
-                "1990": 4.676392164169472,
-                "1991": 5.3995564778602345,
-                "1992": 8.468053362077407,
-                "1993": 10.012654626878009,
-                "1994": 10.686573877482385,
-                "1995": 12.31192778488616,
-                "1996": 16.02528939949253,
-                "1997": 14.372317442908193,
-                "1998": 13.875295267774874,
-                "1999": 20.236479742656847,
-                "2000": 19.677698581947887,
-                "2001": 18.295069799505946,
-                "2002": 17.93678489512184,
-                "2003": 18.7811504312036,
-                "2004": 20.68211470153072,
-                "2005": 20.33206363211398,
-                "2006": 14.006447140135489,
-                "2007": 15.54963185933446,
-                "2008": 19.26881767654081,
-                "2009": 21.87501519447765,
-                "2010": 23.282191877561743,
-                "2011": 22.10933619452633,
-                "2012": 25.41917375668801,
-                "2013": 26.06878501192281,
-                "2014": 24.54805020993589
-            }
-        },
-        "wdi-2": {
-            "Country": "Albania",
-            "Indicator Name": "Nitrous oxide emissions in energy sector (% of total)",
-            "Values Per Year": {
-                "1970": 4.48010149505687,
-                "1971": 4.396255755880942,
-                "1972": 4.621085892410222,
-                "1973": 4.183107224551671,
-                "1974": 4.20665806705428,
-                "1975": 4.276091659722748,
-                "1976": 3.9400921049104745,
-                "1977": 3.713527604812721,
-                "1978": 3.346638210276128,
-                "1979": 3.638520578812985,
-                "1980": 3.6659371421713978,
-                "1981": 3.177388710356863,
-                "1982": 3.3521009559435773,
-                "1983": 2.991849346033819,
-                "1984": 3.3013921313211543,
-                "1985": 3.1609630035631984,
-                "1986": 2.976350899226364,
-                "1987": 3.090415505019566,
-                "1988": 3.1018876322861493,
-                "1989": 2.703972894855748,
-                "1990": 4.40251572327044,
-                "1991": 4.958677685950414,
-                "1992": 5.3097345132743365,
-                "1993": 4.273504273504273,
-                "1994": 2.9197080291970803,
-                "1995": 2.255639097744361,
-                "1996": 2.5210084033613445,
-                "1997": 3.5398230088495577,
-                "1998": 3.418803418803419,
-                "1999": 4.464285714285714,
-                "2000": 4.23728813559322,
-                "2001": 5.217391304347826,
-                "2002": 4.651162790697675,
-                "2003": 4.580152671755725,
-                "2004": 5.511811023622047,
-                "2005": 5.46875,
-                "2006": 5.737704918032787,
-                "2007": 5.737704918032787,
-                "2008": 6.140350877192982
-            }
-        },
-        "wdi-3": {
-            "Country": "Albania",
-            "Indicator Name": "Population in the largest city (% of urban population)",
-            "Values Per Year": {
-                "1960": 27.28054868396014,
-                "1961": 26.81389118210564,
-                "1962": 26.29426150130189,
-                "1963": 25.812515512987105,
-                "1964": 25.357719089673918,
-                "1965": 24.94187583923733,
-                "1966": 24.56248957116636,
-                "1967": 24.190229403246704,
-                "1968": 23.77375283838949,
-                "1969": 23.37281665456129,
-                "1970": 23.12389624683351,
-                "1971": 22.90713335919284,
-                "1972": 22.67678162323128,
-                "1973": 22.47805230267279,
-                "1974": 22.296333519156832,
-                "1975": 22.115428617917598,
-                "1976": 21.957673919599728,
-                "1977": 21.798947012951427,
-                "1978": 21.672489931173928,
-                "1979": 21.56540558785095,
-                "1980": 21.46543697069126,
-                "1981": 21.37554945321521,
-                "1982": 21.263820582520204,
-                "1983": 21.15107694029889,
-                "1984": 21.044465430884017,
-                "1985": 20.947634279275512,
-                "1986": 20.87822098435097,
-                "1987": 20.79575799677516,
-                "1988": 20.73826705517849,
-                "1989": 20.550053120394804,
-                "1990": 20.6536465250388,
-                "1991": 21.26244461645225,
-                "1992": 21.72932392992088,
-                "1993": 22.209607158725188,
-                "1994": 22.704187387926368,
-                "1995": 23.21430442946181,
-                "1996": 23.739682275664965,
-                "1997": 24.280752197293907,
-                "1998": 24.838570508591467,
-                "1999": 25.414012390485468,
-                "2000": 26.0073166324257,
-                "2001": 26.54429748094848,
-                "2002": 26.467729539940628,
-                "2003": 26.423259288126783,
-                "2004": 26.402924242380383,
-                "2005": 26.419635357969668,
-                "2006": 26.48044638077387,
-                "2007": 26.586583016500988,
-                "2008": 26.709049594405293,
-                "2009": 26.82048606931236,
-                "2010": 26.89647184405065,
-                "2011": 26.924571198807445,
-                "2012": 26.937062599791343,
-                "2013": 26.97777680768068,
-                "2014": 27.044958067478508,
-                "2015": 27.15607043323584,
-                "2016": 27.251469575604062,
-                "2017": 27.347986485734125,
-                "2018": 27.50639253798073,
-                "2019": 27.73094192984293,
-                "2020": 28.009724022704518,
-                "2021": 28.39538248992645,
-                "2022": 28.866769969381615,
-                "2023": 29.07986101403391
-            }
-        },
-        "wdi-4": {
-            "Country": "Albania",
-            "Indicator Name": "Textiles and clothing (% of value added in manufacturing)",
-            "Values Per Year": {
-                "1985": 27.749576988155667,
-                "1986": 26.51804670912951,
-                "1987": 24.46585672392124,
-                "1988": 25.80108198085726,
-                "1989": 27.47459540835529,
-                "1990": 32.65895953757225,
-                "2000": 26.54020310183809,
-                "2001": 30.53495750843632,
-                "2002": 36.48631281326308,
-                "2003": 32.43084427384596,
-                "2004": 26.549614698196923,
-                "2005": 25.49758832043435,
-                "2006": 22.29335176405849,
-                "2007": 24.86899195307125,
-                "2008": 22.562573812087017,
-                "2009": 25.795405496234263,
-                "2010": 25.59423356083472,
-                "2011": 30.31235644601064,
-                "2012": 26.578888989911302,
-                "2013": 30.07647822898421,
-                "2014": 32.0804915402347,
-                "2015": 32.388368071687275,
-                "2016": 33.7422202688089,
-                "2017": 34.879836577745735,
-                "2018": 36.57947312177671,
-                "2019": 36.388975954865,
-                "2020": 32.49714805895164,
-                "2021": 32.49602470485437
-            }
-        },
-        "wdi-5": {
-            "Country": "Albania",
-            "Indicator Name": "Coverage of social protection and labor programs (% of population)",
-            "Values Per Year": {
-                "2008": 67.7273947809717,
-                "2012": 54.8855099994917,
-                "2015": 4.71926745979056,
-                "2016": 5.82714036189909,
-                "2017": 49.6257263834819,
-                "2018": 48.5011167583871
-            }
-        },
-        "wdi-6": {
-            "Country": "Albania",
-            "Indicator Name": "Prevalence of severe food insecurity in the population (%)",
-            "Values Per Year": {
-                "2015": 10.0,
-                "2016": 10.5,
-                "2017": 11.0,
-                "2018": 10.0,
-                "2019": 8.8,
-                "2020": 7.7,
-                "2021": 7.5
-            }
-        },
-        "wdi-7": {
-            "Country": "Albania",
-            "Indicator Name": "Merchandise imports from low- and middle-income economies in Latin America & the Caribbean (% of total merchandise imports)",
-            "Values Per Year": {
-                "1981": 1.7427432778349998,
-                "1982": 2.7985656109682124,
-                "1983": 2.4984404668126783,
-                "1984": 1.530868316897341,
-                "1985": 1.6385388507805478,
-                "1986": 1.3897969114726438,
-                "1987": 0.1606551626867998,
-                "1988": 1.1372433841187242,
-                "1989": 1.2548071012837387,
-                "1990": 0.237867309636145,
-                "1991": 0.2819387833065284,
-                "1992": 0.0417436550019532,
-                "1993": 0.0293148696199219,
-                "1994": 0.1039870477071364,
-                "1995": 0.4561281336143228,
-                "1996": 0.5627373703140371,
-                "1997": 6.825643042700467e-05,
-                "1998": 0.0226398764293684,
-                "1999": 0.0226174897821743,
-                "2000": 0.5142088968259348,
-                "2001": 0.8329622318650464,
-                "2002": 0.8077340936916265,
-                "2003": 1.277281496756674,
-                "2004": 2.027614512306949,
-                "2005": 1.452992250796411,
-                "2006": 1.506354891987033,
-                "2007": 1.979446112009652,
-                "2008": 2.129689716391116,
-                "2009": 1.810756009308943,
-                "2010": 1.5133508460887353,
-                "2011": 1.4655364704730869,
-                "2012": 1.557139768127603,
-                "2013": 1.7318911586762975,
-                "2014": 1.8293262291361296,
-                "2015": 1.779092988450889,
-                "2016": 1.7642317842228448,
-                "2017": 1.633600388233768,
-                "2018": 1.7177629414717404,
-                "2019": 1.515694822010753,
-                "2020": 1.5625958412872736
-            }
-        },
-        "wdi-8": {
-            "Country": "Albania",
-            "Indicator Name": "Merchandise exports to low- and middle-income economies in Latin America & the Caribbean (% of total merchandise exports)",
-            "Values Per Year": {
-                "1981": 0.0043176028674091,
-                "1982": 0.0071687780263724,
-                "1984": 0.0043209967237629,
-                "1985": 0.0013753844324419,
-                "1986": 0.0009533657205717,
-                "1987": 0.0061230043815978,
-                "1988": 0.0508551369573377,
-                "1989": 0.0071810166133449,
-                "1990": 0.0786216223971494,
-                "1991": 0.2280183938561719,
-                "1992": 2.977754601328476,
-                "1994": 0.2465078060754729,
-                "1996": 0.1259022234920238,
-                "2001": 0.0002031108966193,
-                "2003": 0.0095572749391081,
-                "2004": 0.0133161360762319,
-                "2005": 0.1476331059164702,
-                "2006": 0.0715957331274057,
-                "2007": 0.0811613693518029,
-                "2008": 0.0224737364419477,
-                "2009": 0.1148598952057357,
-                "2010": 0.1948634533145634,
-                "2011": 0.1268516510702458,
-                "2012": 0.0973408636536981,
-                "2013": 0.0737158113910128,
-                "2014": 0.0570463982607538,
-                "2015": 0.0234777576257508,
-                "2016": 0.0232629249438984,
-                "2017": 0.0355845023386846,
-                "2018": 0.0910236544511347,
-                "2019": 0.0596713000220712,
-                "2020": 0.0474563427737335
+        "User Query": "How much is invested in energy in Africa per annum from 2020 to 2023?",
+        "indicatorsModule Result": {
+            "wdi-1": {
+                "Country": "Tanzania",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 1071.0
+                }
+            },
+            "wdi-2": {
+                "Country": "Algeria",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 89.0
+                }
+            },
+            "wdi-3": {
+                "Country": "Sierra Leone",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 2526.0
+                }
+            },
+            "wdi-4": {
+                "Country": "Burundi",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 1274.0
+                }
+            },
+            "wdi-5": {
+                "Country": "Guinea-Bissau",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 1577.0
+                }
+            },
+            "wdi-6": {
+                "Country": "Liberia",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 2391.0
+                }
+            },
+            "wdi-7": {
+                "Country": "Niger",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 151.0
+                }
+            },
+            "wdi-8": {
+                "Country": "Tunisia",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 207.0
+                }
+            },
+            "wdi-9": {
+                "Country": "Cabo Verde",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 228.0
+                }
+            },
+            "wdi-10": {
+                "Country": "Mali",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 282.0
+                }
+            },
+            "wdi-11": {
+                "Country": "Angola",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 1010.0
+                }
+            },
+            "wdi-12": {
+                "Country": "Lesotho",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 788.0
+                }
+            },
+            "wdi-13": {
+                "Country": "Morocco",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 346.0
+                }
+            },
+            "wdi-14": {
+                "Country": "Comoros",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 900.0
+                }
+            },
+            "wdi-15": {
+                "Country": "Rwanda",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 1212.0
+                }
+            },
+            "wdi-16": {
+                "Country": "Eritrea",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 384.0
+                }
+            },
+            "wdi-17": {
+                "Country": "Mauritania",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 92.0
+                }
+            },
+            "wdi-18": {
+                "Country": "Ethiopia",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 848.0
+                }
+            },
+            "wdi-19": {
+                "Country": "Gabon",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 1831.0
+                }
+            },
+            "wdi-20": {
+                "Country": "Benin",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 1039.0
+                }
+            },
+            "wdi-21": {
+                "Country": "Chad",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 322.0
+                }
+            },
+            "wdi-22": {
+                "Country": "Congo, Dem. Rep.",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 1543.0
+                }
+            },
+            "wdi-23": {
+                "Country": "South Sudan",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 900.0
+                }
+            },
+            "wdi-24": {
+                "Country": "Djibouti",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 220.0
+                }
+            },
+            "wdi-25": {
+                "Country": "Senegal",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 686.0
+                }
+            },
+            "wdi-26": {
+                "Country": "Egypt, Arab Rep.",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 18.1
+                }
+            },
+            "wdi-27": {
+                "Country": "Malawi",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 1181.0
+                }
+            },
+            "wdi-28": {
+                "Country": "Sao Tome and Principe",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 3200.0
+                }
+            },
+            "wdi-29": {
+                "Country": "Gambia, The",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 836.0
+                }
+            },
+            "wdi-30": {
+                "Country": "Somalia",
+                "Indicator Name": "Average precipitation in depth (mm per year)",
+                "Values Per Year": {
+                    "2020": 282.0
+                }
             }
         }
     },
     {
-        "wdi-1": {
-            "Country": "India",
-            "Indicator Name": "Population in the largest city (% of urban population)",
-            "Values Per Year": {
-                "1960": 7.393964279964374,
-                "1961": 7.353998456908833,
-                "1962": 7.265601501658385,
-                "1963": 7.178812647032981,
-                "1964": 7.093416460434016,
-                "1965": 7.013976468304081,
-                "1966": 6.941399191958995,
-                "1967": 6.87114451052887,
-                "1968": 6.79941845278009,
-                "1969": 6.726077890662034,
-                "1970": 6.65325148521603,
-                "1971": 6.571182274777097,
-                "1972": 6.460730878532542,
-                "1973": 6.351308580648267,
-                "1974": 6.243316543702751,
-                "1975": 6.139100504678641,
-                "1976": 6.039008440780473,
-                "1977": 5.940658077040342,
-                "1978": 5.844241855731603,
-                "1979": 5.749200496521914,
-                "1980": 5.715655498342316,
-                "1981": 5.699214995771587,
-                "1982": 5.680174110386057,
-                "1983": 5.661377836946642,
-                "1984": 5.642705162000738,
-                "1985": 5.62475231064392,
-                "1986": 5.607880971795519,
-                "1987": 5.592715031528179,
-                "1988": 5.579368299809239,
-                "1989": 5.566516889165034,
-                "1990": 5.555985386178532,
-                "1991": 5.545994773429406,
-                "1992": 5.534534114780944,
-                "1993": 5.5242927614064605,
-                "1994": 5.515896179791894,
-                "1995": 5.50945054442731,
-                "1996": 5.5053659094084,
-                "1997": 5.502785366919871,
-                "1998": 5.502284783962483,
-                "1999": 5.504020536009854,
-                "2000": 5.507586176046965,
-                "2001": 5.476402723901021,
-                "2002": 5.465901400493061,
-                "2003": 5.4861496561152325,
-                "2004": 5.509707742792104,
-                "2005": 5.5372099687524505,
-                "2006": 5.569884117169195,
-                "2007": 5.606151115894368,
-                "2008": 5.6455456169640446,
-                "2009": 5.687015019466338,
-                "2010": 5.73016581312597,
-                "2011": 5.774725009257028,
-                "2012": 5.8198457615357055,
-                "2013": 5.866085840054876,
-                "2014": 5.914669617419748,
-                "2015": 5.965432740177276,
-                "2016": 6.015485934269338,
-                "2017": 6.0663001444092135,
-                "2018": 6.120499345501308,
-                "2019": 6.16610328299097,
-                "2020": 6.210949630225962,
-                "2021": 6.259070044313443,
-                "2022": 6.307583724707841,
-                "2023": 6.340888972283472
+        "User Query": "What is the social and economic impact of investing 1 million USD in clean energy in albania?",
+        "indicatorsModule Result": {
+            "wdi-1": {
+                "Country": "Albania",
+                "Indicator Name": "Alternative and nuclear energy (% of total energy use)",
+                "Values Per Year": {
+                    "1971": 3.5044457561860454,
+                    "1972": 3.986335213709285,
+                    "1973": 5.532737638222825,
+                    "1974": 6.123031305777501,
+                    "1975": 6.919162459520887,
+                    "1976": 7.459715709047349,
+                    "1977": 8.148727192070064,
+                    "1978": 7.956728350586404,
+                    "1979": 10.263759161465904,
+                    "1980": 8.259654631185422,
+                    "1981": 9.727009602779782,
+                    "1982": 9.985082750792769,
+                    "1983": 9.675467521614229,
+                    "1984": 7.964705003224036,
+                    "1985": 6.741081811517616,
+                    "1986": 11.986751784733665,
+                    "1987": 10.134538549589587,
+                    "1988": 8.669958511775008,
+                    "1989": 9.14789279975118,
+                    "1990": 4.676392164169472,
+                    "1991": 5.3995564778602345,
+                    "1992": 8.468053362077407,
+                    "1993": 10.012654626878009,
+                    "1994": 10.686573877482385,
+                    "1995": 12.31192778488616,
+                    "1996": 16.02528939949253,
+                    "1997": 14.372317442908193,
+                    "1998": 13.875295267774874,
+                    "1999": 20.236479742656847,
+                    "2000": 19.677698581947887,
+                    "2001": 18.295069799505946,
+                    "2002": 17.93678489512184,
+                    "2003": 18.7811504312036,
+                    "2004": 20.68211470153072,
+                    "2005": 20.33206363211398,
+                    "2006": 14.006447140135489,
+                    "2007": 15.54963185933446,
+                    "2008": 19.26881767654081,
+                    "2009": 21.87501519447765,
+                    "2010": 23.282191877561743,
+                    "2011": 22.10933619452633,
+                    "2012": 25.41917375668801,
+                    "2013": 26.06878501192281,
+                    "2014": 24.54805020993589
+                }
+            },
+            "wdi-2": {
+                "Country": "Albania",
+                "Indicator Name": "Nitrous oxide emissions in energy sector (% of total)",
+                "Values Per Year": {
+                    "1970": 4.48010149505687,
+                    "1971": 4.396255755880942,
+                    "1972": 4.621085892410222,
+                    "1973": 4.183107224551671,
+                    "1974": 4.20665806705428,
+                    "1975": 4.276091659722748,
+                    "1976": 3.9400921049104745,
+                    "1977": 3.713527604812721,
+                    "1978": 3.346638210276128,
+                    "1979": 3.638520578812985,
+                    "1980": 3.6659371421713978,
+                    "1981": 3.177388710356863,
+                    "1982": 3.3521009559435773,
+                    "1983": 2.991849346033819,
+                    "1984": 3.3013921313211543,
+                    "1985": 3.1609630035631984,
+                    "1986": 2.976350899226364,
+                    "1987": 3.090415505019566,
+                    "1988": 3.1018876322861493,
+                    "1989": 2.703972894855748,
+                    "1990": 4.40251572327044,
+                    "1991": 4.958677685950414,
+                    "1992": 5.3097345132743365,
+                    "1993": 4.273504273504273,
+                    "1994": 2.9197080291970803,
+                    "1995": 2.255639097744361,
+                    "1996": 2.5210084033613445,
+                    "1997": 3.5398230088495577,
+                    "1998": 3.418803418803419,
+                    "1999": 4.464285714285714,
+                    "2000": 4.23728813559322,
+                    "2001": 5.217391304347826,
+                    "2002": 4.651162790697675,
+                    "2003": 4.580152671755725,
+                    "2004": 5.511811023622047,
+                    "2005": 5.46875,
+                    "2006": 5.737704918032787,
+                    "2007": 5.737704918032787,
+                    "2008": 6.140350877192982
+                }
+            },
+            "wdi-3": {
+                "Country": "Albania",
+                "Indicator Name": "Population in the largest city (% of urban population)",
+                "Values Per Year": {
+                    "1960": 27.28054868396014,
+                    "1961": 26.81389118210564,
+                    "1962": 26.29426150130189,
+                    "1963": 25.812515512987105,
+                    "1964": 25.357719089673918,
+                    "1965": 24.94187583923733,
+                    "1966": 24.56248957116636,
+                    "1967": 24.190229403246704,
+                    "1968": 23.77375283838949,
+                    "1969": 23.37281665456129,
+                    "1970": 23.12389624683351,
+                    "1971": 22.90713335919284,
+                    "1972": 22.67678162323128,
+                    "1973": 22.47805230267279,
+                    "1974": 22.296333519156832,
+                    "1975": 22.115428617917598,
+                    "1976": 21.957673919599728,
+                    "1977": 21.798947012951427,
+                    "1978": 21.672489931173928,
+                    "1979": 21.56540558785095,
+                    "1980": 21.46543697069126,
+                    "1981": 21.37554945321521,
+                    "1982": 21.263820582520204,
+                    "1983": 21.15107694029889,
+                    "1984": 21.044465430884017,
+                    "1985": 20.947634279275512,
+                    "1986": 20.87822098435097,
+                    "1987": 20.79575799677516,
+                    "1988": 20.73826705517849,
+                    "1989": 20.550053120394804,
+                    "1990": 20.6536465250388,
+                    "1991": 21.26244461645225,
+                    "1992": 21.72932392992088,
+                    "1993": 22.209607158725188,
+                    "1994": 22.704187387926368,
+                    "1995": 23.21430442946181,
+                    "1996": 23.739682275664965,
+                    "1997": 24.280752197293907,
+                    "1998": 24.838570508591467,
+                    "1999": 25.414012390485468,
+                    "2000": 26.0073166324257,
+                    "2001": 26.54429748094848,
+                    "2002": 26.467729539940628,
+                    "2003": 26.423259288126783,
+                    "2004": 26.402924242380383,
+                    "2005": 26.419635357969668,
+                    "2006": 26.48044638077387,
+                    "2007": 26.586583016500988,
+                    "2008": 26.709049594405293,
+                    "2009": 26.82048606931236,
+                    "2010": 26.89647184405065,
+                    "2011": 26.924571198807445,
+                    "2012": 26.937062599791343,
+                    "2013": 26.97777680768068,
+                    "2014": 27.044958067478508,
+                    "2015": 27.15607043323584,
+                    "2016": 27.251469575604062,
+                    "2017": 27.347986485734125,
+                    "2018": 27.50639253798073,
+                    "2019": 27.73094192984293,
+                    "2020": 28.009724022704518,
+                    "2021": 28.39538248992645,
+                    "2022": 28.866769969381615,
+                    "2023": 29.07986101403391
+                }
+            },
+            "wdi-4": {
+                "Country": "Albania",
+                "Indicator Name": "Textiles and clothing (% of value added in manufacturing)",
+                "Values Per Year": {
+                    "1985": 27.749576988155667,
+                    "1986": 26.51804670912951,
+                    "1987": 24.46585672392124,
+                    "1988": 25.80108198085726,
+                    "1989": 27.47459540835529,
+                    "1990": 32.65895953757225,
+                    "2000": 26.54020310183809,
+                    "2001": 30.53495750843632,
+                    "2002": 36.48631281326308,
+                    "2003": 32.43084427384596,
+                    "2004": 26.549614698196923,
+                    "2005": 25.49758832043435,
+                    "2006": 22.29335176405849,
+                    "2007": 24.86899195307125,
+                    "2008": 22.562573812087017,
+                    "2009": 25.795405496234263,
+                    "2010": 25.59423356083472,
+                    "2011": 30.31235644601064,
+                    "2012": 26.578888989911302,
+                    "2013": 30.07647822898421,
+                    "2014": 32.0804915402347,
+                    "2015": 32.388368071687275,
+                    "2016": 33.7422202688089,
+                    "2017": 34.879836577745735,
+                    "2018": 36.57947312177671,
+                    "2019": 36.388975954865,
+                    "2020": 32.49714805895164,
+                    "2021": 32.49602470485437
+                }
+            },
+            "wdi-5": {
+                "Country": "Albania",
+                "Indicator Name": "Coverage of social protection and labor programs (% of population)",
+                "Values Per Year": {
+                    "2008": 67.7273947809717,
+                    "2012": 54.8855099994917,
+                    "2015": 4.71926745979056,
+                    "2016": 5.82714036189909,
+                    "2017": 49.6257263834819,
+                    "2018": 48.5011167583871
+                }
+            },
+            "wdi-6": {
+                "Country": "Albania",
+                "Indicator Name": "Prevalence of severe food insecurity in the population (%)",
+                "Values Per Year": {
+                    "2015": 10.0,
+                    "2016": 10.5,
+                    "2017": 11.0,
+                    "2018": 10.0,
+                    "2019": 8.8,
+                    "2020": 7.7,
+                    "2021": 7.5
+                }
+            },
+            "wdi-7": {
+                "Country": "Albania",
+                "Indicator Name": "Merchandise imports from low- and middle-income economies in Latin America & the Caribbean (% of total merchandise imports)",
+                "Values Per Year": {
+                    "1981": 1.7427432778349998,
+                    "1982": 2.7985656109682124,
+                    "1983": 2.4984404668126783,
+                    "1984": 1.530868316897341,
+                    "1985": 1.6385388507805478,
+                    "1986": 1.3897969114726438,
+                    "1987": 0.1606551626867998,
+                    "1988": 1.1372433841187242,
+                    "1989": 1.2548071012837387,
+                    "1990": 0.237867309636145,
+                    "1991": 0.2819387833065284,
+                    "1992": 0.0417436550019532,
+                    "1993": 0.0293148696199219,
+                    "1994": 0.1039870477071364,
+                    "1995": 0.4561281336143228,
+                    "1996": 0.5627373703140371,
+                    "1997": 6.825643042700467e-05,
+                    "1998": 0.0226398764293684,
+                    "1999": 0.0226174897821743,
+                    "2000": 0.5142088968259348,
+                    "2001": 0.8329622318650464,
+                    "2002": 0.8077340936916265,
+                    "2003": 1.277281496756674,
+                    "2004": 2.027614512306949,
+                    "2005": 1.452992250796411,
+                    "2006": 1.506354891987033,
+                    "2007": 1.979446112009652,
+                    "2008": 2.129689716391116,
+                    "2009": 1.810756009308943,
+                    "2010": 1.5133508460887353,
+                    "2011": 1.4655364704730869,
+                    "2012": 1.557139768127603,
+                    "2013": 1.7318911586762975,
+                    "2014": 1.8293262291361296,
+                    "2015": 1.779092988450889,
+                    "2016": 1.7642317842228448,
+                    "2017": 1.633600388233768,
+                    "2018": 1.7177629414717404,
+                    "2019": 1.515694822010753,
+                    "2020": 1.5625958412872736
+                }
+            },
+            "wdi-8": {
+                "Country": "Albania",
+                "Indicator Name": "Merchandise exports to low- and middle-income economies in Latin America & the Caribbean (% of total merchandise exports)",
+                "Values Per Year": {
+                    "1981": 0.0043176028674091,
+                    "1982": 0.0071687780263724,
+                    "1984": 0.0043209967237629,
+                    "1985": 0.0013753844324419,
+                    "1986": 0.0009533657205717,
+                    "1987": 0.0061230043815978,
+                    "1988": 0.0508551369573377,
+                    "1989": 0.0071810166133449,
+                    "1990": 0.0786216223971494,
+                    "1991": 0.2280183938561719,
+                    "1992": 2.977754601328476,
+                    "1994": 0.2465078060754729,
+                    "1996": 0.1259022234920238,
+                    "2001": 0.0002031108966193,
+                    "2003": 0.0095572749391081,
+                    "2004": 0.0133161360762319,
+                    "2005": 0.1476331059164702,
+                    "2006": 0.0715957331274057,
+                    "2007": 0.0811613693518029,
+                    "2008": 0.0224737364419477,
+                    "2009": 0.1148598952057357,
+                    "2010": 0.1948634533145634,
+                    "2011": 0.1268516510702458,
+                    "2012": 0.0973408636536981,
+                    "2013": 0.0737158113910128,
+                    "2014": 0.0570463982607538,
+                    "2015": 0.0234777576257508,
+                    "2016": 0.0232629249438984,
+                    "2017": 0.0355845023386846,
+                    "2018": 0.0910236544511347,
+                    "2019": 0.0596713000220712,
+                    "2020": 0.0474563427737335
+                }
             }
-        },
-        "wdi-2": {
-            "Country": "India",
-            "Indicator Name": "Taxes on goods and services (% of revenue)",
-            "Values Per Year": {
-                "1974": 44.07226691283133,
-                "1975": 42.67407090986758,
-                "1976": 42.356779579694845,
-                "1977": 40.29592454789305,
-                "1978": 42.67919914412349,
-                "1979": 42.60703050198331,
-                "1980": 41.39512135477166,
-                "1981": 39.43360668262619,
-                "1982": 37.353930594900845,
-                "1983": 41.64247037589265,
-                "1984": 39.16425348508317,
-                "1985": 37.42976556229068,
-                "1986": 36.00980765568463,
-                "1987": 36.01791582075807,
-                "1988": 35.56774980274012,
-                "1989": 34.87611379177644,
-                "1990": 35.8915383869314,
-                "1991": 34.482318988398106,
-                "1992": 33.23011005970028,
-                "1993": 31.800271872968334,
-                "1994": 31.26987990912041,
-                "1995": 28.355189260146428,
-                "1996": 27.35105386553106,
-                "1997": 27.306725786576408,
-                "1998": 28.874336590573584,
-                "1999": 27.961197438825657,
-                "2000": 28.92650465266225,
-                "2001": 30.15006450209049,
-                "2002": 30.36666494765613,
-                "2003": 30.203715320820866,
-                "2004": 29.71483419512648,
-                "2005": 30.762289684712744,
-                "2006": 28.49027428792325,
-                "2007": 24.900256172287484,
-                "2008": 26.264006172271493,
-                "2009": 23.776401904675826,
-                "2010": 21.67563443225621,
-                "2011": 24.981882079639423,
-                "2012": 26.00492108741699,
-                "2013": 27.30042527981719,
-                "2014": 25.557036927415396,
-                "2015": 29.833006949864693,
-                "2016": 32.93057846646643,
-                "2017": 37.34565266283868,
-                "2018": 40.867349883138246
-            }
-        },
-        "wdi-3": {
-            "Country": "India",
-            "Indicator Name": "External balance on goods and services (% of GDP)",
-            "Values Per Year": {
-                "1960": -2.37052020129462,
-                "1961": -1.6539902148127532,
-                "1962": -1.8628396128117437,
-                "1963": -1.6263310732907488,
-                "1964": -1.9594465748270369,
-                "1965": -1.904088807756436,
-                "1966": -2.529136192137054,
-                "1967": -1.9121726774229328,
-                "1968": -0.904202463984552,
-                "1969": -0.3170910024858353,
-                "1970": -0.096119213885572,
-                "1971": -0.3351961243016124,
-                "1972": 0.3185789258576566,
-                "1973": -0.5145696341151018,
-                "1974": -1.189248246983384,
-                "1975": -0.9998538982737162,
-                "1976": 0.5718226506559126,
-                "1977": 0.1182424899231589,
-                "1978": -0.2733613734685207,
-                "1979": -1.4195282167751944,
-                "1980": -3.105474584182422,
-                "1981": -2.635211508464306,
-                "1982": -2.159328052267907,
-                "1983": -2.015335038323126,
-                "1984": -1.4425731583566657,
-                "1985": -2.390926201574545,
-                "1986": -1.82682857865279,
-                "1987": -1.3756522676678535,
-                "1988": -1.4200106064791442,
-                "1989": -1.135871534783301,
-                "1990": -1.399561041907411,
-                "1991": 0.0007549899358743,
-                "1992": -0.74724519178629,
-                "1993": 0.016895123258149,
-                "1994": -0.3019745440346636,
-                "1995": -1.1795126361254236,
-                "1996": -1.1591493281740946,
-                "1997": -1.2379522302899428,
-                "1998": -1.6625317204443606,
-                "1999": -1.911468818691064,
-                "2000": -0.906450287751646,
-                "2001": -0.8764954856149685,
-                "2002": -0.9798950864319194,
-                "2003": -0.696608416561172,
-                "2004": -1.7855641333232026,
-                "2005": -2.791176225225204,
-                "2006": -3.188597654849643,
-                "2007": -4.08686918151651,
-                "2008": -5.173505918906892,
-                "2009": -5.471830894213974,
-                "2010": -4.453339999815483,
-                "2011": -6.543057374364719,
-                "2012": -6.724860404528818,
-                "2013": -2.9824093455508254,
-                "2014": -2.9862597307212755,
-                "2015": -2.296535553014411,
-                "2016": -1.766015892071013,
-                "2017": -3.1589672759535543,
-                "2018": -3.761312134610517,
-                "2019": -2.576873736048571,
-                "2020": -0.3936306477077076,
-                "2021": -2.638906005753958,
-                "2022": -3.6559380894354394
-            }
-        },
-        "wdi-4": {
-            "Country": "India",
-            "Indicator Name": "Textiles and clothing (% of value added in manufacturing)",
-            "Values Per Year": {
-                "1963": 27.365467992858967,
-                "1964": 27.10730684201576,
-                "1965": 25.252818784145063,
-                "1966": 23.637192342752964,
-                "1967": 23.937832959098312,
-                "1968": 23.28755959414857,
-                "1969": 21.053702196908056,
-                "1970": 21.00090991810737,
-                "1971": 21.97971708950081,
-                "1972": 23.56281810875971,
-                "1973": 24.93588223884135,
-                "1974": 22.02225447508466,
-                "1975": 19.452395768512755,
-                "1976": 18.119531121017005,
-                "1977": 20.05760160282721,
-                "1978": 21.98752865205925,
-                "1979": 22.94110147883733,
-                "1980": 21.320906908716317,
-                "1981": 17.780928219668706,
-                "1982": 15.565059431007109,
-                "1983": 16.145000614930513,
-                "1984": 15.889432644389508,
-                "1985": 14.978859011476535,
-                "1986": 15.654454592787594,
-                "1987": 13.642308905477869,
-                "1988": 12.715627466188868,
-                "1989": 14.884717017912452,
-                "1990": 15.171388637222451,
-                "1991": 14.04540954028618,
-                "1992": 12.571579792047258,
-                "1993": 15.473862091569991,
-                "1994": 14.664937516779103,
-                "1995": 11.166131998547767,
-                "1996": 12.003590208076329,
-                "1997": 12.209736053712891,
-                "1998": 11.753870662617611,
-                "1999": 11.21581037011567,
-                "2000": 12.554205336163804,
-                "2001": 11.002771054206375,
-                "2002": 10.482853057701162,
-                "2003": 9.516972618193009,
-                "2004": 8.680797795554474,
-                "2005": 8.942498410484706,
-                "2006": 9.001576410328308,
-                "2007": 7.728892159655968,
-                "2008": 7.476953009446411,
-                "2009": 8.177708780074685,
-                "2010": 8.825094490987754,
-                "2011": 7.193489550654738,
-                "2012": 8.859815410462103,
-                "2013": 9.226323489981828,
-                "2014": 8.508955330438418,
-                "2015": 8.700137702090723,
-                "2016": 8.432028531471081,
-                "2017": 8.579153760079846,
-                "2018": 9.235921444335146,
-                "2019": 9.265872175707996,
-                "2020": 9.265872443403987,
-                "2021": 9.265872443061337
-            }
-        },
-        "wdi-5": {
-            "Country": "India",
-            "Indicator Name": "Women participating in the three decisions (own health care, major household purchases, and visiting family) (% of women age 15-49)",
-            "Values Per Year": {
-                "2006": 39.3,
-                "2016": 63.0,
-                "2021": 73.3
-            }
-        },
-        "wdi-6": {
-            "Country": "India",
-            "Indicator Name": "Female share of employment in senior and middle management (%)",
-            "Values Per Year": {
-                "2010": 12.153,
-                "2018": 14.356,
-                "2019": 17.001,
-                "2020": 17.328,
-                "2021": 16.956,
-                "2022": 16.209
-            }
-        },
-        "wdi-7": {
-            "Country": "India",
-            "Indicator Name": "Children in employment, study and work (% of children in employment, ages 7-14)",
-            "Values Per Year": {
-                "2000": 10.2,
-                "2005": 15.2,
-                "2006": 67.2,
-                "2010": 32.5,
-                "2012": 17.5
-            }
-        },
-        "wdi-8": {
-            "Country": "India",
-            "Indicator Name": "Merchandise imports from low- and middle-income economies in Latin America & the Caribbean (% of total merchandise imports)",
-            "Values Per Year": {
-                "1960": 0.2356183871254556,
-                "1961": 0.2078344553381828,
-                "1962": 0.0865351332641052,
-                "1963": 0.0451041495817615,
-                "1964": 0.2855961820299876,
-                "1965": 0.2740812867395146,
-                "1966": 0.3733938573049749,
-                "1967": 0.8568435231609668,
-                "1968": 0.405985292006317,
-                "1969": 0.963546835275549,
-                "1970": 0.783448223148984,
-                "1971": 0.4711635456405956,
-                "1972": 0.3413320449502541,
-                "1973": 2.599904749534572,
-                "1974": 1.569158705019491,
-                "1975": 1.08839651519479,
-                "1976": 0.8550260980092544,
-                "1977": 2.6954784699407623,
-                "1978": 1.5978024142239458,
-                "1979": 1.0744258363296362,
-                "1980": 1.8991594824387288,
-                "1981": 2.192987279340406,
-                "1982": 1.9519797824493064,
-                "1983": 1.5995575238389623,
-                "1984": 3.146814244198485,
-                "1985": 2.5079059042542373,
-                "1986": 1.923226869720757,
-                "1987": 2.359215821804261,
-                "1988": 2.11602252115321,
-                "1989": 2.0084696898251204,
-                "1990": 1.782548165621153,
-                "1991": 1.6493666549321693,
-                "1992": 1.483823513981984,
-                "1993": 1.0158210341269476,
-                "1994": 2.746220501091481,
-                "1995": 1.2621739560344285,
-                "1996": 1.0024636906846982,
-                "1997": 1.0741158915479776,
-                "1998": 1.4113394561344526,
-                "1999": 1.6606298472876069,
-                "2000": 1.3587924163254848,
-                "2001": 1.694251280536204,
-                "2002": 1.4472506585217866,
-                "2003": 1.3036877787532457,
-                "2004": 1.3674236641715682,
-                "2005": 1.2912946451201788,
-                "2006": 1.5536579263111383,
-                "2007": 1.494819706358677,
-                "2008": 1.275979430552055,
-                "2009": 2.042703949947409,
-                "2010": 1.8923212805747196,
-                "2011": 1.829050999305485,
-                "2012": 2.656542666163681,
-                "2013": 3.1665394769403705,
-                "2014": 3.593514381727727,
-                "2015": 3.213033528032022,
-                "2016": 3.208746495565783,
-                "2017": 3.5513665309955464,
-                "2018": 3.283871132521788,
-                "2019": 2.997655732307551,
-                "2020": 3.5756178830530114
-            }
-        },
-        "wdi-9": {
-            "Country": "India",
-            "Indicator Name": "Merchandise exports to low- and middle-income economies in Latin America & the Caribbean (% of total merchandise exports)",
-            "Values Per Year": {
-                "1960": 2.4819185382565663,
-                "1961": 2.0109953703703702,
-                "1962": 2.5550597380164097,
-                "1963": 2.1188859988580853,
-                "1964": 1.7970089259324935,
-                "1965": 1.3684529215864365,
-                "1966": 0.5877203951481805,
-                "1967": 0.3425937461068892,
-                "1968": 0.2346208869814019,
-                "1969": 0.2247928460086964,
-                "1970": 0.3487952729841758,
-                "1971": 0.7354405530740561,
-                "1972": 0.3667361304825821,
-                "1973": 0.2904018634401295,
-                "1974": 0.6481057938910504,
-                "1975": 0.3702999291938873,
-                "1976": 0.2461188943581976,
-                "1977": 0.1855881967234885,
-                "1978": 0.1868552324747752,
-                "1979": 0.1956126504862967,
-                "1980": 0.3241667752751744,
-                "1981": 0.1845777929476634,
-                "1982": 0.1254366627950006,
-                "1983": 0.084812725183604,
-                "1984": 0.1020136467341543,
-                "1985": 0.1525966372011602,
-                "1986": 0.1897559561130713,
-                "1987": 0.1478389362947646,
-                "1988": 0.3086421465652328,
-                "1989": 0.2608466506240535,
-                "1990": 0.3096094392748137,
-                "1991": 0.4500793304690836,
-                "1992": 0.5941027528587759,
-                "1993": 0.798108905921516,
-                "1994": 0.9645848943570556,
-                "1995": 0.7916322519075221,
-                "1996": 0.936283654286738,
-                "1997": 1.1908587223613836,
-                "1998": 1.2867906425487483,
-                "1999": 1.3001917368715918,
-                "2000": 1.5578066354881166,
-                "2001": 1.6689990402742865,
-                "2002": 1.907505834159278,
-                "2003": 1.5481652250344675,
-                "2004": 2.090374181134957,
-                "2005": 2.4339344984537483,
-                "2006": 2.6364666949632145,
-                "2007": 2.9789987896888794,
-                "2008": 2.932017752428802,
-                "2009": 2.177071694069787,
-                "2010": 2.8621330043471045,
-                "2011": 3.0930125464102862,
-                "2012": 3.667136149086296,
-                "2013": 3.4181000872766507,
-                "2014": 4.314024368703162,
-                "2015": 3.589646299823792,
-                "2016": 3.473299248077232,
-                "2017": 3.558333220801318,
-                "2018": 3.605644215807888,
-                "2019": 3.699242449894263,
-                "2020": 3.825279247822932
+        }
+    },
+    {
+        "User Query": "What is the socio-economic and environmental impact of the rising demand for critical minerals on indigenous communities in india?",
+        "indicatorsModule Result": {
+            "wdi-1": {
+                "Country": "India",
+                "Indicator Name": "Population in the largest city (% of urban population)",
+                "Values Per Year": {
+                    "1960": 7.393964279964374,
+                    "1961": 7.353998456908833,
+                    "1962": 7.265601501658385,
+                    "1963": 7.178812647032981,
+                    "1964": 7.093416460434016,
+                    "1965": 7.013976468304081,
+                    "1966": 6.941399191958995,
+                    "1967": 6.87114451052887,
+                    "1968": 6.79941845278009,
+                    "1969": 6.726077890662034,
+                    "1970": 6.65325148521603,
+                    "1971": 6.571182274777097,
+                    "1972": 6.460730878532542,
+                    "1973": 6.351308580648267,
+                    "1974": 6.243316543702751,
+                    "1975": 6.139100504678641,
+                    "1976": 6.039008440780473,
+                    "1977": 5.940658077040342,
+                    "1978": 5.844241855731603,
+                    "1979": 5.749200496521914,
+                    "1980": 5.715655498342316,
+                    "1981": 5.699214995771587,
+                    "1982": 5.680174110386057,
+                    "1983": 5.661377836946642,
+                    "1984": 5.642705162000738,
+                    "1985": 5.62475231064392,
+                    "1986": 5.607880971795519,
+                    "1987": 5.592715031528179,
+                    "1988": 5.579368299809239,
+                    "1989": 5.566516889165034,
+                    "1990": 5.555985386178532,
+                    "1991": 5.545994773429406,
+                    "1992": 5.534534114780944,
+                    "1993": 5.5242927614064605,
+                    "1994": 5.515896179791894,
+                    "1995": 5.50945054442731,
+                    "1996": 5.5053659094084,
+                    "1997": 5.502785366919871,
+                    "1998": 5.502284783962483,
+                    "1999": 5.504020536009854,
+                    "2000": 5.507586176046965,
+                    "2001": 5.476402723901021,
+                    "2002": 5.465901400493061,
+                    "2003": 5.4861496561152325,
+                    "2004": 5.509707742792104,
+                    "2005": 5.5372099687524505,
+                    "2006": 5.569884117169195,
+                    "2007": 5.606151115894368,
+                    "2008": 5.6455456169640446,
+                    "2009": 5.687015019466338,
+                    "2010": 5.73016581312597,
+                    "2011": 5.774725009257028,
+                    "2012": 5.8198457615357055,
+                    "2013": 5.866085840054876,
+                    "2014": 5.914669617419748,
+                    "2015": 5.965432740177276,
+                    "2016": 6.015485934269338,
+                    "2017": 6.0663001444092135,
+                    "2018": 6.120499345501308,
+                    "2019": 6.16610328299097,
+                    "2020": 6.210949630225962,
+                    "2021": 6.259070044313443,
+                    "2022": 6.307583724707841,
+                    "2023": 6.340888972283472
+                }
+            },
+            "wdi-2": {
+                "Country": "India",
+                "Indicator Name": "Taxes on goods and services (% of revenue)",
+                "Values Per Year": {
+                    "1974": 44.07226691283133,
+                    "1975": 42.67407090986758,
+                    "1976": 42.356779579694845,
+                    "1977": 40.29592454789305,
+                    "1978": 42.67919914412349,
+                    "1979": 42.60703050198331,
+                    "1980": 41.39512135477166,
+                    "1981": 39.43360668262619,
+                    "1982": 37.353930594900845,
+                    "1983": 41.64247037589265,
+                    "1984": 39.16425348508317,
+                    "1985": 37.42976556229068,
+                    "1986": 36.00980765568463,
+                    "1987": 36.01791582075807,
+                    "1988": 35.56774980274012,
+                    "1989": 34.87611379177644,
+                    "1990": 35.8915383869314,
+                    "1991": 34.482318988398106,
+                    "1992": 33.23011005970028,
+                    "1993": 31.800271872968334,
+                    "1994": 31.26987990912041,
+                    "1995": 28.355189260146428,
+                    "1996": 27.35105386553106,
+                    "1997": 27.306725786576408,
+                    "1998": 28.874336590573584,
+                    "1999": 27.961197438825657,
+                    "2000": 28.92650465266225,
+                    "2001": 30.15006450209049,
+                    "2002": 30.36666494765613,
+                    "2003": 30.203715320820866,
+                    "2004": 29.71483419512648,
+                    "2005": 30.762289684712744,
+                    "2006": 28.49027428792325,
+                    "2007": 24.900256172287484,
+                    "2008": 26.264006172271493,
+                    "2009": 23.776401904675826,
+                    "2010": 21.67563443225621,
+                    "2011": 24.981882079639423,
+                    "2012": 26.00492108741699,
+                    "2013": 27.30042527981719,
+                    "2014": 25.557036927415396,
+                    "2015": 29.833006949864693,
+                    "2016": 32.93057846646643,
+                    "2017": 37.34565266283868,
+                    "2018": 40.867349883138246
+                }
+            },
+            "wdi-3": {
+                "Country": "India",
+                "Indicator Name": "External balance on goods and services (% of GDP)",
+                "Values Per Year": {
+                    "1960": -2.37052020129462,
+                    "1961": -1.6539902148127532,
+                    "1962": -1.8628396128117437,
+                    "1963": -1.6263310732907488,
+                    "1964": -1.9594465748270369,
+                    "1965": -1.904088807756436,
+                    "1966": -2.529136192137054,
+                    "1967": -1.9121726774229328,
+                    "1968": -0.904202463984552,
+                    "1969": -0.3170910024858353,
+                    "1970": -0.096119213885572,
+                    "1971": -0.3351961243016124,
+                    "1972": 0.3185789258576566,
+                    "1973": -0.5145696341151018,
+                    "1974": -1.189248246983384,
+                    "1975": -0.9998538982737162,
+                    "1976": 0.5718226506559126,
+                    "1977": 0.1182424899231589,
+                    "1978": -0.2733613734685207,
+                    "1979": -1.4195282167751944,
+                    "1980": -3.105474584182422,
+                    "1981": -2.635211508464306,
+                    "1982": -2.159328052267907,
+                    "1983": -2.015335038323126,
+                    "1984": -1.4425731583566657,
+                    "1985": -2.390926201574545,
+                    "1986": -1.82682857865279,
+                    "1987": -1.3756522676678535,
+                    "1988": -1.4200106064791442,
+                    "1989": -1.135871534783301,
+                    "1990": -1.399561041907411,
+                    "1991": 0.0007549899358743,
+                    "1992": -0.74724519178629,
+                    "1993": 0.016895123258149,
+                    "1994": -0.3019745440346636,
+                    "1995": -1.1795126361254236,
+                    "1996": -1.1591493281740946,
+                    "1997": -1.2379522302899428,
+                    "1998": -1.6625317204443606,
+                    "1999": -1.911468818691064,
+                    "2000": -0.906450287751646,
+                    "2001": -0.8764954856149685,
+                    "2002": -0.9798950864319194,
+                    "2003": -0.696608416561172,
+                    "2004": -1.7855641333232026,
+                    "2005": -2.791176225225204,
+                    "2006": -3.188597654849643,
+                    "2007": -4.08686918151651,
+                    "2008": -5.173505918906892,
+                    "2009": -5.471830894213974,
+                    "2010": -4.453339999815483,
+                    "2011": -6.543057374364719,
+                    "2012": -6.724860404528818,
+                    "2013": -2.9824093455508254,
+                    "2014": -2.9862597307212755,
+                    "2015": -2.296535553014411,
+                    "2016": -1.766015892071013,
+                    "2017": -3.1589672759535543,
+                    "2018": -3.761312134610517,
+                    "2019": -2.576873736048571,
+                    "2020": -0.3936306477077076,
+                    "2021": -2.638906005753958,
+                    "2022": -3.6559380894354394
+                }
+            },
+            "wdi-4": {
+                "Country": "India",
+                "Indicator Name": "Textiles and clothing (% of value added in manufacturing)",
+                "Values Per Year": {
+                    "1963": 27.365467992858967,
+                    "1964": 27.10730684201576,
+                    "1965": 25.252818784145063,
+                    "1966": 23.637192342752964,
+                    "1967": 23.937832959098312,
+                    "1968": 23.28755959414857,
+                    "1969": 21.053702196908056,
+                    "1970": 21.00090991810737,
+                    "1971": 21.97971708950081,
+                    "1972": 23.56281810875971,
+                    "1973": 24.93588223884135,
+                    "1974": 22.02225447508466,
+                    "1975": 19.452395768512755,
+                    "1976": 18.119531121017005,
+                    "1977": 20.05760160282721,
+                    "1978": 21.98752865205925,
+                    "1979": 22.94110147883733,
+                    "1980": 21.320906908716317,
+                    "1981": 17.780928219668706,
+                    "1982": 15.565059431007109,
+                    "1983": 16.145000614930513,
+                    "1984": 15.889432644389508,
+                    "1985": 14.978859011476535,
+                    "1986": 15.654454592787594,
+                    "1987": 13.642308905477869,
+                    "1988": 12.715627466188868,
+                    "1989": 14.884717017912452,
+                    "1990": 15.171388637222451,
+                    "1991": 14.04540954028618,
+                    "1992": 12.571579792047258,
+                    "1993": 15.473862091569991,
+                    "1994": 14.664937516779103,
+                    "1995": 11.166131998547767,
+                    "1996": 12.003590208076329,
+                    "1997": 12.209736053712891,
+                    "1998": 11.753870662617611,
+                    "1999": 11.21581037011567,
+                    "2000": 12.554205336163804,
+                    "2001": 11.002771054206375,
+                    "2002": 10.482853057701162,
+                    "2003": 9.516972618193009,
+                    "2004": 8.680797795554474,
+                    "2005": 8.942498410484706,
+                    "2006": 9.001576410328308,
+                    "2007": 7.728892159655968,
+                    "2008": 7.476953009446411,
+                    "2009": 8.177708780074685,
+                    "2010": 8.825094490987754,
+                    "2011": 7.193489550654738,
+                    "2012": 8.859815410462103,
+                    "2013": 9.226323489981828,
+                    "2014": 8.508955330438418,
+                    "2015": 8.700137702090723,
+                    "2016": 8.432028531471081,
+                    "2017": 8.579153760079846,
+                    "2018": 9.235921444335146,
+                    "2019": 9.265872175707996,
+                    "2020": 9.265872443403987,
+                    "2021": 9.265872443061337
+                }
+            },
+            "wdi-5": {
+                "Country": "India",
+                "Indicator Name": "Women participating in the three decisions (own health care, major household purchases, and visiting family) (% of women age 15-49)",
+                "Values Per Year": {
+                    "2006": 39.3,
+                    "2016": 63.0,
+                    "2021": 73.3
+                }
+            },
+            "wdi-6": {
+                "Country": "India",
+                "Indicator Name": "Female share of employment in senior and middle management (%)",
+                "Values Per Year": {
+                    "2010": 12.153,
+                    "2018": 14.356,
+                    "2019": 17.001,
+                    "2020": 17.328,
+                    "2021": 16.956,
+                    "2022": 16.209
+                }
+            },
+            "wdi-7": {
+                "Country": "India",
+                "Indicator Name": "Children in employment, study and work (% of children in employment, ages 7-14)",
+                "Values Per Year": {
+                    "2000": 10.2,
+                    "2005": 15.2,
+                    "2006": 67.2,
+                    "2010": 32.5,
+                    "2012": 17.5
+                }
+            },
+            "wdi-8": {
+                "Country": "India",
+                "Indicator Name": "Merchandise imports from low- and middle-income economies in Latin America & the Caribbean (% of total merchandise imports)",
+                "Values Per Year": {
+                    "1960": 0.2356183871254556,
+                    "1961": 0.2078344553381828,
+                    "1962": 0.0865351332641052,
+                    "1963": 0.0451041495817615,
+                    "1964": 0.2855961820299876,
+                    "1965": 0.2740812867395146,
+                    "1966": 0.3733938573049749,
+                    "1967": 0.8568435231609668,
+                    "1968": 0.405985292006317,
+                    "1969": 0.963546835275549,
+                    "1970": 0.783448223148984,
+                    "1971": 0.4711635456405956,
+                    "1972": 0.3413320449502541,
+                    "1973": 2.599904749534572,
+                    "1974": 1.569158705019491,
+                    "1975": 1.08839651519479,
+                    "1976": 0.8550260980092544,
+                    "1977": 2.6954784699407623,
+                    "1978": 1.5978024142239458,
+                    "1979": 1.0744258363296362,
+                    "1980": 1.8991594824387288,
+                    "1981": 2.192987279340406,
+                    "1982": 1.9519797824493064,
+                    "1983": 1.5995575238389623,
+                    "1984": 3.146814244198485,
+                    "1985": 2.5079059042542373,
+                    "1986": 1.923226869720757,
+                    "1987": 2.359215821804261,
+                    "1988": 2.11602252115321,
+                    "1989": 2.0084696898251204,
+                    "1990": 1.782548165621153,
+                    "1991": 1.6493666549321693,
+                    "1992": 1.483823513981984,
+                    "1993": 1.0158210341269476,
+                    "1994": 2.746220501091481,
+                    "1995": 1.2621739560344285,
+                    "1996": 1.0024636906846982,
+                    "1997": 1.0741158915479776,
+                    "1998": 1.4113394561344526,
+                    "1999": 1.6606298472876069,
+                    "2000": 1.3587924163254848,
+                    "2001": 1.694251280536204,
+                    "2002": 1.4472506585217866,
+                    "2003": 1.3036877787532457,
+                    "2004": 1.3674236641715682,
+                    "2005": 1.2912946451201788,
+                    "2006": 1.5536579263111383,
+                    "2007": 1.494819706358677,
+                    "2008": 1.275979430552055,
+                    "2009": 2.042703949947409,
+                    "2010": 1.8923212805747196,
+                    "2011": 1.829050999305485,
+                    "2012": 2.656542666163681,
+                    "2013": 3.1665394769403705,
+                    "2014": 3.593514381727727,
+                    "2015": 3.213033528032022,
+                    "2016": 3.208746495565783,
+                    "2017": 3.5513665309955464,
+                    "2018": 3.283871132521788,
+                    "2019": 2.997655732307551,
+                    "2020": 3.5756178830530114
+                }
+            },
+            "wdi-9": {
+                "Country": "India",
+                "Indicator Name": "Merchandise exports to low- and middle-income economies in Latin America & the Caribbean (% of total merchandise exports)",
+                "Values Per Year": {
+                    "1960": 2.4819185382565663,
+                    "1961": 2.0109953703703702,
+                    "1962": 2.5550597380164097,
+                    "1963": 2.1188859988580853,
+                    "1964": 1.7970089259324935,
+                    "1965": 1.3684529215864365,
+                    "1966": 0.5877203951481805,
+                    "1967": 0.3425937461068892,
+                    "1968": 0.2346208869814019,
+                    "1969": 0.2247928460086964,
+                    "1970": 0.3487952729841758,
+                    "1971": 0.7354405530740561,
+                    "1972": 0.3667361304825821,
+                    "1973": 0.2904018634401295,
+                    "1974": 0.6481057938910504,
+                    "1975": 0.3702999291938873,
+                    "1976": 0.2461188943581976,
+                    "1977": 0.1855881967234885,
+                    "1978": 0.1868552324747752,
+                    "1979": 0.1956126504862967,
+                    "1980": 0.3241667752751744,
+                    "1981": 0.1845777929476634,
+                    "1982": 0.1254366627950006,
+                    "1983": 0.084812725183604,
+                    "1984": 0.1020136467341543,
+                    "1985": 0.1525966372011602,
+                    "1986": 0.1897559561130713,
+                    "1987": 0.1478389362947646,
+                    "1988": 0.3086421465652328,
+                    "1989": 0.2608466506240535,
+                    "1990": 0.3096094392748137,
+                    "1991": 0.4500793304690836,
+                    "1992": 0.5941027528587759,
+                    "1993": 0.798108905921516,
+                    "1994": 0.9645848943570556,
+                    "1995": 0.7916322519075221,
+                    "1996": 0.936283654286738,
+                    "1997": 1.1908587223613836,
+                    "1998": 1.2867906425487483,
+                    "1999": 1.3001917368715918,
+                    "2000": 1.5578066354881166,
+                    "2001": 1.6689990402742865,
+                    "2002": 1.907505834159278,
+                    "2003": 1.5481652250344675,
+                    "2004": 2.090374181134957,
+                    "2005": 2.4339344984537483,
+                    "2006": 2.6364666949632145,
+                    "2007": 2.9789987896888794,
+                    "2008": 2.932017752428802,
+                    "2009": 2.177071694069787,
+                    "2010": 2.8621330043471045,
+                    "2011": 3.0930125464102862,
+                    "2012": 3.667136149086296,
+                    "2013": 3.4181000872766507,
+                    "2014": 4.314024368703162,
+                    "2015": 3.589646299823792,
+                    "2016": 3.473299248077232,
+                    "2017": 3.558333220801318,
+                    "2018": 3.605644215807888,
+                    "2019": 3.699242449894263,
+                    "2020": 3.825279247822932
+                }
             }
         }
     }
