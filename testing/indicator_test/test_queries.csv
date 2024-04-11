@@ -1,0 +1,5 @@
+query,sample_answer,bert_score,bert_score_gpt
+"What has been the average percentage of the population with access to energy, electricity, and clean cooking solutions in Haiti over the past five years?","According to World Bank's World Development Indicator data, in Haiti, 46.32% of the population had access to electricity, with access to clean cooking solutions standing at 4.2%.",0,0
+"How much private investment did Ethiopia attract in its energy sector in 2021?","According to the World Bank's World Development Indicators, the amount of private investment in Ethiopia's energy sector was $271,000,000 in US dollars.",0,0
+"What percentage of the United Kingdom's total final energy consumption from 2015 to 2019 was derived from renewable sources?","According to data from the World Bank's World Development Indicators, the percentage stood at 7.71 in 2015 and continued to rise, reaching 11.39 by 2019.",0,0
+"What percentage of China's total energy consumption in 2014 came from fossil fuels such as coal, oil, natural gas, and similar sources?","Based on statistics from the World Bank's World Development Indicators, the figure stands at 87.67%.",0,0
