@@ -1,0 +1,34 @@
+[
+    {
+        "query": "What has been the average percentage of the population with access to energy, electricity, and clean cooking solutions in Haiti over the past five years?",
+        "sample_answer": "According to World Bank's World Development Indicator data, in Haiti, 46.32% of the population had access to electricity, with access to clean cooking solutions standing at 4.2%.",
+        "bert_score": "0",
+        "bert_score_gpt": "0",
+        "moonshot_model_answer": "The average percentage of the population with access to energy, electricity, and clean cooking solutions in Haiti over the past five years cannot be determined based on the provided <Sources> extract.",
+        "chat_gpt_answer": "According to data from the World Bank, the average percentage of the population with access to electricity in Haiti over the past five years is as follows:\n\n- 2016: 38.8%\n- 2017: 40.6%\n- 2018: 42.4%\n- 2019: 44.2%\n- 2020: 45.9%\n\nUnfortunately, specific data on the average percentage of the population with access to clean cooking solutions in Haiti over the past five years is not readily available."
+    },
+    {
+        "query": "How much private investment did Ethiopia attract in its energy sector in 2021?",
+        "sample_answer": "According to the World Bank's World Development Indicators, the amount of private investment in Ethiopia's energy sector was $271,000,000 in US dollars.",
+        "bert_score": "0",
+        "bert_score_gpt": "0",
+        "moonshot_model_answer": "According to the provided data, Ethiopia attracted a private investment of 271,000,000 US dollars in its energy sector in 2021.",
+        "chat_gpt_answer": "As an AI language model, I don't have real-time data. However, as of my last update in September 2021, I don't have specific information on the exact amount of private investment Ethiopia attracted in its energy sector in 2021. To obtain the most accurate and up-to-date information, it would be best to refer to official sources such as reports from the Ethiopian government, international organizations, or reputable news outlets that cover investment in Ethiopia's energy sector."
+    },
+    {
+        "query": "What percentage of the United Kingdom's total final energy consumption from 2015 to 2019 was derived from renewable sources?",
+        "sample_answer": "According to data from the World Bank's World Development Indicators, the percentage stood at 7.71 in 2015 and continued to rise, reaching 11.39 by 2019.",
+        "bert_score": "0",
+        "bert_score_gpt": "0",
+        "moonshot_model_answer": "According to the provided data, the percentage of the United Kingdom's total final energy consumption derived from renewable sources from 2015 to 2019 is as follows:\n\n- 2015: 7.71%\n- 2018: 10.09%\n- 2019: 11.39%\n- 2016: 7.68%\n- 2017: 8.81%\n\nPlease note that the data for the remaining years is not available in the provided sources.",
+        "chat_gpt_answer": "According to the UK government's official statistics, the percentage of the United Kingdom's total final energy consumption derived from renewable sources from 2015 to 2019 is as follows:\n\n- 2015: 8.3%\n- 2016: 9.3%\n- 2017: 10.2%\n- 2018: 11.5%\n- 2019: 12.8%\n\nTherefore, the percentage of the United Kingdom's total final energy consumption derived from renewable sources increased from 8.3% in 2015 to 12.8% in 2019."
+    },
+    {
+        "query": "What percentage of China's total energy consumption in 2014 came from fossil fuels such as coal, oil, natural gas, and similar sources?",
+        "sample_answer": "Based on statistics from the World Bank's World Development Indicators, the figure stands at 87.67%.",
+        "bert_score": "0",
+        "bert_score_gpt": "0",
+        "moonshot_model_answer": "According to the provided data, in 2014, approximately 87.67% of China's total energy consumption came from fossil fuels such as coal, oil, natural gas, and similar sources.",
+        "chat_gpt_answer": "According to the International Energy Agency (IEA), in 2014, approximately 86.8% of China's total energy consumption came from fossil fuels such as coal, oil, natural gas, and similar sources."
+    }
+]
