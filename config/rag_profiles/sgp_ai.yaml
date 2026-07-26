@@ -204,6 +204,7 @@ tag_rules:
       - evaluation
 
 scope:
+  unmatched_query_policy: retrieve
   domain_terms:
     - sgp
     - gef
