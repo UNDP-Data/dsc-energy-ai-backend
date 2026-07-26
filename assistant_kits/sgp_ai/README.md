@@ -8,6 +8,10 @@ backend pull request.
 - Assistant ID: `sgp_ai`
 - Display name: `SGP AI`
 - Backend route prefix: `/assistants/sgp_ai/...`
+- Model locale query: `ui_locale=en|pt|fr|es|ru|zh|ar`
+  - Answers follow the language of the latest user question.
+  - Suggested questions use `ui_locale`.
+  - Ambiguous or language-neutral questions fall back to `ui_locale`.
 - LanceDB tables:
   - `sgp_ai_sources`
   - `sgp_ai_documents`

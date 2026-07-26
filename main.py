@@ -42,29 +42,16 @@ from src.security import authenticate
 load_dotenv()
 logger = logging.getLogger(__name__)
 SGP_AI_PAGES_ASSISTANT_ID = "sgp_ai"
-SgpAiDataSource = Literal["innovation_library", "project_database", "all"]
-SGP_AI_PAGES_SOURCE_IDS: dict[SgpAiDataSource, tuple[str, ...] | None] = {
-    "innovation_library": ("gef_sgp_innovation_library",),
-    "project_database": ("gef_sgp_intranet_projects",),
-    "all": None,
-}
+SgpAiDataSource = Literal["innovation_library"]
+AssistantUiLocale = Literal["en", "pt", "fr", "es", "ru", "zh", "ar"]
+SGP_AI_PAGES_SOURCE_IDS = ("gef_sgp_innovation_library",)
 
 
-def _sgp_ai_pages_source_ids(data_source: SgpAiDataSource) -> tuple[str, ...] | None:
+def _sgp_ai_pages_source_ids(_data_source: SgpAiDataSource) -> tuple[str, ...]:
     """
-    Map the public SGP AI data-source switch to corpus source IDs.
+    Restrict public SGP AI Pages requests to the approved Innovation Library.
     """
-    return SGP_AI_PAGES_SOURCE_IDS[data_source]
-
-
-def _sgp_ai_pages_selected_data_source(
-    data_source: SgpAiDataSource,
-    dataset: SgpAiDataSource | None,
-    corpus: SgpAiDataSource | None,
-) -> SgpAiDataSource:
-    if data_source != "all" or not (dataset or corpus):
-        return data_source
-    return dataset or corpus or "all"
+    return SGP_AI_PAGES_SOURCE_IDS
 
 
 def _env_timeout_seconds(
@@ -482,7 +469,7 @@ async def sgp_ai_pages_preflight(request: Request):
 )
 async def sgp_ai_pages_status(
     request: Request,
-    data_source: Annotated[SgpAiDataSource, Query()] = "all",
+    data_source: Annotated[SgpAiDataSource, Query()] = "innovation_library",
 ):
     """
     Origin-limited readiness check for the static GitHub Pages SGP AI interface.
@@ -521,21 +508,14 @@ async def sgp_ai_pages_retrieve(
     request: Request,
     query: Annotated[str, Query(min_length=2)],
     limit: Annotated[int, Query(ge=1, le=12)] = 6,
-    data_source: Annotated[SgpAiDataSource, Query()] = "all",
-    dataset: Annotated[SgpAiDataSource | None, Query()] = None,
-    corpus: Annotated[SgpAiDataSource | None, Query()] = None,
+    data_source: Annotated[SgpAiDataSource, Query()] = "innovation_library",
 ):
     """
     Origin-limited retrieval preview for the static GitHub Pages SGP AI interface.
     """
     origin = _sgp_ai_pages_origin(request)
     profile = _get_profile_or_404(SGP_AI_PAGES_ASSISTANT_ID)
-    selected_data_source = _sgp_ai_pages_selected_data_source(
-        data_source,
-        dataset,
-        corpus,
-    )
-    source_ids = _sgp_ai_pages_source_ids(selected_data_source)
+    source_ids = _sgp_ai_pages_source_ids(data_source)
     async with _profile_client(profile) as client:
         chunks, documents = await client.retrieve_chunks(
             query,
@@ -547,7 +527,7 @@ async def sgp_ai_pages_retrieve(
             "assistant_id": profile.assistant_id,
             "query": query,
             "limit": limit,
-            "data_source": selected_data_source,
+            "data_source": data_source,
             "documents": [document.model_dump() for document in documents],
             "chunks": [chunk.model_dump() for chunk in chunks],
         },
@@ -562,21 +542,14 @@ async def sgp_ai_pages_retrieve(
 async def sgp_ai_pages_relevance_map(
     request: Request,
     query: Annotated[str, Query(min_length=2)],
-    data_source: Annotated[SgpAiDataSource, Query()] = "all",
-    dataset: Annotated[SgpAiDataSource | None, Query()] = None,
-    corpus: Annotated[SgpAiDataSource | None, Query()] = None,
+    data_source: Annotated[SgpAiDataSource, Query()] = "innovation_library",
 ):
     """
     Origin-limited document-level relevance scores for the static SGP AI interface.
     """
     origin = _sgp_ai_pages_origin(request)
     profile = _get_profile_or_404(SGP_AI_PAGES_ASSISTANT_ID)
-    selected_data_source = _sgp_ai_pages_selected_data_source(
-        data_source,
-        dataset,
-        corpus,
-    )
-    source_ids = _sgp_ai_pages_source_ids(selected_data_source)
+    source_ids = _sgp_ai_pages_source_ids(data_source)
     async with _profile_client(profile) as client:
         documents = await client.score_document_relevance_map(
             query,
@@ -586,7 +559,7 @@ async def sgp_ai_pages_relevance_map(
         {
             "assistant_id": profile.assistant_id,
             "query": query,
-            "data_source": selected_data_source,
+            "data_source": data_source,
             "document_count": len(documents),
             "documents": documents,
         },
@@ -603,21 +576,16 @@ async def sgp_ai_pages_relevance_map(
 async def sgp_ai_pages_model(
     request: Request,
     messages: list[Message],
-    data_source: Annotated[SgpAiDataSource, Query()] = "all",
-    dataset: Annotated[SgpAiDataSource | None, Query()] = None,
-    corpus: Annotated[SgpAiDataSource | None, Query()] = None,
+    data_source: Annotated[SgpAiDataSource, Query()] = "innovation_library",
+    ui_locale: Annotated[AssistantUiLocale, Query()] = "en",
 ):
     """
     Origin-limited streaming answer endpoint for the static GitHub Pages SGP AI interface.
     """
     origin = _sgp_ai_pages_origin(request)
-    selected_data_source = _sgp_ai_pages_selected_data_source(
-        data_source,
-        dataset,
-        corpus,
-    )
-    request.state.retrieval_source_ids = _sgp_ai_pages_source_ids(selected_data_source)
-    request.state.retrieval_data_source = selected_data_source
+    request.state.retrieval_source_ids = _sgp_ai_pages_source_ids(data_source)
+    request.state.retrieval_data_source = data_source
+    request.state.ui_locale = ui_locale
     response = await ask_assistant_model(request, SGP_AI_PAGES_ASSISTANT_ID, messages)
     for key, value in _sgp_ai_pages_cors_headers(origin).items():
         response.headers[key] = value
@@ -745,6 +713,7 @@ async def ask_assistant_model(
     request: Request,
     assistant_id: str,
     messages: list[Message],
+    ui_locale: Annotated[AssistantUiLocale, Query()] = "en",
 ):
     """
     Ask a configured RAG assistant to stream an NDJSON response.
@@ -766,6 +735,13 @@ async def ask_assistant_model(
     profile = _get_profile_or_404(assistant_id)
     request_id = request.headers.get("X-Request-Id") or uuid4().hex
     user_query = messages[-1].content
+    effective_ui_locale = genai.normalize_ui_locale(
+        getattr(request.state, "ui_locale", ui_locale)
+    )
+    fallback_answer_locale = genai.infer_question_locale(
+        user_query,
+        effective_ui_locale,
+    )
     retrieval_source_ids = getattr(request.state, "retrieval_source_ids", None)
     scope_decision = genai.assess_profile_scope(messages, profile)
     if not scope_decision.allowed:
@@ -779,10 +755,19 @@ async def ask_assistant_model(
         )
 
         async def stream_blocked_response():
+            if profile.assistant_id == SGP_AI_PAGES_ASSISTANT_ID:
+                refusal = genai.localized_assistant_text(
+                    "outside_sgp_scope",
+                    fallback_answer_locale,
+                )
+                ideas = genai.localized_scope_ideas(effective_ui_locale)
+            else:
+                refusal = scope_decision.refusal or "This request is outside the supported scope."
+                ideas = genai.build_scope_ideas(scope_decision.category)
             yield (
                 AssistantResponse(
                     role="assistant",
-                    content=scope_decision.refusal or "This request is outside the supported scope.",
+                    content=refusal,
                     graph=None,
                 ).model_dump_json()
                 + "\n"
@@ -791,7 +776,7 @@ async def ask_assistant_model(
                 AssistantResponse(
                     role="assistant",
                     content="",
-                    ideas=genai.build_scope_ideas(scope_decision.category),
+                    ideas=ideas,
                     graph=None,
                 ).model_dump_json()
                 + "\n"
@@ -824,6 +809,14 @@ async def ask_assistant_model(
             90.0,
         )
         answer_connection = None
+        translation_task: asyncio.Task[str] | None = None
+        if (
+            profile.assistant_id == SGP_AI_PAGES_ASSISTANT_ID
+            and fallback_answer_locale != "en"
+        ):
+            translation_task = asyncio.create_task(
+                genai.translate_query_for_retrieval(user_query)
+            )
         logger.info(
             "Assistant publication retrieval scheduled assistant_id=%s request_id=%s query=%r timeout=%ss",
             profile.assistant_id,
@@ -834,13 +827,47 @@ async def ask_assistant_model(
         try:
             answer_connection = await database.get_connection(profile=profile)
             answer_client = database.Client(answer_connection, profile=profile)
+            retrieval_query = user_query
+            query_variants: list[str] = []
+            if translation_task is not None:
+                translation_timeout_seconds = _env_timeout_seconds(
+                    "MODEL_RETRIEVAL_TRANSLATION_TIMEOUT_SECONDS",
+                    10.0,
+                )
+                try:
+                    translated_query = await asyncio.wait_for(
+                        translation_task,
+                        timeout=translation_timeout_seconds,
+                    )
+                except asyncio.TimeoutError:
+                    logger.warning(
+                        "Assistant retrieval translation timed out assistant_id=%s request_id=%s timeout=%ss",
+                        profile.assistant_id,
+                        request_id,
+                        translation_timeout_seconds,
+                    )
+                except Exception as error:
+                    logger.warning(
+                        "Assistant retrieval translation failed assistant_id=%s request_id=%s: %s",
+                        profile.assistant_id,
+                        request_id,
+                        error,
+                    )
+                else:
+                    normalized_original = " ".join(user_query.lower().split())
+                    normalized_translation = " ".join(translated_query.lower().split())
+                    if translated_query and normalized_translation != normalized_original:
+                        retrieval_query = translated_query
+                        query_variants = [user_query]
             started_at = monotonic()
             try:
                 retrieval_kwargs = {}
                 if retrieval_source_ids:
                     retrieval_kwargs["source_ids"] = retrieval_source_ids
+                if query_variants:
+                    retrieval_kwargs["query_variants"] = query_variants
                 chunks, documents = await asyncio.wait_for(
-                    answer_client.retrieve_chunks(user_query, **retrieval_kwargs),
+                    answer_client.retrieve_chunks(retrieval_query, **retrieval_kwargs),
                     timeout=retrieval_timeout_seconds,
                 )
             except asyncio.TimeoutError:
@@ -872,6 +899,10 @@ async def ask_assistant_model(
             )
             return [chunk.to_context() for chunk in chunks], documents
         finally:
+            if translation_task is not None and not translation_task.done():
+                translation_task.cancel()
+                with suppress(asyncio.CancelledError):
+                    await translation_task
             if answer_connection is not None:
                 await maybe_close(answer_connection)
 
@@ -891,6 +922,7 @@ async def ask_assistant_model(
             publication_task=publication_payload(),
             defer_initial_answer=defer_initial_answer,
             profile=profile,
+            ui_locale=effective_ui_locale,
         )
         emitted_chunks = 0
         try:
@@ -911,7 +943,10 @@ async def ask_assistant_model(
                     )
                     fallback = AssistantResponse(
                         role="assistant",
-                        content="I ran into a temporary delay while retrieving supporting data. Please retry your question.",
+                        content=genai.localized_assistant_text(
+                            "temporary_answer_issue",
+                            fallback_answer_locale,
+                        ),
                         graph=None,
                     )
                     yield fallback.model_dump_json() + "\n"

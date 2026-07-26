@@ -67,7 +67,10 @@ def test_manifest_validation_requires_chunk_or_content(tmp_path):
     manifest_path = tmp_path / "manifest.yaml"
     manifest_path.write_text(yaml.safe_dump(manifest), encoding="utf-8")
 
-    with pytest.raises(AssistantKitError, match="either content or non-empty chunks"):
+    with pytest.raises(
+        AssistantKitError,
+        match="content, non-empty chunks, or chunk_count with manifest.chunk_files",
+    ):
         validate_manifest_file(manifest_path, expected_assistant_id="sample")
 
 
