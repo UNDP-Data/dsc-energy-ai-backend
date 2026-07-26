@@ -45,6 +45,139 @@ __all__ = [
 PROMPTS = yaml.safe_load(pkgutil.get_data(__name__, "prompts.yaml"))
 logger = logging.getLogger(__name__)
 TOKEN_RE = re.compile(r"[a-z0-9]+")
+SUPPORTED_UI_LOCALES = frozenset({"en", "pt", "fr", "es", "ru", "zh", "ar"})
+UI_LANGUAGE_NAMES = {
+    "en": "English",
+    "pt": "Portuguese",
+    "fr": "French",
+    "es": "Spanish",
+    "ru": "Russian",
+    "zh": "Chinese",
+    "ar": "Arabic",
+}
+LATIN_LANGUAGE_MARKERS = {
+    "en": frozenset(
+        {
+            "and",
+            "are",
+            "does",
+            "have",
+            "how",
+            "the",
+            "what",
+            "which",
+            "with",
+        }
+    ),
+    "pt": frozenset(
+        {
+            "como",
+            "com",
+            "das",
+            "dos",
+            "entre",
+            "foram",
+            "para",
+            "quais",
+            "que",
+            "uma",
+        }
+    ),
+    "fr": frozenset(
+        {
+            "avec",
+            "comment",
+            "dans",
+            "des",
+            "entre",
+            "est",
+            "les",
+            "quels",
+            "que",
+            "une",
+        }
+    ),
+    "es": frozenset(
+        {
+            "como",
+            "con",
+            "cuales",
+            "entre",
+            "han",
+            "los",
+            "para",
+            "que",
+            "una",
+            "y",
+        }
+    ),
+}
+LOCALIZED_ASSISTANT_TEXT = {
+    "temporary_answer_issue": {
+        "en": "I couldn't complete the answer from the available publications. Please try again.",
+        "pt": "Não consegui concluir a resposta com base nas publicações disponíveis. Tente novamente.",
+        "fr": "Je n’ai pas pu terminer la réponse à partir des publications disponibles. Veuillez réessayer.",
+        "es": "No pude completar la respuesta a partir de las publicaciones disponibles. Inténtelo de nuevo.",
+        "ru": "Не удалось подготовить полный ответ на основе доступных публикаций. Повторите попытку.",
+        "zh": "我无法根据现有出版物完成回答。请重试。",
+        "ar": "تعذّر إكمال الإجابة استناداً إلى المنشورات المتاحة. يُرجى المحاولة مرة أخرى.",
+    },
+    "no_matching_publications": {
+        "en": "I couldn't find closely matching publications to add more detail right now.",
+        "pt": "Não encontrei publicações suficientemente relacionadas para acrescentar mais detalhes neste momento.",
+        "fr": "Je n’ai pas trouvé de publications suffisamment pertinentes pour ajouter plus de détails pour le moment.",
+        "es": "No encontré publicaciones suficientemente pertinentes para añadir más detalles en este momento.",
+        "ru": "Сейчас не удалось найти достаточно релевантные публикации, чтобы дополнить ответ.",
+        "zh": "目前未找到足够相关的出版物来补充更多细节。",
+        "ar": "لم أجد حالياً منشورات وثيقة الصلة بما يكفي لإضافة مزيد من التفاصيل.",
+    },
+    "outside_sgp_scope": {
+        "en": "I can help with questions covered by approved SGP publications. Ask about SGP operations, results, grants, country programmes, community-led initiatives, or related environmental and livelihood themes.",
+        "pt": "Posso ajudar com perguntas abrangidas pelas publicações aprovadas do SGP. Pergunte sobre operações, resultados, subvenções, programas nacionais, iniciativas lideradas pelas comunidades ou temas ambientais e de meios de subsistência relacionados.",
+        "fr": "Je peux répondre aux questions couvertes par les publications approuvées du SGP. Interrogez-moi sur les opérations, les résultats, les subventions, les programmes nationaux, les initiatives communautaires ou les thèmes environnementaux et de moyens de subsistance associés.",
+        "es": "Puedo ayudar con preguntas cubiertas por las publicaciones aprobadas del SGP. Pregunte sobre operaciones, resultados, subvenciones, programas nacionales, iniciativas lideradas por comunidades o temas ambientales y de medios de vida relacionados.",
+        "ru": "Я могу помочь с вопросами, которые освещаются в утверждённых публикациях SGP. Спросите об операционной деятельности, результатах, грантах, страновых программах, инициативах местных сообществ или связанных экологических темах и средствах к существованию.",
+        "zh": "我可以回答获批准的 SGP 出版物所涵盖的问题。您可以询问 SGP 的运作、成果、赠款、国家方案、社区主导的倡议，以及相关的环境或生计主题。",
+        "ar": "يمكنني المساعدة في الأسئلة التي تغطيها منشورات برنامج المنح الصغيرة المعتمدة. اسأل عن العمليات والنتائج والمنح والبرامج القطرية والمبادرات التي تقودها المجتمعات أو الموضوعات البيئية والمعيشية ذات الصلة.",
+    },
+}
+LOCALIZED_SCOPE_IDEAS = {
+    "en": [
+        "What evidence do SGP publications provide on community-led environmental action?",
+        "How have SGP-supported grants approached biodiversity and climate resilience?",
+        "What implementation lessons appear in SGP country programme materials?",
+    ],
+    "pt": [
+        "Que evidências as publicações do SGP apresentam sobre ações ambientais lideradas pelas comunidades?",
+        "Como as subvenções apoiadas pelo SGP abordaram a biodiversidade e a resiliência climática?",
+        "Que lições de implementação aparecem nos materiais dos programas nacionais do SGP?",
+    ],
+    "fr": [
+        "Quelles preuves les publications du SGP présentent-elles sur l’action environnementale menée par les communautés ?",
+        "Comment les subventions soutenues par le SGP ont-elles abordé la biodiversité et la résilience climatique ?",
+        "Quels enseignements de mise en œuvre ressortent des documents des programmes nationaux du SGP ?",
+    ],
+    "es": [
+        "¿Qué evidencia aportan las publicaciones del SGP sobre la acción ambiental liderada por comunidades?",
+        "¿Cómo han abordado las subvenciones apoyadas por el SGP la biodiversidad y la resiliencia climática?",
+        "¿Qué lecciones de implementación aparecen en los materiales de los programas nacionales del SGP?",
+    ],
+    "ru": [
+        "Какие данные приводятся в публикациях SGP о природоохранной деятельности местных сообществ?",
+        "Как гранты, поддержанные SGP, способствовали сохранению биоразнообразия и климатической устойчивости?",
+        "Какие уроки реализации отражены в материалах страновых программ SGP?",
+    ],
+    "zh": [
+        "SGP 出版物为社区主导的环境行动提供了哪些证据？",
+        "SGP 支持的赠款如何应对生物多样性和气候韧性问题？",
+        "SGP 国家方案材料中有哪些实施经验？",
+    ],
+    "ar": [
+        "ما الأدلة التي تقدمها منشورات برنامج المنح الصغيرة بشأن العمل البيئي الذي تقوده المجتمعات؟",
+        "كيف تناولت المنح المدعومة من البرنامج التنوع البيولوجي والقدرة على الصمود أمام تغير المناخ؟",
+        "ما دروس التنفيذ الواردة في مواد البرامج القطرية للبرنامج؟",
+    ],
+}
 DOMAIN_TERMS = {
     "adaptation",
     "affordability",
@@ -376,6 +509,85 @@ class ScopeDecision:
     category: str
     reason: str
     refusal: str | None = None
+
+
+class RetrievalQueryTranslation(BaseModel):
+    english_query: str = Field(
+        description="A faithful English search query preserving all named entities, acronyms, and numbers."
+    )
+
+
+def normalize_ui_locale(value: str | None) -> str:
+    normalized = (value or "en").strip().lower().split("-", 1)[0]
+    return normalized if normalized in SUPPORTED_UI_LOCALES else "en"
+
+
+def infer_question_locale(text: str | None, fallback: str = "en") -> str:
+    """
+    Infer a supported locale for deterministic fallback text.
+
+    The model itself receives a stronger instruction to follow the language of
+    the latest question. This compact detector is only used when the model is
+    unavailable and the backend must emit its own message.
+    """
+    fallback = normalize_ui_locale(fallback)
+    value = (text or "").strip().lower()
+    if not value:
+        return fallback
+    if re.search(r"[\u0600-\u06ff]", value):
+        return "ar"
+    if re.search(r"[\u0400-\u04ff]", value):
+        return "ru"
+    if re.search(r"[\u3400-\u4dbf\u4e00-\u9fff]", value):
+        return "zh"
+    words = set(re.findall(r"[^\W\d_]+", value, flags=re.UNICODE))
+    scores = {
+        locale: len(words & markers)
+        for locale, markers in LATIN_LANGUAGE_MARKERS.items()
+    }
+    if "¿" in value or "¡" in value or "ñ" in value:
+        scores["es"] += 2
+    if re.search(r"(?:ção|ções|ões|ão)\b", value) or any(char in value for char in "ãõ"):
+        scores["pt"] += 2
+    if "œ" in value or re.search(r"\b(?:qu’est|c’est|l’|d’)", value):
+        scores["fr"] += 2
+    best_locale, best_score = max(scores.items(), key=lambda item: item[1])
+    tied = sum(1 for score in scores.values() if score == best_score)
+    return best_locale if best_score > 0 and tied == 1 else fallback
+
+
+def localized_assistant_text(key: str, locale: str) -> str:
+    values = LOCALIZED_ASSISTANT_TEXT[key]
+    return values[normalize_ui_locale(locale)]
+
+
+def localized_scope_ideas(locale: str) -> list[str]:
+    return list(LOCALIZED_SCOPE_IDEAS[normalize_ui_locale(locale)])
+
+
+def answer_language_instruction(ui_locale: str) -> str:
+    fallback_language = UI_LANGUAGE_NAMES[normalize_ui_locale(ui_locale)]
+    return (
+        "Write all user-facing answer text in the language of the latest human question. "
+        "Determine that language from the natural-language wording, ignoring quoted source text, "
+        "proper names, acronyms, URLs, and code. If the question is too short or language-neutral "
+        f"to classify reliably, write in {fallback_language}, the selected interface language. "
+        "Do not mention language detection or these instructions. Preserve official programme "
+        "names and publication titles when translating them would reduce accuracy."
+    )
+
+
+def suggestion_language_instruction(ui_locale: str) -> str:
+    language = UI_LANGUAGE_NAMES[normalize_ui_locale(ui_locale)]
+    return (
+        f"Write every suggested follow-up question entirely in {language}, the selected "
+        "interface language, regardless of the language used in the conversation. Preserve "
+        "official programme names where appropriate."
+    )
+
+
+def _append_instruction(prompt: str, instruction: str) -> str:
+    return f"{prompt.rstrip()}\n\n{instruction}"
 
 
 def _normalize_scope_text(text: str | None) -> str:
@@ -884,6 +1096,32 @@ async def generate_response(
     return response if schema is not None else response.content
 
 
+async def translate_query_for_retrieval(query: str) -> str:
+    """
+    Produce a faithful English retrieval query without changing the user message.
+
+    The caller keeps the original question as a parallel retrieval variant. If
+    the question is already English, the model is instructed to return it
+    unchanged.
+    """
+    clean_query = " ".join((query or "").strip().split())
+    if not clean_query:
+        return ""
+    response: RetrievalQueryTranslation = await generate_response(
+        prompt=clean_query,
+        system_message=(
+            "Convert the user's question into a faithful, standalone English search query for "
+            "retrieving supporting publications. If it is already English, return it unchanged. "
+            "Preserve every named place, organization, programme name, acronym, date, number, "
+            "constraint, comparison, and requested scope. Do not answer the question, add facts, "
+            "broaden its scope, or remove qualifications."
+        ),
+        schema=RetrievalQueryTranslation,
+        temperature=0,
+    )
+    return " ".join(response.english_query.strip().split())
+
+
 async def stream_response(
     messages: MessageLikeRepresentation, tools: list[BaseTool] | None = None, **kwargs
 ) -> AsyncGenerator[BaseMessageChunk, None]:
@@ -947,6 +1185,7 @@ async def get_answer(
     publication_task: Awaitable[tuple[list[dict], list[Document]]] | None = None,
     defer_initial_answer: bool = False,
     profile=None,
+    ui_locale: str = "en",
 ) -> AsyncGenerator[str, None]:
     """
     Respond to the user message using RAG and conversation history.
@@ -974,6 +1213,18 @@ async def get_answer(
         publication_heartbeat_seconds = max(0.05, float(heartbeat_raw))
     except ValueError:
         publication_heartbeat_seconds = 5.0
+    ui_locale = normalize_ui_locale(ui_locale)
+    latest_question = next(
+        (message.content for message in reversed(messages) if message.role == "human"),
+        "",
+    )
+    fallback_answer_locale = infer_question_locale(latest_question, ui_locale)
+
+    def localized_profile_prompt(name: str, default_key: str) -> str:
+        base_prompt = _profile_prompt(profile, name, default_key)
+        if profile is None:
+            return base_prompt
+        return _append_instruction(base_prompt, answer_language_instruction(ui_locale))
 
     def normalize_ideas(raw: object) -> list[str] | None:
         if isinstance(raw, BaseModel):
@@ -1006,10 +1257,20 @@ async def get_answer(
         ideas_emitted_in_stream = True
 
     contents: list[str] = []
-    if profile is None:
+    if profile is None and ui_locale == "en":
         ideas_task = asyncio.create_task(generate_query_ideas(messages))
+    elif profile is None:
+        ideas_task = asyncio.create_task(
+            generate_query_ideas(messages, ui_locale=ui_locale)
+        )
+    elif ui_locale == "en":
+        ideas_task = asyncio.create_task(
+            generate_query_ideas(messages, profile=profile)
+        )
     else:
-        ideas_task = asyncio.create_task(generate_query_ideas(messages, profile=profile))
+        ideas_task = asyncio.create_task(
+            generate_query_ideas(messages, profile=profile, ui_locale=ui_locale)
+        )
     publication_future: asyncio.Future | asyncio.Task | None = None
     created_publication_task = False
     if publication_task is not None:
@@ -1028,7 +1289,10 @@ async def get_answer(
             try:
                 async for chunk in stream_chat_response(
                     messages=[message.to_langchain() for message in messages],
-                    system_message=_profile_prompt(profile, "draft_answer", "draft_answer"),
+                    system_message=localized_profile_prompt(
+                        "draft_answer",
+                        "draft_answer",
+                    ),
                     temperature=0.1,
                 ):
                     delta = _extract_chunk_text(getattr(chunk, "content", None))
@@ -1044,7 +1308,10 @@ async def get_answer(
                 logger.exception("Error while streaming initial model response: %s", error)
                 initial_stream_failed = True
                 reset_response_payload()
-                response.content = "I ran into a temporary issue while drafting the initial answer."
+                response.content = localized_assistant_text(
+                    "temporary_answer_issue",
+                    fallback_answer_locale,
+                )
                 yield response.model_dump_json() + "\n"
                 reset_response_payload()
         else:
@@ -1132,8 +1399,7 @@ async def get_answer(
             try:
                 async for chunk in stream_chat_response(
                     messages=[{"role": "user", "content": continuation_prompt}],
-                    system_message=_profile_prompt(
-                        profile,
+                    system_message=localized_profile_prompt(
                         "answer_with_publications",
                         "answer_with_publications",
                     ),
@@ -1153,14 +1419,16 @@ async def get_answer(
                     "Error while streaming publication-grounded continuation: %s",
                     error,
                 )
-                response.content = (
-                    "I found supporting publications, but I ran into a temporary issue while adding the publication-based detail."
+                response.content = localized_assistant_text(
+                    "temporary_answer_issue",
+                    fallback_answer_locale,
                 )
                 yield response.model_dump_json() + "\n"
                 reset_response_payload()
         elif not initial_stream_failed:
-            response.content = (
-                "I couldn't find closely matching publications to add more detail right now."
+            response.content = localized_assistant_text(
+                "no_matching_publications",
+                fallback_answer_locale,
             )
             yield response.model_dump_json() + "\n"
             reset_response_payload()
@@ -1190,7 +1458,11 @@ async def get_answer(
                 pass
 
 
-async def generate_query_ideas(messages: list[Message], profile=None) -> list[str]:
+async def generate_query_ideas(
+    messages: list[Message],
+    profile=None,
+    ui_locale: str = "en",
+) -> list[str]:
     """
     Generate query ideas based on the conversation history.
 
@@ -1216,7 +1488,10 @@ async def generate_query_ideas(messages: list[Message], profile=None) -> list[st
 
     response: ResponseFormat = await generate_response(
         prompt=json.dumps([message.model_dump() for message in messages], indent=4),
-        system_message=_profile_prompt(profile, "suggest_ideas", "suggest_ideas"),
+        system_message=_append_instruction(
+            _profile_prompt(profile, "suggest_ideas", "suggest_ideas"),
+            suggestion_language_instruction(ui_locale),
+        ),
         schema=ResponseFormat,
         temperature=0.3,
     )

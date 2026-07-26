@@ -838,6 +838,21 @@ def _prioritize_retrieval_queries(query: str) -> list[str]:
     return prioritized[:2]
 
 
+def _retrieval_queries_with_variants(
+    query: str,
+    query_variants: tuple[str, ...] | list[str] | None = None,
+) -> list[str]:
+    retrieval_queries = _prioritize_retrieval_queries(query)
+    for query_variant in query_variants or []:
+        clean_variant = " ".join((query_variant or "").strip().split())
+        if not clean_variant:
+            continue
+        for candidate in _prioritize_retrieval_queries(clean_variant):
+            if candidate not in retrieval_queries:
+                retrieval_queries.append(candidate)
+    return retrieval_queries[:6]
+
+
 def _sql_quote(value: str) -> str:
     return value.replace("'", "''")
 
@@ -3633,6 +3648,7 @@ class Client:
         limit: int = 20,
         debug: dict | None = None,
         source_ids: tuple[str, ...] | list[str] | set[str] | None = None,
+        query_variants: tuple[str, ...] | list[str] | None = None,
     ) -> tuple[list[Chunk], list[Document]]:
         """
         Retrieve the document chunks from the database that best match a query.
@@ -3645,6 +3661,9 @@ class Client:
             Optional explicit year filter extracted from the user query.
         limit : int, default=20
             Maximum number of best matching chunks to retrieve.
+        query_variants : tuple[str, ...] | list[str] | None, optional
+            Additional faithful forms of the same query, such as the original
+            multilingual question paired with an English retrieval translation.
 
         Returns
         -------
@@ -3672,7 +3691,7 @@ class Client:
         )
         source_filter_set = set(source_filter_ids)
         candidate_limit = max(limit * 3, 24)
-        retrieval_queries = _prioritize_retrieval_queries(query)
+        retrieval_queries = _retrieval_queries_with_variants(query, query_variants)
         lexical_timeout = _env_timeout_seconds(
             "RETRIEVE_CHUNKS_LEXICAL_TIMEOUT_SECONDS",
             6.0,

@@ -15,6 +15,7 @@ from src.database import (
     _score_document_row,
     _select_documents_and_chunks,
     _prioritize_retrieval_queries,
+    _retrieval_queries_with_variants,
     build_retrieval_queries,
     should_defer_to_publications,
 )
@@ -96,6 +97,17 @@ def test_build_retrieval_queries_expands_sgp_operational_phase_shorthand():
 def test_prioritized_retrieval_queries_keep_sdg7_variant_for_current_data_query():
     queries = _prioritize_retrieval_queries("How many people lack access to energy?")
     assert "tracking sdg7 access to electricity" in queries
+
+
+def test_multilingual_retrieval_keeps_translation_and_original_query():
+    queries = _retrieval_queries_with_variants(
+        "How have SGP grants supported coastal resilience in Senegal?",
+        ["Comment les subventions du SGP ont-elles soutenu la résilience côtière au Sénégal ?"],
+    )
+
+    assert queries[0].startswith("How have SGP grants")
+    assert any(query.startswith("Comment les subventions") for query in queries)
+    assert len(queries) == len(set(queries))
 
 
 def test_should_defer_to_publications_for_current_energy_access_data_query():

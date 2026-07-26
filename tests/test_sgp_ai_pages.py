@@ -34,6 +34,7 @@ class FakeClient:
     async def retrieve_chunks(self, query: str, *, limit: int, debug=None, source_ids=None):
         assert query == "coastal erosion"
         assert limit == 2
+        assert source_ids == ("gef_sgp_innovation_library",)
         return [FakeDump({"content": "Evidence"})], [FakeDump({"title": "Doc"})]
 
     async def score_document_relevance_map(self, query: str, *, source_ids=None):
@@ -43,7 +44,7 @@ class FakeClient:
             {
                 "document_id": "doc-1",
                 "title": "Coastal erosion grant lessons",
-                "source": "gef_sgp_intranet_projects",
+                "source": "gef_sgp_innovation_library",
                 "year": 2024,
                 "url": "https://example.org/doc-1",
                 "document_type": "project profile",
@@ -86,12 +87,12 @@ def test_pages_status_requires_allowed_origin(monkeypatch):
     assert response.status_code == 200
     assert response.headers["Access-Control-Allow-Origin"] == ALLOWED_ORIGIN
     assert response.json()["corpus_ready"] is True
-    assert response.json()["document_count"] == 3080
-    assert response.json()["data_source"] == "all"
+    assert response.json()["document_count"] == 1433
+    assert response.json()["data_source"] == "innovation_library"
     assert blocked.status_code == 403
 
 
-def test_pages_status_counts_selected_data_source(monkeypatch):
+def test_pages_status_rejects_unapproved_data_sources(monkeypatch):
     @asynccontextmanager
     async def fake_profile_client(_profile):
         yield FakeClient()
@@ -99,21 +100,17 @@ def test_pages_status_counts_selected_data_source(monkeypatch):
     monkeypatch.setattr(app_module, "_profile_client", fake_profile_client)
 
     with TestClient(app_module.app) as client:
-        library = client.get(
-            "/pages/sgp-ai/status?data_source=innovation_library",
-            headers={"Origin": ALLOWED_ORIGIN},
-        )
         projects = client.get(
             "/pages/sgp-ai/status?data_source=project_database",
             headers={"Origin": ALLOWED_ORIGIN},
         )
+        all_sources = client.get(
+            "/pages/sgp-ai/status?data_source=all",
+            headers={"Origin": ALLOWED_ORIGIN},
+        )
 
-    assert library.status_code == 200
-    assert library.json()["document_count"] == 1433
-    assert library.json()["data_source"] == "innovation_library"
-    assert projects.status_code == 200
-    assert projects.json()["document_count"] == 1647
-    assert projects.json()["data_source"] == "project_database"
+    assert projects.status_code == 422
+    assert all_sources.status_code == 422
 
 
 def test_pages_status_rejects_missing_origin(monkeypatch):
@@ -157,17 +154,17 @@ def test_pages_relevance_map_returns_cors_and_scores(monkeypatch):
 
     with TestClient(app_module.app) as client:
         response = client.get(
-            "/pages/sgp-ai/relevance-map?query=coastal%20erosion&data_source=project_database",
+            "/pages/sgp-ai/relevance-map?query=coastal%20erosion&data_source=innovation_library",
             headers={"Origin": ALLOWED_ORIGIN},
         )
 
     payload = response.json()
     assert response.status_code == 200
     assert response.headers["Access-Control-Allow-Origin"] == ALLOWED_ORIGIN
-    assert payload["data_source"] == "project_database"
+    assert payload["data_source"] == "innovation_library"
     assert payload["document_count"] == 1
     assert payload["documents"][0]["relevance"] == 1.0
-    assert payload["documents"][0]["source"] == "gef_sgp_intranet_projects"
+    assert payload["documents"][0]["source"] == "gef_sgp_innovation_library"
 
 
 def test_pages_relevance_map_honors_empty_corpus(monkeypatch):
@@ -257,6 +254,8 @@ def test_pages_model_streams_without_browser_api_key(monkeypatch):
     async def fake_ask_assistant_model(_request, assistant_id, messages):
         assert assistant_id == "sgp_ai"
         assert messages[-1].content == "hello"
+        assert _request.state.retrieval_source_ids == ("gef_sgp_innovation_library",)
+        assert _request.state.ui_locale == "fr"
         return StreamingResponse(
             iter([b'{"role":"assistant","content":"Hello","graph":null}\n']),
             media_type="application/x-ndjson",
@@ -266,7 +265,17 @@ def test_pages_model_streams_without_browser_api_key(monkeypatch):
 
     with TestClient(app_module.app) as client:
         response = client.post(
-            "/pages/sgp-ai/model",
+            "/pages/sgp-ai/model?ui_locale=fr",
+            headers={"Origin": ALLOWED_ORIGIN},
+            json=[{"role": "human", "content": "hello"}],
+        )
+        blocked = client.post(
+            "/pages/sgp-ai/model?data_source=project_database",
+            headers={"Origin": ALLOWED_ORIGIN},
+            json=[{"role": "human", "content": "hello"}],
+        )
+        unsupported_locale = client.post(
+            "/pages/sgp-ai/model?ui_locale=de",
             headers={"Origin": ALLOWED_ORIGIN},
             json=[{"role": "human", "content": "hello"}],
         )
@@ -274,3 +283,5 @@ def test_pages_model_streams_without_browser_api_key(monkeypatch):
     assert response.status_code == 200
     assert response.headers["Access-Control-Allow-Origin"] == ALLOWED_ORIGIN
     assert response.text.strip() == '{"role":"assistant","content":"Hello","graph":null}'
+    assert blocked.status_code == 422
+    assert unsupported_locale.status_code == 422

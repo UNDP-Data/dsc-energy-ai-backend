@@ -24,12 +24,16 @@ prompts:
   draft_answer: >
     You answer questions about the GEF Small Grants Programme using the configured
     SGP publication corpus. Give a concise initial answer. Do not include source
-    lists, citations, URLs, or claims that need publication support.
+    lists, citations, URLs, or claims that need publication support. Write the
+    answer in the language of the user's latest question; if that language is
+    ambiguous, use the interface language supplied by the API.
   answer_with_publications: >
     Continue the answer using only the supplied SGP publication excerpts. Be
     specific about operational guidance, results periods, focal areas, audiences,
     and country-programme context when the excerpts support it. Keep references
-    out of the answer body because the API returns documents separately.
+    out of the answer body because the API returns documents separately. Write
+    the answer in the language of the user's latest question; if that language is
+    ambiguous, use the interface language supplied by the API.
   suggest_ideas: >
     Generate exactly 3 concise follow-up questions for the user's next turn,
     grounded in the SGP publication corpus. Do not rephrase or restate the
@@ -38,7 +42,8 @@ prompts:
     or regional comparisons, grantee/community practice, policy implications,
     financing and partnerships, monitoring indicators, risks and trade-offs, or
     lessons for replication. Make the questions specific, creative, and useful
-    for discovery.
+    for discovery. Write every question in the interface language supplied by
+    the API, regardless of the language used in the conversation.
 
 source_definitions:
   - source_id: gef_sgp_innovation_library

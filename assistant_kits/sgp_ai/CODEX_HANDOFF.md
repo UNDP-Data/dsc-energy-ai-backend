@@ -23,4 +23,7 @@ Preserve the backend contract:
 
 - Assistant ID: `sgp_ai`
 - Route prefix: `/assistants/sgp_ai/...`
+- Model locale query: `ui_locale=en|pt|fr|es|ru|zh|ar`; answers follow
+  the latest question's language, while suggested questions and ambiguous
+  questions use the requested interface locale.
 - Tables: `sgp_ai_sources`, `sgp_ai_documents`, `sgp_ai_chunks`

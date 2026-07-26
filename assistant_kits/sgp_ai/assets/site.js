@@ -128,7 +128,7 @@ async function checkStatus() {
 }
 
 async function streamAnswer(query, signal) {
-  const response = await fetch(`${API_BASE}/model`, {
+  const response = await fetch(`${API_BASE}/model?ui_locale=en`, {
     method: "POST",
     headers: { "Content-Type": "application/json", "Accept": "application/x-ndjson" },
     body: JSON.stringify([{ role: "human", content: query }]),
