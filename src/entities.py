@@ -2,9 +2,9 @@
 Entities (models) and related routines to define the data layer.
 """
 
+import re
 from enum import Enum, auto
 from html import escape
-import re
 from typing import Literal
 from urllib.parse import urlparse
 
@@ -63,10 +63,7 @@ def _html_encode_json_strings(value):
     if isinstance(value, list):
         return [_html_encode_json_strings(item) for item in value]
     if isinstance(value, dict):
-        return {
-            key: _html_encode_json_strings(item)
-            for key, item in value.items()
-        }
+        return {key: _html_encode_json_strings(item) for key, item in value.items()}
     return value
 
 
@@ -241,7 +238,9 @@ class Graph(BaseModel, frozen=True):
         # compute minimum neighbourhood from any source using undirected paths
         undirected = graph.to_undirected()
         for source in sources:
-            for target, (path, *_) in nx.single_source_all_shortest_paths(undirected, source=source):
+            for target, (path, *_) in nx.single_source_all_shortest_paths(
+                undirected, source=source
+            ):
                 hop = len(path) - 1
                 if hop == 0:
                     continue  # skip source nodes
@@ -256,7 +255,12 @@ class Graph(BaseModel, frozen=True):
         return cls(
             nodes=[{"name": name} | data for name, data in graph.nodes(data=True)],
             edges=[
-                {"subject": subject, "object": object, "level": graph.nodes[subject].get("neighbourhood", 0) + 1} | data
+                {
+                    "subject": subject,
+                    "object": object,
+                    "level": graph.nodes[subject].get("neighbourhood", 0) + 1,
+                }
+                | data
                 for subject, object, data in graph.edges(data=True)
             ],
         )
@@ -267,17 +271,27 @@ class Document(LanceModel):
     Publication document.
     """
 
-    document_id: str | None = Field(default=None, description="Stable document identifier")
-    source: str | None = Field(default=None, description="Document source identifier or name")
+    document_id: str | None = Field(
+        default=None, description="Stable document identifier"
+    )
+    source: str | None = Field(
+        default=None, description="Document source identifier or name"
+    )
     publisher: str | None = Field(default=None, description="Publishing organization")
     title: str = Field(description="Document title if available")
     year: int = Field(description="Publication year if available")
     language: str = Field(description="Document language")
     url: str = Field(description="URL to the source document")
     summary: str | None = Field(description="Brief document summary if available")
-    document_type: str | None = Field(default=None, description="Document type classification")
-    publication_date: str | None = Field(default=None, description="ISO publication date if available")
-    series_name: str | None = Field(default=None, description="Series or report family name")
+    document_type: str | None = Field(
+        default=None, description="Document type classification"
+    )
+    publication_date: str | None = Field(
+        default=None, description="ISO publication date if available"
+    )
+    series_name: str | None = Field(
+        default=None, description="Series or report family name"
+    )
     topics: list[str] | None = Field(default=None, description="Topical tags")
     geographies: list[str] | None = Field(default=None, description="Geographic tags")
 
@@ -328,13 +342,23 @@ class Chunk(Document):
 
     content: str = Field(description="Text content of a chunk")
     chunk_id: str | None = Field(default=None, description="Stable chunk identifier")
-    chunk_index: int | None = Field(default=None, description="Chunk order within a document")
+    chunk_index: int | None = Field(
+        default=None, description="Chunk order within a document"
+    )
     content_type: str | None = Field(default=None, description="Chunk content type")
-    section_title: str | None = Field(default=None, description="Section heading if available")
-    page_start: int | None = Field(default=None, description="First page covered by the chunk")
-    page_end: int | None = Field(default=None, description="Last page covered by the chunk")
+    section_title: str | None = Field(
+        default=None, description="Section heading if available"
+    )
+    page_start: int | None = Field(
+        default=None, description="First page covered by the chunk"
+    )
+    page_end: int | None = Field(
+        default=None, description="Last page covered by the chunk"
+    )
     token_count: int | None = Field(default=None, description="Estimated token count")
-    chunk_summary: str | None = Field(default=None, description="Optional short chunk summary")
+    chunk_summary: str | None = Field(
+        default=None, description="Optional short chunk summary"
+    )
 
     def to_context(self) -> dict:
         """
@@ -416,6 +440,19 @@ class DocumentRecord(LanceModel):
     topic_tags_text: str | None = None
     geography_tags_text: str | None = None
     audience_tags_text: str | None = None
+    project_ids: list[str] | None = None
+    project_numbers: list[str] | None = None
+    data_classification: str | None = None
+    publication_status: str | None = None
+    review_state: str | None = None
+    review_required: bool | None = None
+    sensitive_content_flags: list[str] | None = None
+    validation_category: str | None = None
+    classifier_version: str | None = None
+    ruleset_version: str | None = None
+    ruleset_revision: str | None = None
+    policy_version: str | None = None
+    source_sha256: str | None = None
 
 
 class Message(BaseModel):

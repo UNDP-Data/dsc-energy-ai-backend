@@ -45,3 +45,21 @@ async def authenticate(api_key: str = Security(api_key_header)) -> bool:
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid API key."
     )
+
+
+async def authenticate_sgp_project_access(
+    api_key: str = Security(api_key_header),
+) -> bool:
+    """Authenticate the separate server-side credential for non-public SGP corpora."""
+    expected_key = os.getenv("SGP_PROJECT_RAG_API_KEY")
+    if not expected_key:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="SGP project-corpus access is not configured on the server.",
+        )
+    if hmac.compare_digest(api_key, expected_key):
+        return True
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Invalid SGP project-corpus API key.",
+    )

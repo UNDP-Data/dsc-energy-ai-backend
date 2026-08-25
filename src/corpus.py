@@ -4,10 +4,10 @@ Corpus metadata enrichment and bootstrap helpers.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
-from datetime import UTC, datetime
 import hashlib
 import re
+from dataclasses import dataclass
+from datetime import UTC, datetime
 from urllib.parse import urlparse
 from uuid import NAMESPACE_URL, uuid5
 
@@ -16,13 +16,42 @@ from .entities import Document, DocumentRecord, SourceRecord
 TOKEN_RE = re.compile(r"[a-z0-9]+")
 
 TOPIC_RULES: dict[str, tuple[str, ...]] = {
-    "energy access": ("energy access", "electricity access", "electrification", "mini-grid", "off-grid"),
-    "renewable energy": ("renewable", "solar", "wind", "hydro", "geothermal", "bioenergy"),
+    "energy access": (
+        "energy access",
+        "electricity access",
+        "electrification",
+        "mini-grid",
+        "off-grid",
+    ),
+    "renewable energy": (
+        "renewable",
+        "solar",
+        "wind",
+        "hydro",
+        "geothermal",
+        "bioenergy",
+    ),
     "energy efficiency": ("energy efficiency", "energy intensity", "efficiency"),
-    "climate mitigation": ("climate mitigation", "decarbon", "emissions", "greenhouse gas"),
-    "climate adaptation": ("climate adaptation", "resilience", "adaptive capacity", "disaster risk"),
+    "climate mitigation": (
+        "climate mitigation",
+        "decarbon",
+        "emissions",
+        "greenhouse gas",
+    ),
+    "climate adaptation": (
+        "climate adaptation",
+        "resilience",
+        "adaptive capacity",
+        "disaster risk",
+    ),
     "energy finance": ("finance", "investment", "green bond", "concessional", "tariff"),
-    "grid infrastructure": ("grid", "transmission", "distribution", "storage", "interconnection"),
+    "grid infrastructure": (
+        "grid",
+        "transmission",
+        "distribution",
+        "storage",
+        "interconnection",
+    ),
     "clean cooking": ("clean cooking", "cookstove", "biofuel", "traditional biomass"),
 }
 
@@ -47,7 +76,13 @@ COUNTRY_RULES: dict[str, tuple[str, ...]] = {
 }
 
 SDG_RULES: dict[str, tuple[str, ...]] = {
-    "SDG7": ("sdg 7", "sustainable development goal 7", "energy access", "renewable", "clean cooking"),
+    "SDG7": (
+        "sdg 7",
+        "sustainable development goal 7",
+        "energy access",
+        "renewable",
+        "clean cooking",
+    ),
     "SDG13": ("sdg 13", "climate action", "mitigation", "adaptation"),
 }
 
@@ -62,7 +97,13 @@ SECTOR_RULES: dict[str, tuple[str, ...]] = {
 
 AUDIENCE_RULES: dict[str, tuple[str, ...]] = {
     "policy-makers": ("policy", "roadmap", "guidance", "framework", "regulation"),
-    "practitioners": ("toolkit", "implementation", "case study", "programme", "project"),
+    "practitioners": (
+        "toolkit",
+        "implementation",
+        "case study",
+        "programme",
+        "project",
+    ),
     "researchers": ("analysis", "report", "assessment", "scenario"),
 }
 
@@ -176,15 +217,19 @@ def _source_definitions_from_profile(profile=None) -> tuple[SourceDefinition, ..
                 review_policy=str(item.get("review_policy") or "hybrid_editorial"),
                 license_policy=item.get("license_policy"),
                 robots_policy=item.get("robots_policy"),
-                domains=tuple(value for value in domains if isinstance(value, str))
-                if isinstance(domains, list)
-                else (),
+                domains=(
+                    tuple(value for value in domains if isinstance(value, str))
+                    if isinstance(domains, list)
+                    else ()
+                ),
             )
         )
     return tuple(definitions) or SOURCE_DEFINITIONS
 
 
-def _rules_from_profile(profile, group: str, default: dict[str, tuple[str, ...]]) -> dict[str, tuple[str, ...]]:
+def _rules_from_profile(
+    profile, group: str, default: dict[str, tuple[str, ...]]
+) -> dict[str, tuple[str, ...]]:
     """
     Return tag rules from a profile, preserving legacy defaults when absent.
     """
@@ -238,12 +283,34 @@ def _tag_matches(text: str, rules: dict[str, tuple[str, ...]]) -> list[str]:
 
 
 def _infer_document_type(title: str, summary: str, content: str) -> str:
-    text = " ".join(filter(None, [_normalize_text(title), _normalize_text(summary), _normalize_text(content)]))
-    if any(pattern in text for pattern in ("policy brief", "guidance", "toolkit", "roadmap", "framework")):
+    text = " ".join(
+        filter(
+            None,
+            [
+                _normalize_text(title),
+                _normalize_text(summary),
+                _normalize_text(content),
+            ],
+        )
+    )
+    if any(
+        pattern in text
+        for pattern in ("policy brief", "guidance", "toolkit", "roadmap", "framework")
+    ):
         return "policy"
-    if any(pattern in text for pattern in ("case study", "programme", "program", "initiative")):
+    if any(
+        pattern in text
+        for pattern in ("case study", "programme", "program", "initiative")
+    ):
         return "case_study"
-    if any(pattern in text for pattern in ("tracking sdg7", "progress toward sustainable energy", "annual report")):
+    if any(
+        pattern in text
+        for pattern in (
+            "tracking sdg7",
+            "progress toward sustainable energy",
+            "annual report",
+        )
+    ):
         return "flagship_report"
     if "report" in text:
         return "report"
@@ -252,14 +319,19 @@ def _infer_document_type(title: str, summary: str, content: str) -> str:
 
 def _infer_series(title: str) -> tuple[str | None, str | None]:
     normalized = _normalize_text(title)
-    if "tracking sdg7" in normalized or "progress toward sustainable energy" in normalized:
+    if (
+        "tracking sdg7" in normalized
+        or "progress toward sustainable energy" in normalized
+    ):
         return "Tracking SDG7", "tracking_sdg7"
     if "world energy outlook" in normalized:
         return "World Energy Outlook", "world_energy_outlook"
     return None, None
 
 
-def _infer_quality_score(summary: str | None, content: str | None, url: str | None) -> float:
+def _infer_quality_score(
+    summary: str | None, content: str | None, url: str | None
+) -> float:
     score = 0.3
     if summary:
         score += 0.2
@@ -288,7 +360,9 @@ def match_source(url: str | None, *, profile=None) -> SourceDefinition:
     )
 
 
-def build_source_record(source: SourceDefinition, *, timestamp: str | None = None) -> SourceRecord:
+def build_source_record(
+    source: SourceDefinition, *, timestamp: str | None = None
+) -> SourceRecord:
     now = timestamp or _utcnow_iso()
     return SourceRecord(
         source_id=source.source_id,
@@ -338,21 +412,54 @@ def build_document_record(
     language = (best.get("language") or "").strip() or "en"
     year = int(best.get("year") or 0)
     summary = next(
-        ((row.get("summary") or "").strip() for row in rows if (row.get("summary") or "").strip()),
+        (
+            (row.get("summary") or "").strip()
+            for row in rows
+            if (row.get("summary") or "").strip()
+        ),
         "",
     )
-    content = "\n".join((row.get("content") or "").strip() for row in rows if (row.get("content") or "").strip())
+    content = "\n".join(
+        (row.get("content") or "").strip()
+        for row in rows
+        if (row.get("content") or "").strip()
+    )
     source = match_source(url, profile=profile)
     source_record = build_source_record(source, timestamp=now)
     document_type = _infer_document_type(title, summary, content)
     series_name, series_id = _infer_series(title)
-    text = " ".join(filter(None, [_normalize_text(title), _normalize_text(summary), _normalize_text(content)]))
-    topic_tags = _tag_matches(text, _rules_from_profile(profile, "topics", TOPIC_RULES)) or None
-    geographies = _tag_matches(text, _rules_from_profile(profile, "geographies", GEOGRAPHY_RULES)) or None
-    country_codes = _tag_matches(text, _rules_from_profile(profile, "countries", COUNTRY_RULES)) or None
-    sdg_tags = _tag_matches(text, _rules_from_profile(profile, "sdgs", SDG_RULES)) or None
-    sector_tags = _tag_matches(text, _rules_from_profile(profile, "sectors", SECTOR_RULES)) or None
-    audience_tags = _tag_matches(text, _rules_from_profile(profile, "audiences", AUDIENCE_RULES)) or None
+    text = " ".join(
+        filter(
+            None,
+            [
+                _normalize_text(title),
+                _normalize_text(summary),
+                _normalize_text(content),
+            ],
+        )
+    )
+    topic_tags = (
+        _tag_matches(text, _rules_from_profile(profile, "topics", TOPIC_RULES)) or None
+    )
+    geographies = (
+        _tag_matches(text, _rules_from_profile(profile, "geographies", GEOGRAPHY_RULES))
+        or None
+    )
+    country_codes = (
+        _tag_matches(text, _rules_from_profile(profile, "countries", COUNTRY_RULES))
+        or None
+    )
+    sdg_tags = (
+        _tag_matches(text, _rules_from_profile(profile, "sdgs", SDG_RULES)) or None
+    )
+    sector_tags = (
+        _tag_matches(text, _rules_from_profile(profile, "sectors", SECTOR_RULES))
+        or None
+    )
+    audience_tags = (
+        _tag_matches(text, _rules_from_profile(profile, "audiences", AUDIENCE_RULES))
+        or None
+    )
     publication_date = f"{year:04d}-01-01" if year else None
     content_hash = hashlib.sha256(
         "\n".join([title, url, summary, content]).encode("utf-8")
@@ -398,7 +505,9 @@ def build_document_record(
         dedupe_group_id=str(uuid5(NAMESPACE_URL, (url or normalized_title or title))),
         is_flagship=is_flagship,
         is_data_report=is_data_report,
-        has_tables=any(token in text for token in ("data", "table", "indicator", "statistics")),
+        has_tables=any(
+            token in text for token in ("data", "table", "indicator", "statistics")
+        ),
         has_figures=any(token in text for token in ("figure", "chart", "graph")),
         page_count=None,
         review_notes=review_notes,
@@ -429,7 +538,9 @@ def build_source_records_for_documents(
                 base_url="",
                 ingestion_method="manual_manifest",
             )
-        records[document.source_id] = build_source_record(definition, timestamp=timestamp)
+        records[document.source_id] = build_source_record(
+            definition, timestamp=timestamp
+        )
     return sorted(records.values(), key=lambda item: item.source_id)
 
 
@@ -454,7 +565,8 @@ def enrich_chunk_rows(
             {
                 **row,
                 "document_id": document.document_id,
-                "chunk_id": _stable_chunk_id(document.document_id, chunk_index, content),
+                "chunk_id": row.get("chunk_id")
+                or _stable_chunk_id(document.document_id, chunk_index, content),
                 "chunk_index": chunk_index,
                 "content_type": row.get("content_type") or "text",
                 "section_title": row.get("section_title"),

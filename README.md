@@ -333,6 +333,34 @@ Import additional curated documents from a local YAML manifest:
 python3 scripts/import_corpus_manifest.py --manifest data/corpus/sample_manifest.yaml --include-chunks
 ```
 
+Use the partition deployer for a complete refresh of the governed intranet-
+project corpus. Its default mode is read-only; `--apply` embeds missing chunks,
+builds and validates staging tables, preserves the Innovation Library partition,
+and atomically swaps each validated table:
+
+```bash
+python3 scripts/deploy_corpus_partition.py \
+  --manifest /path/to/rag-export/corpus/manifest.yaml
+
+python3 scripts/deploy_corpus_partition.py \
+  --manifest /path/to/rag-export/corpus/manifest.yaml \
+  --apply \
+  --allow-non-public-external-embedding
+```
+
+The resumable float32 embedding cache is stored beside the manifest unless
+`--embedding-cache` is supplied. Do not use the ordinary manifest upsert when
+records removed by a policy or classification refresh must also disappear.
+The explicit external-embedding flag is required when the manifest contains
+non-public or sensitive-flagged records because chunk text is sent to the
+configured embedding provider. Use it only after the data transfer is approved.
+
+The public `/pages/sgp-ai` route remains Innovation Library-only. Server-side
+MVP access to `innovation_library`, `projects` (alias `project_database`), or
+`all` uses `/internal/sgp-ai/*` and the separate
+`SGP_PROJECT_RAG_API_KEY`. `all` is the explicit union of the two approved
+source IDs, not an unfiltered database query.
+
 Supporting files:
 - `data/corpus/sources.yaml`: seed source registry for trusted and partner corpora
 - `data/corpus/sample_manifest.yaml`: example manual import manifest

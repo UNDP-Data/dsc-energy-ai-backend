@@ -10,7 +10,6 @@ from fastapi.testclient import TestClient
 import main as app_module
 from src import database as database_module
 
-
 ALLOWED_ORIGIN = "https://undp-data.github.io"
 
 
@@ -20,6 +19,9 @@ class FakeTable:
             None: 3080,
             "source_id = 'gef_sgp_innovation_library'": 1433,
             "source_id = 'gef_sgp_intranet_projects'": 1647,
+            "source_id IN ('gef_sgp_innovation_library')": 1433,
+            "source_id IN ('gef_sgp_intranet_projects')": 1647,
+            "source_id IN ('gef_sgp_innovation_library', 'gef_sgp_intranet_projects')": 3080,
         }
         return counts[source_filter]
 
@@ -31,7 +33,9 @@ class FakeClient:
     async def open_optional_table(self, _name: str):
         return FakeTable()
 
-    async def retrieve_chunks(self, query: str, *, limit: int, debug=None, source_ids=None):
+    async def retrieve_chunks(
+        self, query: str, *, limit: int, debug=None, source_ids=None
+    ):
         assert query == "coastal erosion"
         assert limit == 2
         assert source_ids == ("gef_sgp_innovation_library",)
@@ -111,6 +115,57 @@ def test_pages_status_rejects_unapproved_data_sources(monkeypatch):
 
     assert projects.status_code == 422
     assert all_sources.status_code == 422
+
+
+def test_internal_status_supports_source_partitions_with_separate_key(monkeypatch):
+    @asynccontextmanager
+    async def fake_profile_client(_profile):
+        yield FakeClient()
+
+    monkeypatch.setattr(app_module, "_profile_client", fake_profile_client)
+    monkeypatch.setenv("SGP_PROJECT_RAG_API_KEY", "project-secret")
+
+    with TestClient(app_module.app) as client:
+        projects = client.get(
+            "/internal/sgp-ai/status?data_source=projects",
+            headers={"X-Api-Key": "project-secret"},
+        )
+        all_sources = client.get(
+            "/internal/sgp-ai/status?data_source=all",
+            headers={"X-Api-Key": "project-secret"},
+        )
+        public_key = client.get(
+            "/internal/sgp-ai/status?data_source=projects",
+            headers={"X-Api-Key": "not-the-project-key"},
+        )
+
+    assert projects.status_code == 200
+    assert projects.json()["document_count"] == 1647
+    assert projects.json()["source_ids"] == ["gef_sgp_intranet_projects"]
+    assert all_sources.status_code == 200
+    assert all_sources.json()["document_count"] == 3080
+    assert public_key.status_code == 401
+
+
+def test_internal_relevance_map_scopes_projects(monkeypatch):
+    fake_client = FakeClient()
+
+    @asynccontextmanager
+    async def fake_profile_client(_profile):
+        yield fake_client
+
+    monkeypatch.setattr(app_module, "_profile_client", fake_profile_client)
+    monkeypatch.setenv("SGP_PROJECT_RAG_API_KEY", "project-secret")
+
+    with TestClient(app_module.app) as client:
+        response = client.get(
+            "/internal/sgp-ai/relevance-map?query=coastal%20erosion&data_source=project_database",
+            headers={"X-Api-Key": "project-secret"},
+        )
+
+    assert response.status_code == 200
+    assert response.json()["source_ids"] == ["gef_sgp_intranet_projects"]
+    assert fake_client.source_ids == ("gef_sgp_intranet_projects",)
 
 
 def test_pages_status_rejects_missing_origin(monkeypatch):
@@ -282,6 +337,8 @@ def test_pages_model_streams_without_browser_api_key(monkeypatch):
 
     assert response.status_code == 200
     assert response.headers["Access-Control-Allow-Origin"] == ALLOWED_ORIGIN
-    assert response.text.strip() == '{"role":"assistant","content":"Hello","graph":null}'
+    assert (
+        response.text.strip() == '{"role":"assistant","content":"Hello","graph":null}'
+    )
     assert blocked.status_code == 422
     assert unsupported_locale.status_code == 422
