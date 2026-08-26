@@ -8,8 +8,8 @@ from __future__ import annotations
 import argparse
 import asyncio
 import json
-from collections import defaultdict
 import sys
+from collections import defaultdict
 from pathlib import Path
 
 import yaml
@@ -51,7 +51,10 @@ def _document_record_from_manifest(item: dict, *, profile) -> DocumentRecord:
     )
     overrides = {
         "source_id": item.get("source_id", record.source_id),
-        "canonical_title": item.get("canonical_title") or item.get("title") or record.canonical_title,
+        "document_type": item.get("document_type") or record.document_type,
+        "canonical_title": item.get("canonical_title")
+        or item.get("title")
+        or record.canonical_title,
         "subtitle": item.get("subtitle"),
         "authors": item.get("authors"),
         "publisher": item.get("publisher") or record.publisher,
@@ -72,6 +75,23 @@ def _document_record_from_manifest(item: dict, *, profile) -> DocumentRecord:
         "page_count": item.get("page_count", record.page_count),
         "review_notes": item.get("review_notes") or record.review_notes,
         "status": item.get("status", record.status),
+        "project_ids": item.get("project_ids"),
+        "project_numbers": item.get("project_numbers"),
+        "data_classification": item.get("data_classification"),
+        "publication_status": item.get("publication_status"),
+        "review_state": item.get("review_state"),
+        "review_required": item.get("review_required"),
+        "sensitive_content_flags": item.get("sensitive_content_flags"),
+        "validation_category": item.get("validation_category"),
+        "classifier_version": item.get("classifier_version"),
+        "ruleset_version": (
+            str(item["ruleset_version"])
+            if item.get("ruleset_version") is not None
+            else None
+        ),
+        "ruleset_revision": item.get("ruleset_revision"),
+        "policy_version": item.get("policy_version"),
+        "source_sha256": item.get("source_sha256"),
     }
     if overrides["topic_tags"]:
         overrides["topic_tags_text"] = " | ".join(overrides["topic_tags"])
@@ -83,7 +103,7 @@ def _document_record_from_manifest(item: dict, *, profile) -> DocumentRecord:
         overrides["audience_tags_text"] = " | ".join(overrides["audience_tags"])
     if item.get("document_id"):
         overrides["document_id"] = item["document_id"]
-    return record.model_copy(update=overrides)
+    return DocumentRecord.model_validate({**record.model_dump(), **overrides})
 
 
 def _source_record_from_manifest(item: dict) -> SourceRecord:
@@ -105,7 +125,11 @@ def _source_record_from_manifest(item: dict) -> SourceRecord:
 
 def _row_for_chunk(chunk: dict, document: DocumentRecord) -> dict:
     chunk_identifier = chunk.get("chunk_id")
-    if not chunk_identifier and chunk.get("document_id") and chunk.get("document_id") != document.document_id:
+    if (
+        not chunk_identifier
+        and chunk.get("document_id")
+        and chunk.get("document_id") != document.document_id
+    ):
         # Older manifests used chunk.document_id as the chunk identifier.
         chunk_identifier = chunk.get("document_id")
     row = {
@@ -122,6 +146,21 @@ def _row_for_chunk(chunk: dict, document: DocumentRecord) -> dict:
         "series_name": document.series_name,
         "topic_tags": document.topic_tags,
         "region_codes": document.region_codes,
+        "country_codes": document.country_codes,
+        "status": document.status,
+        "project_ids": document.project_ids,
+        "project_numbers": document.project_numbers,
+        "data_classification": document.data_classification,
+        "publication_status": document.publication_status,
+        "review_state": document.review_state,
+        "review_required": document.review_required,
+        "sensitive_content_flags": document.sensitive_content_flags,
+        "validation_category": document.validation_category,
+        "classifier_version": document.classifier_version,
+        "ruleset_version": document.ruleset_version,
+        "ruleset_revision": document.ruleset_revision,
+        "policy_version": document.policy_version,
+        "source_sha256": document.source_sha256,
         "content": chunk.get("content") or chunk.get("text") or "",
         "section_title": chunk.get("section_title") or chunk.get("section_heading"),
         "page_start": chunk.get("page_start"),
@@ -145,9 +184,17 @@ def _chunk_rows_for_document(
     chunks = item.get("chunks")
     rows = []
     if isinstance(chunks, list) and chunks:
-        rows = [_row_for_chunk(chunk, document) for chunk in chunks if isinstance(chunk, dict)]
+        rows = [
+            _row_for_chunk(chunk, document)
+            for chunk in chunks
+            if isinstance(chunk, dict)
+        ]
     elif allow_summary_fallback and (item.get("content") or item.get("summary")):
-        rows = [_row_for_chunk({"content": item.get("content") or item.get("summary") or ""}, document)]
+        rows = [
+            _row_for_chunk(
+                {"content": item.get("content") or item.get("summary") or ""}, document
+            )
+        ]
     if not rows:
         return []
     return corpus.enrich_chunk_rows(
@@ -157,7 +204,9 @@ def _chunk_rows_for_document(
     )
 
 
-def _manifest_chunk_paths(manifest_path: Path, manifest: dict, cli_paths: list[str] | None) -> list[Path]:
+def _manifest_chunk_paths(
+    manifest_path: Path, manifest: dict, cli_paths: list[str] | None
+) -> list[Path]:
     paths = [Path(item).expanduser() for item in cli_paths or []]
     for item in manifest.get("chunk_files") or []:
         if not isinstance(item, str) or not item.strip():
@@ -197,7 +246,9 @@ def _chunk_rows_from_jsonl(
                 document_id = str(chunk.get("document_id") or "")
                 document = documents_by_id.get(document_id)
                 if document is None:
-                    raise ValueError(f"Unknown document_id {document_id!r} in {path}:{line_number}")
+                    raise ValueError(
+                        f"Unknown document_id {document_id!r} in {path}:{line_number}"
+                    )
                 rows_by_document[document_id].append(_row_for_chunk(chunk, document))
 
     enriched: list[dict] = []
@@ -227,7 +278,11 @@ async def _run(args) -> dict[str, int]:
     document_records = []
     chunk_rows = []
     documents_by_id = {}
-    chunk_paths = _manifest_chunk_paths(Path(args.manifest), manifest, args.chunks_jsonl) if args.include_chunks else []
+    chunk_paths = (
+        _manifest_chunk_paths(Path(args.manifest), manifest, args.chunks_jsonl)
+        if args.include_chunks
+        else []
+    )
     for item in manifest.get("documents", []):
         if not isinstance(item, dict):
             continue
@@ -244,7 +299,9 @@ async def _run(args) -> dict[str, int]:
                 )
             )
     if args.include_chunks and chunk_paths:
-        chunk_rows.extend(_chunk_rows_from_jsonl(chunk_paths, documents_by_id, profile=profile))
+        chunk_rows.extend(
+            _chunk_rows_from_jsonl(chunk_paths, documents_by_id, profile=profile)
+        )
 
     inferred_sources = corpus.build_source_records_for_documents(
         document_records,
@@ -263,14 +320,22 @@ async def _run(args) -> dict[str, int]:
     try:
         client = database.Client(connection, profile=profile)
         print("[import] Upserting sources...", flush=True)
-        source_count = await client.upsert_sources([item.model_dump() for item in by_source.values()])
+        source_count = await client.upsert_sources(
+            [item.model_dump() for item in by_source.values()]
+        )
         print("[import] Upserting documents...", flush=True)
-        document_count = await client.upsert_documents([item.model_dump() for item in document_records])
+        document_count = await client.upsert_documents(
+            [item.model_dump() for item in document_records]
+        )
         chunk_count = 0
         if args.include_chunks:
             print("[import] Upserting chunks...", flush=True)
             chunk_count = await client.upsert_chunks(chunk_rows)
-        return {"sources": source_count, "documents": document_count, "chunks": chunk_count}
+        return {
+            "sources": source_count,
+            "documents": document_count,
+            "chunks": chunk_count,
+        }
     finally:
         print("[import] Closing database connection...", flush=True)
         close = getattr(connection, "close", None)
@@ -282,7 +347,9 @@ async def _run(args) -> dict[str, int]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--manifest", required=True, help="Path to YAML corpus manifest.")
+    parser.add_argument(
+        "--manifest", required=True, help="Path to YAML corpus manifest."
+    )
     parser.add_argument(
         "--assistant-id",
         default=None,

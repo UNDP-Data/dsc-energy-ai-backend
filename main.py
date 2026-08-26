@@ -3,15 +3,15 @@ Entry point to the API.
 """
 
 import asyncio
-from contextlib import asynccontextmanager, suppress
-from inspect import isawaitable
-from pathlib import Path
-from typing import Annotated, Literal
-from uuid import uuid4
 import json
 import logging
 import os
+from contextlib import asynccontextmanager, suppress
+from inspect import isawaitable
+from pathlib import Path
 from time import monotonic
+from typing import Annotated, Literal
+from uuid import uuid4
 
 import networkx as nx
 import yaml
@@ -37,14 +37,23 @@ from src.kg import v2 as kg_v2
 from src.kg.types import GraphV2, GraphV2Parameters
 from src.moonshot import router as moonshot_router
 from src.rag_system import RagProfileError, get_profile, list_profiles
-from src.security import authenticate
+from src.security import authenticate, authenticate_sgp_project_access
 
 load_dotenv()
 logger = logging.getLogger(__name__)
 SGP_AI_PAGES_ASSISTANT_ID = "sgp_ai"
 SgpAiDataSource = Literal["innovation_library"]
+SgpAiPrivateDataSource = Literal[
+    "innovation_library", "projects", "project_database", "all"
+]
 AssistantUiLocale = Literal["en", "pt", "fr", "es", "ru", "zh", "ar"]
 SGP_AI_PAGES_SOURCE_IDS = ("gef_sgp_innovation_library",)
+SGP_AI_PRIVATE_SOURCE_IDS = {
+    "innovation_library": ("gef_sgp_innovation_library",),
+    "projects": ("gef_sgp_intranet_projects",),
+    "project_database": ("gef_sgp_intranet_projects",),
+    "all": ("gef_sgp_innovation_library", "gef_sgp_intranet_projects"),
+}
 
 
 def _sgp_ai_pages_source_ids(_data_source: SgpAiDataSource) -> tuple[str, ...]:
@@ -52,6 +61,11 @@ def _sgp_ai_pages_source_ids(_data_source: SgpAiDataSource) -> tuple[str, ...]:
     Restrict public SGP AI Pages requests to the approved Innovation Library.
     """
     return SGP_AI_PAGES_SOURCE_IDS
+
+
+def _sgp_ai_private_source_ids(data_source: SgpAiPrivateDataSource) -> tuple[str, ...]:
+    """Map an authenticated corpus selector to approved LanceDB source partitions."""
+    return SGP_AI_PRIVATE_SOURCE_IDS[data_source]
 
 
 def _env_timeout_seconds(
@@ -220,7 +234,9 @@ async def kg_tester(request: Request):
     """
     Return an interactive page for testing and visualizing `/graph` responses.
     """
-    remote_api_base_url = os.getenv("KG_TESTER_REMOTE_API_BASE_URL", "").strip().rstrip("/")
+    remote_api_base_url = (
+        os.getenv("KG_TESTER_REMOTE_API_BASE_URL", "").strip().rstrip("/")
+    )
     return templates.TemplateResponse(
         request=request,
         name="kg_tester.html",
@@ -440,7 +456,9 @@ async def debug_assistant_retrieve(
     profile = _get_profile_or_404(assistant_id)
     async with _profile_client(profile) as client:
         debug_payload: dict = {}
-        chunks, documents = await client.retrieve_chunks(query, limit=limit, debug=debug_payload)
+        chunks, documents = await client.retrieve_chunks(
+            query, limit=limit, debug=debug_payload
+        )
         return {
             "assistant_id": profile.assistant_id,
             "query": query,
@@ -593,6 +611,118 @@ async def sgp_ai_pages_model(
 
 
 @app.get(
+    path="/internal/sgp-ai/status",
+    dependencies=[Depends(authenticate_sgp_project_access)],
+    include_in_schema=False,
+)
+async def sgp_ai_internal_status(
+    data_source: Annotated[SgpAiPrivateDataSource, Query()] = "innovation_library",
+):
+    """Return source-scoped readiness to an authenticated server-side MVP client."""
+    profile = _get_profile_or_404(SGP_AI_PAGES_ASSISTANT_ID)
+    source_ids = _sgp_ai_private_source_ids(data_source)
+    async with _profile_client(profile) as client:
+        table = await client.open_optional_table(client.table_name("documents"))
+        document_count = 0
+        if table is not None:
+            joined = ", ".join(f"'{source_id}'" for source_id in source_ids)
+            document_count = await table.count_rows(f"source_id IN ({joined})")
+    return {
+        "ok": True,
+        "assistant_id": profile.assistant_id,
+        "display_name": profile.display_name,
+        "corpus_ready": document_count > 0,
+        "document_count": document_count,
+        "data_source": data_source,
+        "source_ids": list(source_ids),
+    }
+
+
+@app.get(
+    path="/internal/sgp-ai/relevance-map",
+    dependencies=[Depends(authenticate_sgp_project_access)],
+    include_in_schema=False,
+)
+async def sgp_ai_internal_relevance_map(
+    query: Annotated[str, Query(min_length=2)],
+    data_source: Annotated[SgpAiPrivateDataSource, Query()] = "innovation_library",
+):
+    """Return source-scoped document relevance to the authenticated MVP server."""
+    profile = _get_profile_or_404(SGP_AI_PAGES_ASSISTANT_ID)
+    source_ids = _sgp_ai_private_source_ids(data_source)
+    async with _profile_client(profile) as client:
+        documents = await client.score_document_relevance_map(
+            query, source_ids=source_ids
+        )
+    return {
+        "assistant_id": profile.assistant_id,
+        "query": query,
+        "data_source": data_source,
+        "source_ids": list(source_ids),
+        "document_count": len(documents),
+        "documents": documents,
+    }
+
+
+@app.get(
+    path="/internal/sgp-ai/debug/retrieve",
+    dependencies=[Depends(authenticate_sgp_project_access)],
+    include_in_schema=False,
+)
+async def sgp_ai_internal_retrieve(
+    query: Annotated[str, Query(min_length=2)],
+    limit: Annotated[int, Query(ge=1, le=50)] = 12,
+    data_source: Annotated[SgpAiPrivateDataSource, Query()] = "innovation_library",
+):
+    """Inspect source-scoped retrieval through the server-side SGP credential."""
+    profile = _get_profile_or_404(SGP_AI_PAGES_ASSISTANT_ID)
+    source_ids = _sgp_ai_private_source_ids(data_source)
+    async with _profile_client(profile) as client:
+        debug_payload: dict = {}
+        chunks, documents = await client.retrieve_chunks(
+            query,
+            limit=limit,
+            debug=debug_payload,
+            source_ids=source_ids,
+        )
+    return {
+        "assistant_id": profile.assistant_id,
+        "query": query,
+        "limit": limit,
+        "data_source": data_source,
+        "source_ids": list(source_ids),
+        "documents": [document.model_dump() for document in documents],
+        "chunks": [chunk.model_dump() for chunk in chunks],
+        "debug": debug_payload,
+    }
+
+
+@app.post(
+    path="/internal/sgp-ai/model",
+    response_model=AssistantResponse,
+    response_model_by_alias=False,
+    dependencies=[Depends(authenticate_sgp_project_access)],
+    include_in_schema=False,
+)
+async def sgp_ai_internal_model(
+    request: Request,
+    messages: list[Message],
+    data_source: Annotated[SgpAiPrivateDataSource, Query()] = "innovation_library",
+    ui_locale: Annotated[AssistantUiLocale, Query()] = "en",
+):
+    """Stream source-scoped RAG answers to the authenticated MVP server."""
+    request.state.retrieval_source_ids = _sgp_ai_private_source_ids(data_source)
+    request.state.retrieval_data_source = data_source
+    request.state.ui_locale = ui_locale
+    return await ask_assistant_model(
+        request,
+        SGP_AI_PAGES_ASSISTANT_ID,
+        messages,
+        ui_locale,
+    )
+
+
+@app.get(
     path="/graph",
     response_model=Graph,
     response_model_by_alias=False,
@@ -658,6 +788,7 @@ async def debug_tables(request: Request):
     """
     Return table presence and row counts to validate storage wiring.
     """
+
     async def maybe_await(value):
         return await value if isawaitable(value) else value
 
@@ -693,7 +824,9 @@ async def debug_retrieve(
     """
     client: database.Client = request.state.client
     debug_payload: dict = {}
-    chunks, documents = await client.retrieve_chunks(query, limit=limit, debug=debug_payload)
+    chunks, documents = await client.retrieve_chunks(
+        query, limit=limit, debug=debug_payload
+    )
     return {
         "query": query,
         "limit": limit,
@@ -762,7 +895,10 @@ async def ask_assistant_model(
                 )
                 ideas = genai.localized_scope_ideas(effective_ui_locale)
             else:
-                refusal = scope_decision.refusal or "This request is outside the supported scope."
+                refusal = (
+                    scope_decision.refusal
+                    or "This request is outside the supported scope."
+                )
                 ideas = genai.build_scope_ideas(scope_decision.category)
             yield (
                 AssistantResponse(
@@ -856,7 +992,10 @@ async def ask_assistant_model(
                 else:
                     normalized_original = " ".join(user_query.lower().split())
                     normalized_translation = " ".join(translated_query.lower().split())
-                    if translated_query and normalized_translation != normalized_original:
+                    if (
+                        translated_query
+                        and normalized_translation != normalized_original
+                    ):
                         retrieval_query = translated_query
                         query_variants = [user_query]
             started_at = monotonic()
@@ -913,8 +1052,7 @@ async def ask_assistant_model(
             90.0,
         )
         defer_initial_answer = (
-            not profile.is_default
-            or database.should_defer_to_publications(user_query)
+            not profile.is_default or database.should_defer_to_publications(user_query)
         )
         answer_iter = genai.get_answer(
             messages,
@@ -1042,7 +1180,8 @@ async def ask_model(
             yield (
                 AssistantResponse(
                     role="assistant",
-                    content=scope_decision.refusal or "This request is outside the supported scope.",
+                    content=scope_decision.refusal
+                    or "This request is outside the supported scope.",
                     graph=None,
                 ).model_dump_json()
                 + "\n"
@@ -1158,6 +1297,7 @@ async def ask_model(
                 content="",
                 graph=None,
             )
+
             async def publication_payload():
                 retrieval_timeout_seconds = _env_timeout_seconds(
                     "MODEL_PUBLICATION_RETRIEVAL_TIMEOUT_SECONDS",

@@ -91,6 +91,25 @@ Import a manifest:
 python3 scripts/import_corpus_manifest.py --manifest data/corpus/sample_manifest.yaml --include-chunks
 ```
 
+Replace the governed SGP intranet-project partition while preserving the
+Innovation Library partition:
+
+```bash
+python3 scripts/deploy_corpus_partition.py \
+  --manifest /path/to/rag-export/corpus/manifest.yaml
+
+python3 scripts/deploy_corpus_partition.py \
+  --manifest /path/to/rag-export/corpus/manifest.yaml \
+  --apply \
+  --allow-non-public-external-embedding
+```
+
+The first command is a read-only plan. The applied command embeds missing
+chunks, validates isolated staging tables and per-source counts, and only then
+swaps the live tables. It writes a deployment audit beside the manifest.
+The explicit external-embedding flag confirms approval to send non-public or
+sensitive-flagged chunk text to the configured embedding provider.
+
 Export document inventory:
 
 ```bash

@@ -162,7 +162,19 @@ python scripts/import_corpus_manifest.py \
   --include-chunks
 ```
 
-The direct import path is useful for repeated corpus iteration after the profile is already installed.
+The direct import path is useful for additive corpus iteration after the profile is already installed. It is an ID-based upsert and does not delete rows that disappeared from a later manifest.
+
+For a governed replacement of the SGP intranet-project source partition, use:
+
+```bash
+python scripts/deploy_corpus_partition.py \
+  --manifest /path/to/rag-export/corpus/manifest.yaml \
+  --apply \
+  --allow-non-public-external-embedding
+```
+
+This path preserves the Innovation Library partition, embeds missing chunks with a resumable cache, validates per-source counts and vector shape in staging tables, and swaps only after validation succeeds.
+The external-embedding flag must be used only after approval to send non-public or sensitive-flagged chunk text to the configured provider.
 
 ## Run locally
 
